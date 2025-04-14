@@ -1,7 +1,9 @@
 ---
 title: "Resume"
 ---
-
+::: {html}
+Full Resume: <a href="excel/Project work 1_Water_Hieu Phung.xlsx" download> <button>Download</button> </a>
+:::
 # Education
 
 -   [ **Master of Geomatics for Environmental Management (July, 2024 - April, 2025)**]{style="color: red;"}
@@ -23,6 +25,13 @@ title: "Resume"
     Thesis: Effect if Graphene/Gold - nanoparticles composite on the photocatalytics activity of Titan Dioxide.
 
 # Work Experience
+
+## MGEM Program's Assistant Vancouver, Canada
+
+-   **The University of British Columbia (May, 2025 - August, 2025)**
+
+    - Preparing study materials for next year courses 
+    
 
 ## Environmental Specialist (Internship) Hanoi, Vietnam
 
