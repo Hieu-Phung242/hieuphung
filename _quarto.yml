@@ -10,10 +10,10 @@ website:
         text: Home
       - href: resume.qmd
         text: Resume
-      - text: Content & Deliverable
+      - text: Remote Sensing
         menu:
-          - href: content.qmd
-            text: Capstone Project
+          - href: final_project.qmd
+            text: Detecting Change of AGB in Ghana
           - href: gem520_finallab.qmd
             text: Analysis of Burn Severity and Vegetation Recovery at Prouton Lake, BC
           - href: gem521_lab5.qmd
@@ -22,7 +22,7 @@ website:
             text: Analysis of Suitable Sanctuaries for Humpback Whales
           - href: gem500_proposal.qmd
             text: Evaluating the Impact of Landsacape Fragmentation on Carbon Sequestration of Forests in Kwahu South, Ghana using Landscape Metrics and Landsat 8 Data
-      - text: Other Projects
+      - text: Environmental Projects
         menu:
           - href: other_projects.qmd
             text: Overview
