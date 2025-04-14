@@ -22,7 +22,7 @@ Forests play a vital role in regulating the global carbon cycle, yet their above
 - GEDI L4A data (date of the data: 09/2022 to 02/2023)
 - Digital Elevation Model (DEM)
 
-## Refernce
+## References
 
 :::
 
@@ -47,7 +47,54 @@ library(htmlwidgets)
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
 # Load shapefile
-kwahu_bound <- st_read("C:/Users/hphung.stu/OneDrive - UBC/Documents/GitHub/hieuphung/files/final_project/AOI_Kwahu_South.shp")
+kwahu_boundary <- st_read("C:/Users/hphung.stu/OneDrive - UBC/Documents/GitHub/hieuphung/files/final_project/AOI_Kwahu_South.shp")
 
 ```
+
+
+```{r, echo = FALSE}
+# Create a leaflet map
+m <- leaflet() %>% 
+  addProviderTiles("Esri.WorldImagery") %>% 
+  
+  #add kwahu_boundary
+  addPolygons(
+    data = kwahu_boundary,
+    color = "red",
+    weight = 2,
+    fillOpacity = 0.5,
+    group = "AOI_boundary") %>% 
+  
+  
+  #add layer control
+  addLayersControl(
+    baseGroups = c("Esri World Imagery"),
+    overlayGroups = c("kwahu_boundary"),
+    options = layersControlOptions(collapsed = FALSE)
+  ) %>%
+  
+  #add legend
+  addLegend(
+    position = "bottomright",
+    colors = c("red"),
+    labels = c("Kwahu South District"),
+    title = "Legend",
+    opacity = 1
+  ) %>%
+  
+  #add scale bar
+  addScaleBar(position = c("bottomleft"))
+
+# Save as an interactive HTML file
+saveWidget(m, "interactive_map.html", selfcontained = TRUE)
+  
+```
+
+::: {html}
+<iframe src="interactive_map.html" width="100%" height="600px">
+
+</iframe>
+:::
+
+
 
