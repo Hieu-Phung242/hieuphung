@@ -1,0 +1,69 @@
+---
+title: "Resume"
+---
+
+# Education
+
+-   [ **Master of Geomatics for Environmental Management (July, 2024 - April, 2025)**]{style="color: red;"}
+
+    **The University of British Columbia**
+
+    Capstone Project: Detecting change of aboveground biomass using Landsat 9 and PlanetScope in Kwahu South, Ghana.
+
+-   [**Master of Science (Technology) in Environmental Engineering (August, 2020 - July, 2023)**]{style="color: red;"}
+
+    **Tampere University**
+
+    Thesis: Molten Carbonate Salt Electrolysis - Materials Selection, Experimental Design, and Carbon Production.
+
+-   [**Bachelor of Engineer in Energy and Environmental Engineering (August, 2015 - June, 2019)**]{style="color: red;"}
+
+    **Tampere University of Applied Sciences**
+
+    Thesis: Effect if Graphene/Gold - nanoparticles composite on the photocatalytics activity of Titan Dioxide.
+
+# Work Experience
+
+## Environmental Specialist (Internship) Hanoi, Vietnam
+
+-   **STI Vietnam (July, 2023 - September, 2023)**
+
+    -   Conducted research on carbon market and carbon trade in Vietnam as well as in South-East Asia region.
+    -   Contributed to write the proposal for the project of LiDAR Image Processing using AI for Affordable Forest Carbon Credit Evaluation and Monitoring in Laos and Vietnam.
+    -   Website: [STIVINA](https://stivina.com/)
+
+## Research Assistant Tampere, Finland
+
+-   **Tampere University (February, 2022 - June, 2023)**
+
+    -   Researched on CO2 capture by molten salt electrolysis in Hydrogen and Carbon Value Chain (HYGCEL) project.
+    -   Designed and constructed laboratory scale system for experiment of molten salt electrolysis.
+    -   Successfully found a material that was not only cost-effective but also durable for the molten salt electrolysis process.
+    -   Managed to produce carbon nano-onion product as well as other tubular carbon products.
+    -   Read more: [here](https://www.tuni.fi/en/news/tiny-carbon-nanotubes-may-play-significant-role-binding-atmospheric-carbon-dioxide)
+
+## CAD Designer Trainee Tampere, Finland
+
+-   **Ramboll Finland Oy (May, 2021 - August, 2021)**
+
+    -   Participated in on-the-job training, working closely with supervisors and coworkers (team of 10 people) and asking appropriate quations.
+    -   Designed Pipe and Instrument Diagram (P&ID) for water and wastewater treament plant in AutoCAD and AutoCAD Plant 3D.
+    -   Sketched a pumping station, which included 3D designed and orthographic drawing in AutoCAD Plant 3D.
+    -   Website: [Ramboll](https://www.ramboll.com/fi-fi)
+
+# Awards & Honors
+
+-   100% Tuition Fee Scholarship (August, 2020 - July, 2023)
+
+# Certificates
+
+-   The Power of Statistics (November, 2023)
+-   Learning PLC Ladder Logic: 1 The Basics
+-   AutoCAD: 3D Modelling for Mechanical Designs
+-   AutoCAD 2023: Essential Training (March, 2023)
+-   AutoCAD Plant 3D Essential Training: User (May, 2021)
+-   Learning MATLAB (March, 2023)
+-   MATLAB Fundamental (February, 2023)
+-   MATLAB Onramp (November, 2022)
+-   Student Ambassador 2021-2022 (May, 2022)
+-   Talent Tampere Mentoring Programme 2017 - 2018 (April, 2018)
