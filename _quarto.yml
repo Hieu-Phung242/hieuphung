@@ -1,10 +1,9 @@
 project:
   type: website
-  output-dir: C:/Users/hphung.stu/OneDrive - UBC/Documents/GitHub/hieuphung
 
 website:
-  title: "Your E-Portfolio"
   navbar:
+    logo: site_logo/logo.png
     left:
       - href: index.qmd
         text: Home
