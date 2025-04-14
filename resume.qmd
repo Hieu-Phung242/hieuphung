@@ -2,7 +2,7 @@
 title: "Resume"
 ---
 ::: {html}
-Full Resume: <a href="excel/Project work 1_Water_Hieu Phung.xlsx" download> <button>Download</button> </a>
+Full Resume: <a href="files/CV_draft.pdf" download> <button>Download</button> </a>
 :::
 # Education
 
