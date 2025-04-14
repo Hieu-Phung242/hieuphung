@@ -1,9 +1,28 @@
 ---
 title: "Exploring the Art of Solutions and Design - Innovating at the crossroads of Forestry, Remote Sensing, and Environment"
+page-layout: full
 
 ---
+<div style="position: relative; text-align: left; color: white;">
 
-Hello
+<!-- Background video -->
+<video autoplay muted loop playsinline style="width: 100%; height: 400px; object-fit: cover;">
+  <source src="videos/WebMap.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<!-- Text block (optional) -->
+<div style="position: absolute; top: 20%; left: 10%; transform: translateY(-20%); background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px; max-width: 500px;">
+  <h1 style="font-size: 2rem; color: #b3ffab;">Exploring the Art of Solutions and Design</h1>
+  <p style="font-size: 1.2rem;">Innovating at the crossroads of Forestry, Remote Sensing, and Environment</p>
+  <p style="margin-top: 20px;">Hieu Phung<br>April 13, 2025</p>
+</div>
+
+</div>
+
+
+# Welcome to my e-portfolio 👋
+
 
 My name is Hieu (pronounce as "Heal") Phung. You can call me Harry.
 
