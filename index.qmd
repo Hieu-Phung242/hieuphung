@@ -1,0 +1,38 @@
+---
+title: "Exploring the Art of Solutions and Design - Innovating at the crossroads of Forestry, Remote Sensing, and Environment"
+image: images/profile_picture.png
+about:
+  template: trestles
+  image-width: 20em
+  links: 
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/hieu-phung-465699154/
+    - icon: github
+      text: GitHub
+      href: https://hieu-phung242.github.io/My-E-portfolio/
+    - icon: envelope-at
+      text: Email
+      href: mailto:phungchihieu24296@gmail.com
+---
+
+Hello
+
+My name is Hieu (Heal) Phung.
+
+I am currently studying Master of Geomatics for Environmental Management at The University of British Columbia.
+
+Before coming to Canada, I have completed my Bachelor's in Energy and Environmental Engineering at Tampere University of Applied Sciences in Finland. I also completed one Master's programme in Environmental Engineering in Tampere University in Finland.
+
+It is interesting that, after my first master's graduation, I decided to revolve my career path to the field of GIS and Forestry because I recognized an interconnection between environment, forestry and remote sensing field. 
+
+In my e-portfolio, I hope to deliver insights, creativity and innovations to readers.
+
+Thank you and enjoy your time exploring my space. Should you have any questions, please do not hesitate to send me an email.
+
+-   Skills: ArcGIS Pro, QGIS, R coding, Python, ENVI, AutoCAD, AutoCAD Plant 3D
+
+::: {html}
+<img src="images/nasa-global-warming.gif" alt="Global Temperature" width="400px"/>
+:::
+[gif link](https://tenor.com/view/nasa-global-warming-gif-9361977)

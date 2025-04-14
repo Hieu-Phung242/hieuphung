@@ -1,0 +1,47 @@
+project:
+  type: website
+  output-dir: C:/Users/hphung.stu/OneDrive - UBC/Documents/GitHub/My-E-portfolio
+
+website:
+  title: "Your E-Portfolio"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: resume.qmd
+        text: Resume
+      - text: Content & Deliverable
+        menu:
+          - href: content.qmd
+            text: Capstone Project
+          - href: gem520_finallab.qmd
+            text: Analysis of Burn Severity and Vegetation Recovery at Prouton Lake, BC
+          - href: gem521_lab5.qmd
+            text: Individual Trees Detecting using different methods
+          - href: gem510_lab3.qmd
+            text: Analysis of Suitable Sanctuaries for Humpback Whales
+          - href: gem500_proposal.qmd
+            text: Evaluating the Impact of Landsacape Fragmentation on Carbon Sequestration of Forests in Kwahu South, Ghana using Landscape Metrics and Landsat 8 Data
+      - text: Other Projects
+        menu:
+          - href: other_projects.qmd
+            text: Overview
+          - href: thesis1.qmd
+            text: Molten Salt Carbonate Electrolysis
+          - href: thesis2.qmd
+            text: Effect of Nanoparticles on TiO2
+          - href: water_and_wastewater.qmd
+            text: Design of Water, Wastewater, and Sludge Treatment
+          - href: water_and_sewer.qmd
+            text: Water and Sewer Network Design
+      - href: contact.qmd
+        text: Contact
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: true
+
+editor: visual
+
