@@ -4,7 +4,7 @@ format: html
 editor: visual
 ---
 
-# Project 1 - Detecting Change of Aboveground Biomass using Landsat 9, GEDI, and the combination of Landsat 9 and GEDI data.
+# Detecting Change of Aboveground Biomass using Landsat 9, GEDI, and the combination of Landsat 9 and GEDI data.
 
 ::: panel-tabset
 ## Background

@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Exploring the Art of Solutions and Design - Innovating at the crossroads of Forestry, Remote Sensing, and Environment",
     "section": "",
-    "text": "Your browser does not support the video tag. \n\n\n\n\n\n\nWelcome to my e-portfolio 👋\nMy name is Hieu (pronounce as “Heal”) Phung. You can call me Harry.\nI am a fresh graduate student in Master of Geomatics for Environmental Management at The University of British Columbia.\nBefore coming to Canada, I have completed my Bachelor’s in Energy and Environmental Engineering at Tampere University of Applied Sciences in Finland. I also completed one Master’s programme in Environmental Engineering in Tampere University in Finland.\nIt is interesting that, after my first master’s graduation, I decided to revolve my career path to the field of GIS and Forestry because I recognized an interconnection between environment, forestry and remote sensing field.\nIn my e-portfolio, I hope to deliver insights, creativity and innovations to readers.\nThank you and enjoy your time exploring my space. Should you have any questions, please do not hesitate to send me an email.\n\nSkills: ArcGIS Pro, QGIS, R coding, Python, ENVI, AutoCAD, AutoCAD Plant 3D"
+    "text": "Your browser does not support the video tag. \n\n\nWelcome to my e-portfolio 👋\nMy name is Hieu (pronounce as “Heal”) Phung. You can call me Harry.\nI am a fresh graduate student in Master of Geomatics for Environmental Management at The University of British Columbia.\nBefore coming to Canada, I have completed my Bachelor’s in Energy and Environmental Engineering at Tampere University of Applied Sciences in Finland. I also completed one Master’s programme in Environmental Engineering in Tampere University in Finland.\nIt is interesting that, after my first master’s graduation, I decided to revolve my career path to the field of GIS and Forestry because I recognized an interconnection between environment, forestry and remote sensing field.\nIn my e-portfolio, I hope to deliver insights, creativity and innovations to readers.\nThank you and enjoy your time exploring my space. Should you have any questions, please do not hesitate to send me an email.\n\nSkills: ArcGIS Pro, QGIS, R coding, Python, ENVI, AutoCAD, AutoCAD Plant 3D"
   },
   {
     "objectID": "resume.html",
@@ -40,5 +40,33 @@
     "title": "Resume",
     "section": "CAD Designer Trainee Tampere, Finland",
     "text": "CAD Designer Trainee Tampere, Finland\n\nRamboll Finland Oy (May, 2021 - August, 2021)\n\nParticipated in on-the-job training, working closely with supervisors and coworkers (team of 10 people) and asking appropriate quations.\nDesigned Pipe and Instrument Diagram (P&ID) for water and wastewater treament plant in AutoCAD and AutoCAD Plant 3D.\nSketched a pumping station, which included 3D designed and orthographic drawing in AutoCAD Plant 3D.\nWebsite: Ramboll"
+  },
+  {
+    "objectID": "final_project.html",
+    "href": "final_project.html",
+    "title": "Remote Sensing",
+    "section": "",
+    "text": "BackgroundObjectives\n\n\nContent details go here.\n\n\nDeliverables information goes here.\n\n\n\n\n\nSample leaflet - for detailed leaflet instructions, visit the FCOR 599 workshop archive page here.\n\n\n\n\n\n\n\n\n\nSample code snippet. Notice that you can provide a toggle to switch between coding languages - this is referred to as a ‘tabset’ in quarto. It is good practice to try and convert your R code to python, and vice-versa to demonstrate coding proficiency. For example, let’s showcase a function for calculating NDVI in R and Python.\n\nRPython\n\n\ncalc_ndvi &lt;- function(nir, red){\n  ndvi &lt;- (nir-red)/(nir+red)\n  return(ndvi)\n}\n(Assuming nir and red are terra rast objects)\n\n\ndef calc_ndvi(nir, red): \n  ndvi = (nir - red)/(nir + red)\n  return(ndvi)\n(Assuming nir and red are numpy arrays)\n\n\n\n\n\n\nYou can also provide a frame linking to external websites. For example, here is a Google Earth Engine application I developed - which I embedded in this webpage using the code below:\n\n\n&lt;iframe width=\"900\" height=\"700\"\nsrc=\"https://ee-melserramon.projects.earthengine.app/view/thermal-analysis-tool\"&gt;\n&lt;/iframe&gt;\n\nThe full-screen GEE application is available here in case you’re interested.\n(To use the GEE tool, navigate to any city you’d like, hit apply filters, and click anywhere on the map to retrieve a time-series of Landsat surface temperature observations for that point. Areas where the maximum temp exceeded 35 degrees Celsius in your date-range are highlighted in red.)"
+  },
+  {
+    "objectID": "final_project.html#leaflet",
+    "href": "final_project.html#leaflet",
+    "title": "Remote Sensing",
+    "section": "",
+    "text": "Sample leaflet - for detailed leaflet instructions, visit the FCOR 599 workshop archive page here."
+  },
+  {
+    "objectID": "final_project.html#code-snippets",
+    "href": "final_project.html#code-snippets",
+    "title": "Remote Sensing",
+    "section": "",
+    "text": "Sample code snippet. Notice that you can provide a toggle to switch between coding languages - this is referred to as a ‘tabset’ in quarto. It is good practice to try and convert your R code to python, and vice-versa to demonstrate coding proficiency. For example, let’s showcase a function for calculating NDVI in R and Python.\n\nRPython\n\n\ncalc_ndvi &lt;- function(nir, red){\n  ndvi &lt;- (nir-red)/(nir+red)\n  return(ndvi)\n}\n(Assuming nir and red are terra rast objects)\n\n\ndef calc_ndvi(nir, red): \n  ndvi = (nir - red)/(nir + red)\n  return(ndvi)\n(Assuming nir and red are numpy arrays)"
+  },
+  {
+    "objectID": "final_project.html#external-links",
+    "href": "final_project.html#external-links",
+    "title": "Remote Sensing",
+    "section": "",
+    "text": "You can also provide a frame linking to external websites. For example, here is a Google Earth Engine application I developed - which I embedded in this webpage using the code below:\n\n\n&lt;iframe width=\"900\" height=\"700\"\nsrc=\"https://ee-melserramon.projects.earthengine.app/view/thermal-analysis-tool\"&gt;\n&lt;/iframe&gt;\n\nThe full-screen GEE application is available here in case you’re interested.\n(To use the GEE tool, navigate to any city you’d like, hit apply filters, and click anywhere on the map to retrieve a time-series of Landsat surface temperature observations for that point. Areas where the maximum temp exceeded 35 degrees Celsius in your date-range are highlighted in red.)"
   }
 ]

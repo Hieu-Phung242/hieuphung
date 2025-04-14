@@ -3,24 +3,17 @@ title: "Exploring the Art of Solutions and Design - Innovating at the crossroads
 page-layout: full
 
 ---
-<div style="position: relative;">
+<!-- Full-width container -->
+<div style="margin-left: -10vw; margin-right: -10vw; width: 100vw; position: relative; overflow: hidden;">
 
-<!-- Background video only -->
 <video autoplay muted loop playsinline style="width: 100%; height: 400px; object-fit: cover;">
-  <source src="videos/WebMap.mp4" type="video/mp4">
+  <source src="videos/video1.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
 </div>
 
 
-<div style="display: flex; align-items: center; gap: 20px;">
-
-<!-- Your photo -->
-<img src="images/profile_picture.png" alt="Hieu Phung" style="width: 250px; border-radius: 10px;">
-
-<!-- Your introduction text -->
-<div>
 
 ### Welcome to my e-portfolio 👋
 
@@ -37,7 +30,7 @@ In my e-portfolio, I hope to deliver insights, creativity and innovations to rea
 
 Thank you and enjoy your time exploring my space. Should you have any questions, please do not hesitate to send me an email.
 
--   Skills: ArcGIS Pro, QGIS, R coding, Python, ENVI, AutoCAD, AutoCAD Plant 3D
+-   Skills: ArcGIS Pro, QGIS, R coding, Python, ENVI, eCognition, Google Earth Enginer, AutoCAD, AutoCAD Plant 3D
 
 ::: {html}
 <img src="images/nasa-global-warming.gif" alt="Global Temperature" width="400px"/>
