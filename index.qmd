@@ -1,19 +1,6 @@
 ---
 title: "Exploring the Art of Solutions and Design - Innovating at the crossroads of Forestry, Remote Sensing, and Environment"
-image: images/profile_picture.png
-about:
-  template: trestles
-  image-width: 20em
-  links: 
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/hieu-phung-465699154/
-    - icon: github
-      text: GitHub
-      href: https://hieu-phung242.github.io/My-E-portfolio/
-    - icon: envelope-at
-      text: Email
-      href: mailto:phungchihieu24296@gmail.com
+
 ---
 
 Hello
