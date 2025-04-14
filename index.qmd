@@ -18,13 +18,13 @@ about:
 
 Hello
 
-My name is Hieu (Heal) Phung.
+My name is Hieu (pronounce as "Heal") Phung. You can call me Harry.
 
-I am currently studying Master of Geomatics for Environmental Management at The University of British Columbia.
+I am a fresh graduate student in Master of Geomatics for Environmental Management at The University of British Columbia.
 
 Before coming to Canada, I have completed my Bachelor's in Energy and Environmental Engineering at Tampere University of Applied Sciences in Finland. I also completed one Master's programme in Environmental Engineering in Tampere University in Finland.
 
-It is interesting that, after my first master's graduation, I decided to revolve my career path to the field of GIS and Forestry because I recognized an interconnection between environment, forestry and remote sensing field. 
+It is interesting that, after my first master's graduation, I decided to revolve my career path to the field of GIS and Forestry because I recognized an interconnection between environment, forestry and remote sensing field.
 
 In my e-portfolio, I hope to deliver insights, creativity and innovations to readers.
 
@@ -35,4 +35,3 @@ Thank you and enjoy your time exploring my space. Should you have any questions,
 ::: {html}
 <img src="images/nasa-global-warming.gif" alt="Global Temperature" width="400px"/>
 :::
-[gif link](https://tenor.com/view/nasa-global-warming-gif-9361977)
