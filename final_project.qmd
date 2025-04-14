@@ -9,73 +9,45 @@ editor: visual
 ::: panel-tabset
 ## Background
 
-Content details go here.
+Forests play a vital role in regulating the global carbon cycle, yet their aboveground biomass (AGB) remains difficult to estimate over large areas due to limitations of field-based measurements. Remote sensing offers a scalable solution, but the choice of satellite data remains challenging. This study addresses the challenge by evaluating satellite-based approaches to estimate AGB in Kwahu South, Ghana
 
 ## Objectives
 
-Deliverables information goes here.
+- Identifying the optimal approach for estimating AGB in Ghana
+- Evaluating the accuracy AGB estimation models derived from Landsat 9, PlanetSocpe, and 30-m PlanetScope with GEDI L4A serving as a reference data
+
+## Datasets
+- Landsat 9 imagery (date of the images: 12/2022)
+- PlanetScope imagery (date of the images: 12/2022)
+- GEDI L4A data (date of the data: 09/2022 to 02/2023)
+- Digital Elevation Model (DEM)
+
+## Refernce
+
 :::
 
-## Leaflet
+## Study area
 
-Sample leaflet - for detailed leaflet instructions, visit the FCOR 599 workshop archive page [here](https://ubc-mgem-fcor599.github.io/FCOR-599-Workshops/Interactive_Maps/leaflet.html).
+The study area is located in Kwahu South District, Ghana
 
-```{r leaflet, include = FALSE}
-library(dplyr); library(leaflet)
+Total area: 795.76 km2
 
-m <- leaflet() %>%
-  addProviderTiles("Esri.WorldImagery") %>%
-  addScaleBar(position = c("bottomleft")) %>%
-  setView(-123.1207, 49.2827, zoom = 11)
+Main climate: wet semi equatorial 
+
+Forest zone: semi-deciduous 
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+# Load library
+library(leaflet)
+library(sf)
+library(htmlwidgets)
 
 ```
 
-```{r map, echo=FALSE}
-m
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
+# Load shapefile
+kwahu_bound <- st_read("C:/Users/hphung.stu/OneDrive - UBC/Documents/GitHub/hieuphung/files/final_project/AOI_Kwahu_South.shp")
+
 ```
 
-## Code Snippets
-
-Sample code snippet. Notice that you can provide a toggle to switch between coding languages - this is referred to as a 'tabset' in quarto. It is good practice to try and convert your R code to python, and vice-versa to demonstrate coding proficiency. For example, let's showcase a function for calculating NDVI in R and Python.
-
-::: {.panel-tabset group="language"}
-## R
-
-``` (.r)
-calc_ndvi <- function(nir, red){
-  ndvi <- (nir-red)/(nir+red)
-  return(ndvi)
-}
-```
-
-(Assuming *nir* and *red* are terra rast objects)
-
-## Python
-
-``` (.python)
-def calc_ndvi(nir, red): 
-  ndvi = (nir - red)/(nir + red)
-  return(ndvi)
-```
-
-(Assuming *nir* and *red* are numpy arrays)
-:::
-
-## External links
-
-You can also provide a frame linking to external websites. For example, here is a Google Earth Engine application I developed - which I embedded in this webpage using the code below:
-
-```{code}
-
-<iframe width="900" height="700"
-src="https://ee-melserramon.projects.earthengine.app/view/thermal-analysis-tool">
-</iframe>
-```
-
-The full-screen GEE application is available [here](https://ee-melserramon.projects.earthengine.app/view/thermal-analysis-tool) in case you're interested.
-
-(To use the GEE tool, navigate to any city you'd like, hit apply filters, and click anywhere on the map to retrieve a time-series of Landsat surface temperature observations for that point. Areas where the maximum temp exceeded 35 degrees Celsius in your date-range are highlighted in red.)
-
-```{=html}
-<iframe width="900" height="700" src="https://ee-melserramon.projects.earthengine.app/view/thermal-analysis-tool"></iframe>
-```
