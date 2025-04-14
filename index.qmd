@@ -32,6 +32,10 @@ Thank you and enjoy your time exploring my space. Should you have any questions,
 
 -   Skills: ArcGIS Pro, QGIS, R coding, Python, ENVI, eCognition, Google Earth Enginer, AutoCAD, AutoCAD Plant 3D
 
-::: {html}
-<img src="images/nasa-global-warming.gif" alt="Global Temperature" width="400px"/>
-:::
+
+<p style="text-align: center; margin-top: 30px;">
+  <a href="contact.html" style="background-color: #4CAF50; color: white; padding: 12px 24px; text-decoration: none; font-size: 16px; border-radius: 8px;">
+    Contact Me
+  </a>
+</p>
+
