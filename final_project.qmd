@@ -6,13 +6,20 @@ editor: visual
 
 # Detecting Change of Aboveground Biomass using Landsat 9 and PlanetScope data
 
-## Skills
+## Applied Skills
 
 <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
 
 <span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">ArcGIS Pro</span>
+
 <span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Linear Regression Analysis</span>
+
 <span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Create Map</span>
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Calculating Vegetation Indices</span>
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Handling Trajectory GEDI Dataset</span>
+
 </div>
 
 ::: panel-tabset
