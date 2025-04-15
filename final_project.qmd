@@ -41,6 +41,9 @@ Forest zone: semi-deciduous
 library(leaflet)
 library(sf)
 library(htmlwidgets)
+library(leaflet.extras2)   # for addSidebyside
+library(raster)            # to load GeoTIFF
+library(leafem)            # to visualize raster in leaflet
 
 ```
 
@@ -92,20 +95,41 @@ saveWidget(m, "interactive_map.html", selfcontained = TRUE)
 
 The main approach for developing AGB estimation model in this project is as follow:
 - Generated a rescaled 30-m PlanetScope imagery
+
 - Calculated vegetation indices (NDVI, EVI, NDWI, MSAVI, and GCI) from Landsat 9, PlanetScope, and rescaled 30-m PlanetScope imagery
+
 - Computed the aspect from the DEM
-- Applying random forest algorithm for AGB estimation with input variables were spectral bands, vegetation indices, aspect, and DEM. GEDI L4A was used as groundtruth data for validating each model.
-- Evaluated the accuracy of AGB estimation model derived from Landsat 9, PlanetScope, and rescaled 30-m PlanetScope. 
+
+- Applying random forest algorithm for AGB estimation with input variables were spectral bands, vegetation indices, aspect, and DEM. GEDI L4A was used as groundtruth data for validating each model
+
+- Evaluated the accuracy of AGB estimation model derived from Landsat 9, PlanetScope, and rescaled 30-m PlanetScope
 
 ## Results
 
 ### Model's accuracy
 
 ::: panel-tabset
+
 ## Landsat 9 model
+::: {html}
+<img src="images/Scatterplot_L9.png" alt="AGB estimation model derived from Landsat 9" width="700px"/>
+:::
 
+## PlanetScope model
+::: {html}
+<img src="images/Scatterplot_Planet.png" alt="AGB estimation model derived from PlanetScope" width="700px"/>
+:::
+Result derived from Image © 2022 Planet Labs PBC
 
+## Rescaled 30-m PlanetScope model
+::: {html}
+<img src="images/Scatterplot_Planet30m.png" alt="AGB estimation model derived from 30-m PlanetScope" width="700px"/>
+:::
+Result derived from Image © 2022 Planet Labs PBC
 
 :::
 
+Though Planet had finer spatial resolution, it still demonstrated a less accurate result compared to Landsat 9. Meanwhile, the rescaled Planet provided the best performance, suggesting that spatial resolution alone did not determine AGB estimation accuracy. One potential explanation for this result is the misalignment between Planet’s 3m resolution and GEDI’s 25m footprint.That explains when the PlanetScope was rescaled to 30m, it better matched the scale of GEDI’s footprint, improving alignment and reducing fine-scale noise.
 
+
+### AGB Distribution Map

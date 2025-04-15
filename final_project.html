@@ -177,6 +177,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a>
   <ul class="collapse">
   <li><a href="#models-accuracy" id="toc-models-accuracy" class="nav-link" data-scroll-target="#models-accuracy">Model’s accuracy</a></li>
+  <li><a href="#agb-distribution-map" id="toc-agb-distribution-map" class="nav-link" data-scroll-target="#agb-distribution-map">AGB Distribution Map</a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -244,19 +245,47 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="method" class="level2">
 <h2 class="anchored" data-anchor-id="method">Method</h2>
-<p>The main approach for developing AGB estimation model in this project is as follow: - Generated a rescaled 30-m PlanetScope imagery - Calculated vegetation indices (NDVI, EVI, NDWI, MSAVI, and GCI) from Landsat 9, PlanetScope, and rescaled 30-m PlanetScope imagery - Computed the aspect from the DEM - Applying random forest algorithm for AGB estimation with input variables were spectral bands, vegetation indices, aspect, and DEM. GEDI L4A was used as groundtruth data for validating each model. - Evaluated the accuracy of AGB estimation model derived from Landsat 9, PlanetScope, and rescaled 30-m PlanetScope.</p>
+<p>The main approach for developing AGB estimation model in this project is as follow: - Generated a rescaled 30-m PlanetScope imagery</p>
+<ul>
+<li><p>Calculated vegetation indices (NDVI, EVI, NDWI, MSAVI, and GCI) from Landsat 9, PlanetScope, and rescaled 30-m PlanetScope imagery</p></li>
+<li><p>Computed the aspect from the DEM</p></li>
+<li><p>Applying random forest algorithm for AGB estimation with input variables were spectral bands, vegetation indices, aspect, and DEM. GEDI L4A was used as groundtruth data for validating each model</p></li>
+<li><p>Evaluated the accuracy of AGB estimation model derived from Landsat 9, PlanetScope, and rescaled 30-m PlanetScope</p></li>
+</ul>
 </section>
 <section id="results" class="level2">
 <h2 class="anchored" data-anchor-id="results">Results</h2>
 <section id="models-accuracy" class="level3">
 <h3 class="anchored" data-anchor-id="models-accuracy">Model’s accuracy</h3>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Landsat 9 model</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Landsat 9 model</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">PlanetScope model</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Rescaled 30-m PlanetScope model</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-
+<div class="{html}">
+<p><img src="images/Scatterplot_L9.png" alt="AGB estimation model derived from Landsat 9" width="700px"></p>
 </div>
 </div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div class="{html}">
+<p><img src="images/Scatterplot_Planet.png" alt="AGB estimation model derived from PlanetScope" width="700px"></p>
+</div>
+<p>Result derived from Image © 2022 Planet Labs PBC</p>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<div class="{html}">
+<p><img src="images/Scatterplot_Planet30m.png" alt="AGB estimation model derived from 30-m PlanetScope" width="700px"></p>
+</div>
+<p>Result derived from Image © 2022 Planet Labs PBC</p>
+</div>
+</div>
+</div>
+<p>Though Planet had finer spatial resolution, it still demonstrated a less accurate result compared to Landsat 9. Meanwhile, the rescaled Planet provided the best performance, suggesting that spatial resolution alone did not determine AGB estimation accuracy. One potential explanation for this result is the misalignment between Planet’s 3m resolution and GEDI’s 25m footprint.That explains when the PlanetScope was rescaled to 30m, it better matched the scale of GEDI’s footprint, improving alignment and reducing fine-scale noise.</p>
+</section>
+<section id="agb-distribution-map" class="level3">
+<h3 class="anchored" data-anchor-id="agb-distribution-map">AGB Distribution Map</h3>
+<div class="{html}">
+<iframe src="interactive_map2.html" width="100%" height="600px">
+</iframe>
 </div>
 
 
