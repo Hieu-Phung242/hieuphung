@@ -161,3 +161,5 @@ This map presents a sample of AGB predictions generated using Landsat 9 imagery.
 ## Conclusion
 
 In conclusion, this study evaluated the accuracy of AGB estimation models derived from Landsat 9 and PlanetScope, with GEDI L4A serving as reference. From the results, the most optimal model was identified. The findings demonstrated that finer resolution alone does not guarantee improved model performance. This study also emphasized the importance of matching the spatial scale of input data with reference measurements to enhance the accuracy of biomass prediction.
+
+*Access to my [StoryMap](https://storymaps.arcgis.com/stories/e7b79463a8fd4f0283473a795d89a61c)*
