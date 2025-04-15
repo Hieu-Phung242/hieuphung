@@ -39,8 +39,8 @@ I'd love to hear from you. Please, drop me an email or message me on LinkedIn an
     <i class="fab fa-github"></i> GitHub
   </a>
 
-  <a href="mailto:harry.ph.242@gmail.com">
-    <i class="fas fa-envelope"></i> Email
+  <a href="mailto:harry.ph.242@gmail.com"> 
+    <i class="fas fa-envelope"></i> Email: harry.ph.242@gmail.com
   </a>
 </div>
 
