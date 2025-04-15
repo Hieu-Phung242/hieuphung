@@ -4,8 +4,42 @@ format: html
 editor: visual
 ---
 
-Email: [phungchihieu24296\@gmail.com](mailto:phungchihieu24296@gmail.com)
+Thanks for spending your time here 😀
 
-::: {html}
-<a href="https://www.linkedin.com/in/hieu-phung-465699154/" target="_blank"> <i class="fab fa-linkedin"></i> LinkedIn </a>
-:::
+I'd love to hear from you. Please, drop me an email or message me on LinkedIn anytime!
+
+
+<!-- Add Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+.contact-links {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.contact-links a {
+  display: inline-block;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.contact-links i {
+  margin-right: 8px;
+}
+</style>
+
+<div class="contact-links">
+  <a href="https://www.linkedin.com/in/hieu-phung-465699154/" target="_blank">
+    <i class="fab fa-linkedin"></i> LinkedIn
+  </a>
+
+  <a href="https://github.com/Hieu-Phung242" target="_blank">
+    <i class="fab fa-github"></i> GitHub
+  </a>
+
+  <a href="mailto:harry.ph.242@gmail.com">
+    <i class="fas fa-envelope"></i> Email
+  </a>
+</div>
