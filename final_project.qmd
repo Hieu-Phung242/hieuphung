@@ -62,16 +62,8 @@ m <- leaflet() %>%
     data = kwahu_boundary,
     color = "red",
     weight = 2,
-    fillOpacity = 0.5,
+    fillOpacity = 0.2,
     group = "AOI_boundary") %>% 
-  
-  
-  #add layer control
-  addLayersControl(
-    baseGroups = c("Esri World Imagery"),
-    overlayGroups = c("kwahu_boundary"),
-    options = layersControlOptions(collapsed = FALSE)
-  ) %>%
   
   #add legend
   addLegend(
@@ -96,5 +88,24 @@ saveWidget(m, "interactive_map.html", selfcontained = TRUE)
 </iframe>
 :::
 
+## Method
+
+The main approach for developing AGB estimation model in this project is as follow:
+- Generated a rescaled 30-m PlanetScope imagery
+- Calculated vegetation indices (NDVI, EVI, NDWI, MSAVI, and GCI) from Landsat 9, PlanetScope, and rescaled 30-m PlanetScope imagery
+- Computed the aspect from the DEM
+- Applying random forest algorithm for AGB estimation with input variables were spectral bands, vegetation indices, aspect, and DEM. GEDI L4A was used as groundtruth data for validating each model.
+- Evaluated the accuracy of AGB estimation model derived from Landsat 9, PlanetScope, and rescaled 30-m PlanetScope. 
+
+## Results
+
+### Model's accuracy
+
+::: panel-tabset
+## Landsat 9 model
+
+
+
+:::
 
 
