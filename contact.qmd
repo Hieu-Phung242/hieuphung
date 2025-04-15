@@ -4,7 +4,7 @@ format: html
 editor: visual
 ---
 
-Thanks for spending your time here 😀
+Thanks for spending your time here 😀  
 
 I'd love to hear from you. Please, drop me an email or message me on LinkedIn anytime!
 
@@ -43,3 +43,7 @@ I'd love to hear from you. Please, drop me an email or message me on LinkedIn an
     <i class="fas fa-envelope"></i> Email
   </a>
 </div>
+
+::: {html}
+<img src="images/profile_picture.png" alt="Profile Picture" width="300px"/>
+:::
