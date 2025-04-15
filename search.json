@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Exploring the Art of Solutions and Design - Innovating at the crossroads of Forestry, Remote Sensing, and Environment",
     "section": "",
-    "text": "Your browser does not support the video tag. \n\n\nWelcome to my e-portfolio 👋\nMy name is Hieu (pronounce as “Heal”) Phung. You can call me Harry.\nI am a fresh graduate student in Master of Geomatics for Environmental Management at The University of British Columbia.\nBefore coming to Canada, I have completed my Bachelor’s in Energy and Environmental Engineering at Tampere University of Applied Sciences in Finland. I also completed one Master’s programme in Environmental Engineering in Tampere University in Finland.\nIt is interesting that, after my first master’s graduation, I decided to revolve my career path to the field of GIS and Forestry because I recognized an interconnection between environment, forestry and remote sensing field.\nIn my e-portfolio, I hope to deliver insights, creativity and innovations to readers.\nThank you and enjoy your time exploring my space. Should you have any questions, please do not hesitate to send me an email.\n\nSkills: ArcGIS Pro, QGIS, R coding, Python, ENVI, eCognition, Google Earth Enginer, AutoCAD, AutoCAD Plant 3D\n\n\n Contact Me"
+    "text": "Your browser does not support the video tag. \n\n\nWelcome to my e-portfolio 👋\nMy name is Hieu (pronounce as “Heal”) Phung. You can call me Harry.\nI am a fresh graduate student in Master of Geomatics for Environmental Management at The University of British Columbia.\nBefore coming to Canada, I have completed my Bachelor’s in Energy and Environmental Engineering at Tampere University of Applied Sciences in Finland. I also completed one Master’s programme in Environmental Engineering in Tampere University in Finland.\nIt is interesting that, after my first master’s graduation, I decided to revolve my career path to the field of GIS and Forestry because I recognized an interconnection between environment, forestry and remote sensing field.\nIn my e-portfolio, I hope to deliver insights, creativity and innovations to readers.\nThank you and enjoy your time exploring my space. Should you have any questions, please do not hesitate to send me an email.\n\nSkills: ArcGIS Pro, QGIS, R coding, Python, ENVI, eCognition, Google Earth Engine, AutoCAD, AutoCAD Plant 3D\n\n\n Contact Me"
   },
   {
     "objectID": "resume.html",
@@ -46,7 +46,7 @@
     "href": "final_project.html",
     "title": "Remote Sensing",
     "section": "",
-    "text": "BackgroundObjectivesDatasetsReferences\n\n\nForests play a vital role in regulating the global carbon cycle, yet their aboveground biomass (AGB) remains difficult to estimate over large areas due to limitations of field-based measurements. Remote sensing offers a scalable solution, but the choice of satellite data remains challenging. This study addresses the challenge by evaluating satellite-based approaches to estimate AGB in Kwahu South, Ghana\n\n\n\nIdentifying the optimal approach for estimating AGB in Ghana\nEvaluating the accuracy AGB estimation models derived from Landsat 9, PlanetSocpe, and 30-m PlanetScope with GEDI L4A serving as a reference data\n\n\n\n\nLandsat 9 imagery (date of the images: 12/2022)\nPlanetScope imagery (date of the images: 12/2022)\nGEDI L4A data (date of the data: 09/2022 to 02/2023)\nDigital Elevation Model (DEM)\n\n\n\n\n\n\n\n\n\nThe study area is located in Kwahu South District, Ghana\nTotal area: 795.76 km2\nMain climate: wet semi equatorial\nForest zone: semi-deciduous\n\n\n\n\n\n\n\nThe main approach for estimating"
+    "text": "BackgroundObjectivesDatasetsReferences\n\n\nForests play a vital role in regulating the global carbon cycle, yet their aboveground biomass (AGB) remains difficult to estimate over large areas due to limitations of field-based measurements. Remote sensing offers a scalable solution, but the choice of satellite data remains challenging. This study addresses the challenge by evaluating satellite-based approaches to estimate AGB in Kwahu South, Ghana\n\n\n\nIdentifying the optimal approach for estimating AGB in Ghana\nEvaluating the accuracy AGB estimation models derived from Landsat 9, PlanetSocpe, and 30-m PlanetScope with GEDI L4A serving as a reference data\n\n\n\n\nLandsat 9 imagery (date of the images: 12/2022)\nPlanetScope imagery (date of the images: 12/2022)\nGEDI L4A data (date of the data: 09/2022 to 02/2023)\nDigital Elevation Model (DEM)\n\n\n\n\n\n\n\n\n\nThe study area is located in Kwahu South District, Ghana\nTotal area: 795.76 km2\nMain climate: wet semi equatorial\nForest zone: semi-deciduous\n\n\n\n\n\n\n\nThe main approach for developing AGB estimation model in this project is as follow: - Generated a rescaled 30-m PlanetScope imagery - Calculated vegetation indices (NDVI, EVI, NDWI, MSAVI, and GCI) from Landsat 9, PlanetScope, and rescaled 30-m PlanetScope imagery - Computed the aspect from the DEM - Applying random forest algorithm for AGB estimation with input variables were spectral bands, vegetation indices, aspect, and DEM. GEDI L4A was used as groundtruth data for validating each model. - Evaluated the accuracy of AGB estimation model derived from Landsat 9, PlanetScope, and rescaled 30-m PlanetScope.\n\n\n\n\n\n\nLandsat 9 model"
   },
   {
     "objectID": "final_project.html#leaflet",
@@ -88,6 +88,13 @@
     "href": "final_project.html#method",
     "title": "Remote Sensing",
     "section": "",
-    "text": "The main approach for estimating"
+    "text": "The main approach for developing AGB estimation model in this project is as follow: - Generated a rescaled 30-m PlanetScope imagery - Calculated vegetation indices (NDVI, EVI, NDWI, MSAVI, and GCI) from Landsat 9, PlanetScope, and rescaled 30-m PlanetScope imagery - Computed the aspect from the DEM - Applying random forest algorithm for AGB estimation with input variables were spectral bands, vegetation indices, aspect, and DEM. GEDI L4A was used as groundtruth data for validating each model. - Evaluated the accuracy of AGB estimation model derived from Landsat 9, PlanetScope, and rescaled 30-m PlanetScope."
+  },
+  {
+    "objectID": "final_project.html#results",
+    "href": "final_project.html#results",
+    "title": "Remote Sensing",
+    "section": "",
+    "text": "Landsat 9 model"
   }
 ]

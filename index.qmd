@@ -30,7 +30,7 @@ In my e-portfolio, I hope to deliver insights, creativity and innovations to rea
 
 Thank you and enjoy your time exploring my space. Should you have any questions, please do not hesitate to send me an email.
 
--   Skills: ArcGIS Pro, QGIS, R coding, Python, ENVI, eCognition, Google Earth Enginer, AutoCAD, AutoCAD Plant 3D
+-   Skills: ArcGIS Pro, QGIS, R coding, Python, ENVI, eCognition, Google Earth Engine, AutoCAD, AutoCAD Plant 3D
 
 
 <p style="text-align: center; margin-top: 30px;">
