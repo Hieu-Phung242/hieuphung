@@ -30,7 +30,7 @@ Miller, C. W., Harvey, B. J., Kane, V. R., Moskal, L. M., & Alvarado, E. (2023).
 
 To begin with, I loaded the necessary library used for this analysis task.
 
-```{r, echo = FALSE, warning = FALSE, message = FALSE}
+```{r, echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 library(terra)
 library(sf)
 library(readr)
@@ -44,7 +44,7 @@ library(bfast)
 
 Read the data files to investigate the data and extract the information about total area burned in 2017
 
-```{r,  echo = FALSE, warning = FALSE, message = FALSE}
+```{r,  echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 h_fire_ply_polygon <- st_read("C:/Users/hphung.stu/Downloads/GEM520/Labs/Lab8/lab8_finalDemonstrationOfRSkills-assign/data/PROT_HISTORICAL_FIRE_POLYS_SP/H_FIRE_PLY_polygon.shp", quiet = TRUE)
 
 # Extract the data for the year 2017
@@ -53,15 +53,15 @@ fire_2017 <- h_fire_ply_polygon %>%
 
 # Number of fire
 number_of_fire <- nrow(fire_2017)
-print(number_of_fire)
+
 
 # Total land area burned
 total_area_burned <- sum(fire_2017$SIZE_HA)
-print(total_area_burned)
+
 
 ```
 
-```{r, echo = TRUE, warning = FALSE, message = FALSE}
+```{r, echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 # Create a bar plot showing total area burned per year in BC
 fire_by_year <- h_fire_ply_polygon %>% 
   st_drop_geometry() %>% 
@@ -70,7 +70,7 @@ fire_by_year <- h_fire_ply_polygon %>%
 
 ```
 
-```{r, echo = TRUE, warning = FALSE, message = FALSE}
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
 # Create a bar plot showing total area burned per year in BC
 
 ggplot(fire_by_year, aes(x = FIRE_YEAR, y = TOTAL_AREA, fill = FIRE_CAUSE)) +
@@ -82,15 +82,15 @@ ggplot(fire_by_year, aes(x = FIRE_YEAR, y = TOTAL_AREA, fill = FIRE_CAUSE)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
-```{r, echo = TRUE, warning = FALSE, message = FALSE}
+```{r, echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 
 # Find the burned area at Prouton Lake by ID = C30870
 burned_area_ID <- h_fire_ply_polygon$FIRE_NO == "C30870"
 prouton_fire <- h_fire_ply_polygon[burned_area_ID, ]
-print(prouton_fire$SIZE_HA)
+
 ```
 
-```{r,  echo = TRUE, warning = FALSE, message = FALSE}
+```{r,  echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 
 # List all L2 product directories
 l2_directories <- list.dirs("C:/Users/hphung.stu/Downloads/GEM520/Labs/Lab8/lab8_finalDemonstrationOfRSkills-assign/data/Landsat 8 OLI_TIRS C2 L2", 
@@ -139,7 +139,7 @@ for (dir in l2_directories) {
 
 ```
 
-```{r, echo = TRUE, warning = FALSE, message = FALSE}
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
 
 # Extract the date from SR file
 flist_sr <- list.files("C:/Users/hphung.stu/Downloads/GEM520/Labs/Lab8/lab8_finalDemonstrationOfRSkills-assign/output/LC08_L2SP_048023_SR",
@@ -160,7 +160,7 @@ post_fire <- rast("C:/Users/hphung.stu/Downloads/GEM520/Labs/Lab8/lab8_finalDemo
 
 ```
 
-```{r, echo = TRUE, warning = FALSE, message = FALSE}
+```{r, echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 
 # Create true color composite
 plotRGB(pre_fire, r = 4, g = 3, b = 2, stretch = "lin")
@@ -168,7 +168,7 @@ plotRGB(post_fire, r = 4, g = 3, b = 2, stretch = "lin")
 
 ```
 
-```{r, echo = TRUE, warning = FALSE, message = FALSE}
+```{r, echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 # List all the NDVI files
 ndvi_files <- list.files("C:/Users/hphung.stu/Downloads/GEM520/Labs/Lab8/lab8_finalDemonstrationOfRSkills-assign/output/LC08_L2SP_048023_NDVI",
                          pattern = "tif$",
@@ -199,7 +199,7 @@ for (year in unique(years_july_august_ndvi)) {
 
 ```
 
-```{r, echo = TRUE, warning = FALSE, message = FALSE}
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
 # List all the NBR files
 nbr_files <- list.files("C:/Users/hphung.stu/Downloads/GEM520/Labs/Lab8/lab8_finalDemonstrationOfRSkills-assign/output/LC08_L2SP_048023_NBR",
                         pattern = "tif$",
@@ -230,7 +230,7 @@ for (year in unique(years_july_august_nbr)) {
 
 ```
 
-```{r}
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
 # Prouton Lake fire extent CRS matching
 prouton_lake_fire_extent <- st_transform(prouton_fire, 
                                          crs(yearly_composites_ndvi[[1]]))
@@ -248,7 +248,7 @@ for (year in names(yearly_composites_ndvi)) {
 }
 ```
 
-```{r}
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
 # Plot
 ggplot(avg_ndvi_per_year, aes(x = Year, y = Avg_NDVI)) +
   geom_point() +
@@ -262,7 +262,7 @@ ggplot(avg_ndvi_per_year, aes(x = Year, y = Avg_NDVI)) +
 
 ```
 
-```{r}
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
 # Extract pre-fire 2015 and post fire 2018 NBR
 nbr_2015 <- yearly_composites_nbr[["2015"]] # Pre-fire NBR
 nbr_2018 <- yearly_composites_nbr[["2018"]] # Post-fire NBR
@@ -291,7 +291,7 @@ levels(burn_severity) <- data.frame(id = c(1, 2, 3, 4),
 
 ```
 
-```{r}
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
 # Convert raster to dataframe for ggplot
 severity_df <- as.data.frame(burn_severity, xy = TRUE)
 
@@ -310,7 +310,7 @@ ggplot() +
 
 ## Post-fire vegetation recovery
 
-```{r}
+```{r, echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 # Convert burn severity raster to polygons
 burn_severity_masked <- mask(burn_severity, vect(prouton_lake_fire_extent))  # Mask to the fire extent
 burn_severity_polygons <- as.polygons(burn_severity_masked, dissolve = TRUE)
@@ -353,7 +353,7 @@ ndvi_all_years$severity <- factor(ndvi_all_years$label,
 
 ```
 
-```{r}
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
 # Plot yearly NDVI composites
 for (year in years) {
   plot(yearly_composites_ndvi[[as.character(year)]], 
@@ -363,7 +363,7 @@ for (year in years) {
 
 ```
 
-```{r}
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
 # Create a boxplot of NDVI distributions
 ggplot(ndvi_all_years, aes(x = severity, y = mean, fill = severity)) +
   geom_boxplot() +

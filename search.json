@@ -117,5 +117,19 @@
     "title": "Remote Sensing",
     "section": "",
     "text": "ArcGIS Pro\nLinear Regression Analysis\nCreate Map\nCalculating Vegetation Indices\nHandling Trajectory GEDI Dataset\n\n\nBackgroundObjectivesDatasetsReferences\n\n\nForests play a vital role in regulating the global carbon cycle, yet their aboveground biomass (AGB) remains difficult to estimate over large areas due to limitations of field-based measurements. Remote sensing offers a scalable solution, but the choice of satellite data remains challenging. This study addresses the challenge by evaluating satellite-based approaches to estimate AGB in Kwahu South, Ghana\n\n\n\nIdentifying the optimal approach for estimating AGB in Ghana\nEvaluating the accuracy AGB estimation models derived from Landsat 9, PlanetSocpe, and 30-m PlanetScope with GEDI L4A serving as a reference data\n\n\n\n\nLandsat 9 imagery (date of the images: 12/2022)\nPlanetScope imagery (date of the images: 12/2022)\nGEDI L4A data (date of the data: 09/2022 to 02/2023)\nDigital Elevation Model (DEM)\n\n\n\nPan, Y., Birdsey, R. A., Fang, J., Houghton, R., Kauppi, P., Kurz, W. A., Phillips, O. L., Shvidenko, A., Lewis, S. L., Canadell, J. G., Ciais, P., Jackson, R. B., Pacala, S. W., McGuire, A. D., Piao, S., Rautiainen, A., Sitch, S., & Hayes, D. (2011). A Large and Persistent Carbon Sink in the World’s Forests. ResearchGate. https://www.researchgate.net/publication/51498031_A_Large_and_Persistent_Carbon_Sink_in_the_World’s_Forests\nTian, L., Wu, X., Tao, Y., Li, M., Qian, C., Liao, L., & Fu, W. (2023). Review of Remote Sensing-Based Methods for Forest Aboveground Biomass Estimation: Progress, Challenges, and Prospects. Forests, 14(6), Article 6. https://doi.org/10.3390/f14061086"
+  },
+  {
+    "objectID": "gem520_finallab.html#running-code",
+    "href": "gem520_finallab.html#running-code",
+    "title": "Analysis of Burn Severity and Vegetation Recovery at Prouton Lake, BC",
+    "section": "Running Code",
+    "text": "Running Code\nTo begin with, I loaded the necessary library used for this analysis task.\nRead the data files to investigate the data and extract the information about total area burned in 2017\n\n\n[1] 342\n\n\n[1] 1222205\n\n\n\n\n\n\n\n\n\n\n\n\n\n[1] 859.3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[1] 35\n\n\n[1] \"LC08_L2SP_048023_20130701_20200912_02_T1_NDVI.tif\"\n[2] \"LC08_L2SP_048023_20130717_20200912_02_T1_NDVI.tif\"\n[3] \"LC08_L2SP_048023_20130802_20200912_02_T1_NDVI.tif\"\n[4] \"LC08_L2SP_048023_20130818_20200913_02_T2_NDVI.tif\"\n[5] \"LC08_L2SP_048023_20140704_20200911_02_T1_NDVI.tif\"\n\n\n\n\n[1] 35\n\n\n[1] \"LC08_L2SP_048023_20130701_20200912_02_T1_NBR.tif\"\n[2] \"LC08_L2SP_048023_20130717_20200912_02_T1_NBR.tif\"\n[3] \"LC08_L2SP_048023_20130802_20200912_02_T1_NBR.tif\"\n[4] \"LC08_L2SP_048023_20130818_20200913_02_T2_NBR.tif\"\n[5] \"LC08_L2SP_048023_20140704_20200911_02_T1_NBR.tif\""
+  },
+  {
+    "objectID": "gem520_finallab.html#post-fire-vegetation-recovery",
+    "href": "gem520_finallab.html#post-fire-vegetation-recovery",
+    "title": "Analysis of Burn Severity and Vegetation Recovery at Prouton Lake, BC",
+    "section": "Post-fire vegetation recovery",
+    "text": "Post-fire vegetation recovery\n\n\n       ID      mean      x       y    label year\n2018.1  1 0.2663470 585420 5814480 unburned 2018\n2018.2  1 0.2561202 585450 5814480 unburned 2018\n2018.3  1 0.2355936 585390 5814450 unburned 2018\n2018.4  1 0.2287356 585420 5814450 unburned 2018\n2018.5  1 0.2395178 585450 5814450 unburned 2018\n2018.6  1 0.2413820 585480 5814450 unburned 2018"
   }
 ]
