@@ -13,7 +13,9 @@ Individual tree detection (ITD) is a crucial technique in forest inventory and m
 
 ## Objectives
 
-The aim of this work is to apply 2 methods from Li et al. 2012 and Dalponte and Coomes 2016, which are point cloud method and CHM derived method.
+- Applied point cloud method for individual tree detection (ITD) (Li et al., 2012)
+
+- Applied canopy height model derived method for individual tree detection (ITD) (Dalponte and Coomes, 2016)
 
 ## Data descriptions
 
@@ -30,9 +32,8 @@ Luo, Z., Zhang, Z., Li, W., Chen, Y., Wang, C., Nurunnabi, A., & Li, J. (n.d). D
 The University of British Columbia. (n.d). Malcolm Knapp Reseach Forest. https://www.mkrf.forestry.ubc.ca/about/
 :::
 
-## Pre-processing the data
 
-Load the necessary library
+Necessary pakages for this analysis 
 
 ```{r, echo = TRUE, warning = FALSE, message = FALSE}
 library(lidR)
@@ -41,14 +42,6 @@ library(tidyverse)
 library(rgl)
 
 ```
-
-Preparation of data for analysis
-
-For this study, the LiDAR point cloud data, stored in .las files, had already been normalized. This pre-processing step simplifies subsequent analysis by adjusting the elevation values relative to the ground surface rather than absolute elevation.
-
-
-
-Extract the specific plot. The coordinate of the plot is listed in the .csv files.
 
 
 

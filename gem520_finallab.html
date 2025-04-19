@@ -205,7 +205,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#applied-skills" id="toc-applied-skills" class="nav-link active" data-scroll-target="#applied-skills">Applied Skills</a></li>
+  <li><a href="#ndvi-time-series" id="toc-ndvi-time-series" class="nav-link" data-scroll-target="#ndvi-time-series">NDVI time series</a></li>
+  <li><a href="#burn-severity-map-and-analysis" id="toc-burn-severity-map-and-analysis" class="nav-link" data-scroll-target="#burn-severity-map-and-analysis">Burn severity map and analysis</a>
+  <ul class="collapse">
   <li><a href="#post-fire-vegetation-recovery" id="toc-post-fire-vegetation-recovery" class="nav-link" data-scroll-target="#post-fire-vegetation-recovery">Post-fire vegetation recovery</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -281,6 +285,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="{html}">
 <p><img src="images/false_color_pre_post_fire.png" alt="False Color Pre- and Post-fire at Prouton Lake" width="700px"></p>
 </div>
+</section>
+<section id="ndvi-time-series" class="level2">
+<h2 class="anchored" data-anchor-id="ndvi-time-series">NDVI time series</h2>
 <p>The NDVI time series illustrates notable vegetation dynamics across the Prouton Lakes Fire area between 2013 and 2021. From 2013 to 2016, there is a steady decline in average NDVI, reaching a pronounced low in 2016 — likely corresponding with the year of the wildfire event. This sharp dip indicates a significant loss of live green vegetation, consistent with high burn severity. In 2017, NDVI rebounds sharply, suggesting early signs of post-fire vegetation recovery. However, the values remain lower than pre-fire levels and show moderate fluctuations in the following years. The gradual upward trend from 2019 to 2021 may reflect ongoing regrowth and ecological succession, although the NDVI has not yet returned to its original state observed before the fire.</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -291,6 +298,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+</section>
+<section id="burn-severity-map-and-analysis" class="level1">
+<h1>Burn severity map and analysis</h1>
 <p>This map displays the spatial distribution of burn severity across the Prouton Lakes Fire area, derived from remote sensing analysis using indices such as NBR (Normalized Burn Ratio). The classification reveals a mosaic of fire impact, with most of the region experiencing low to moderate burn severity. Areas colored in red represent high severity burns, where vegetation was likely completely consumed or severely damaged. These zones are concentrated near the center and northern parts of the fire extent, suggesting intense fire activity in those regions. Surrounding these are patches of medium severity (orange) and low severity (yellow), indicating partial canopy loss and understorey burns. The green areas indicate unburned vegetation, either untouched by the fire or outside its perimeter. This spatial variability in burn severity provides crucial insight for post-fire recovery planning, ecological monitoring, and identifying zones that may require restoration efforts.</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -301,20 +311,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-</section>
 <section id="post-fire-vegetation-recovery" class="level2">
 <h2 class="anchored" data-anchor-id="post-fire-vegetation-recovery">Post-fire vegetation recovery</h2>
-<div class="cell" data-result="hide">
-<div class="cell-output cell-output-stdout">
-<pre><code>       ID      mean      x       y    label year
-2018.1  1 0.2663470 585420 5814480 unburned 2018
-2018.2  1 0.2561202 585450 5814480 unburned 2018
-2018.3  1 0.2355936 585390 5814450 unburned 2018
-2018.4  1 0.2287356 585420 5814450 unburned 2018
-2018.5  1 0.2395178 585450 5814450 unburned 2018
-2018.6  1 0.2413820 585480 5814450 unburned 2018</code></pre>
-</div>
-</div>
+<p>The yearly NDVI composites from 2018 to 2021 illustrate the temporal pattern of vegetation recovery following the Prouton Lakes Fire. In 2018, NDVI values are relatively low across the burned area, particularly in the central and southern regions, indicating limited photosynthetic activity and sparse vegetation cover shortly after the fire. By 2019, there is a slight increase in NDVI in scattered patches, suggesting the early stages of regrowth. This trend continues in 2020 and becomes more apparent in 2021, where broader areas show higher NDVI values (greener shades), reflecting increasing vegetation density and health. The gradual shift toward green and yellow tones over the four years indicates a progressive recovery of plant cover, although full canopy regeneration has not yet been achieved. These spatial NDVI patterns align with typical successional trajectories seen after wildfire events, where initial colonization by herbaceous species is followed by slower woody vegetation growth.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -323,39 +322,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </figure>
 </div>
 </div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="gem520_finallab_files/figure-html/unnamed-chunk-16-2.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="gem520_finallab_files/figure-html/unnamed-chunk-16-3.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="gem520_finallab_files/figure-html/unnamed-chunk-16-4.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="gem520_finallab_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
 </div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

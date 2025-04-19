@@ -273,6 +273,7 @@ for (year in names(yearly_composites_ndvi)) {
 }
 ```
 
+## NDVI time series
 
 The NDVI time series illustrates notable vegetation dynamics across the Prouton Lakes Fire area between 2013 and 2021. From 2013 to 2016, there is a steady decline in average NDVI, reaching a pronounced low in 2016 — likely corresponding with the year of the wildfire event. This sharp dip indicates a significant loss of live green vegetation, consistent with high burn severity. In 2017, NDVI rebounds sharply, suggesting early signs of post-fire vegetation recovery. However, the values remain lower than pre-fire levels and show moderate fluctuations in the following years. The gradual upward trend from 2019 to 2021 may reflect ongoing regrowth and ecological succession, although the NDVI has not yet returned to its original state observed before the fire.
 
@@ -319,6 +320,7 @@ levels(burn_severity) <- data.frame(id = c(1, 2, 3, 4),
 
 ```
 
+# Burn severity map and analysis
 
 This map displays the spatial distribution of burn severity across the Prouton Lakes Fire area, derived from remote sensing analysis using indices such as NBR (Normalized Burn Ratio). The classification reveals a mosaic of fire impact, with most of the region experiencing low to moderate burn severity. Areas colored in red represent high severity burns, where vegetation was likely completely consumed or severely damaged. These zones are concentrated near the center and northern parts of the fire extent, suggesting intense fire activity in those regions. Surrounding these are patches of medium severity (orange) and low severity (yellow), indicating partial canopy loss and understorey burns. The green areas indicate unburned vegetation, either untouched by the fire or outside its perimeter. This spatial variability in burn severity provides crucial insight for post-fire recovery planning, ecological monitoring, and identifying zones that may require restoration efforts.
 
@@ -340,6 +342,9 @@ ggplot() +
 ```
 
 ## Post-fire vegetation recovery
+
+The yearly NDVI composites from 2018 to 2021 illustrate the temporal pattern of vegetation recovery following the Prouton Lakes Fire. In 2018, NDVI values are relatively low across the burned area, particularly in the central and southern regions, indicating limited photosynthetic activity and sparse vegetation cover shortly after the fire. By 2019, there is a slight increase in NDVI in scattered patches, suggesting the early stages of regrowth. This trend continues in 2020 and becomes more apparent in 2021, where broader areas show higher NDVI values (greener shades), reflecting increasing vegetation density and health. The gradual shift toward green and yellow tones over the four years indicates a progressive recovery of plant cover, although full canopy regeneration has not yet been achieved. These spatial NDVI patterns align with typical successional trajectories seen after wildfire events, where initial colonization by herbaceous species is followed by slower woody vegetation growth.
+
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 # Convert burn severity raster to polygons
@@ -371,7 +376,7 @@ for (year in years) {
 
 # Combine data for all years into a single dataframe
 ndvi_all_years <- do.call(rbind, ndvi_values)
-head(ndvi_all_years)
+#head(ndvi_all_years)
 
 
 # Ensure burn severity is an ordered factor
@@ -385,6 +390,9 @@ ndvi_all_years$severity <- factor(ndvi_all_years$label,
 ```
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE}
+# Set up side-by-side layout
+par(mfrow = c(2, 2), mar = c(4, 4, 4, 4))
+
 # Plot yearly NDVI composites
 for (year in years) {
   plot(yearly_composites_ndvi[[as.character(year)]], 
@@ -396,18 +404,18 @@ for (year in years) {
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE}
 # Create a boxplot of NDVI distributions
-ggplot(ndvi_all_years, aes(x = severity, y = mean, fill = severity)) +
-  geom_boxplot() +
-  facet_wrap(~ year) +
-  scale_fill_manual(values = c("unburned" = "green", 
-                               "low severity" = "yellow", 
-                               "medium severity" = "orange", 
-                               "high severity" = "red"),
-                    name = "Burn Severity") +
-  labs(title = "Distribution of NDVI Values by Burn Severity Class",
-       x = "Burn Severity Class",
-       y = "NDVI") +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+#ggplot(ndvi_all_years, aes(x = severity, y = mean, fill = severity)) +
+  #geom_boxplot() +
+  #facet_wrap(~ year) +
+  #scale_fill_manual(values = c("unburned" = "green", 
+                               #"low severity" = "yellow", 
+                               #"medium severity" = "orange", 
+                               #"high severity" = "red"),
+                    #name = "Burn Severity") +
+  #labs(title = "Distribution of NDVI Values by Burn Severity Class",
+       #x = "Burn Severity Class",
+       #y = "NDVI") +
+  #theme_minimal() +
+  #theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 ```
