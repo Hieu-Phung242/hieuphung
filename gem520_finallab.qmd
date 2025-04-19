@@ -4,6 +4,16 @@ format: html
 editor: visual
 ---
 
+## Applied Skills
+
+<div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">R Coding </span>
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Time Series Analysis</span>
+
+</div>
+
 ::: panel-tabset
 ## Background
 
@@ -13,7 +23,9 @@ Fire severity analysis is a crucial aspect of post-fire ecosystem assessment and
 
 ## Objectives
 
-The aim of this lab is to investigate the burn severity at Prouton Lake as well as the recovery of vegetation in the years after the fire (2018 -2021).
+- Investigated the burn severity at Prouton Lake 
+
+- Analysed the recovery of vegetation in the years after the fire (2018 -2021).
 
 ## Data descriptions
 
@@ -26,7 +38,7 @@ Mitchell, K. A., Peng, L., Daniels, L., & Carroll, A. (2022). Patterns of infest
 Miller, C. W., Harvey, B. J., Kane, V. R., Moskal, L. M., & Alvarado, E. (2023). Different approaches make comparing studies of burn severity challenging: A review of methods used to link remotely sensed data with the Composite Burn Index. International Journal of Wildland Fire. https://doi.org/10.1071/WF22050
 :::
 
-
+Necessary R package for this analysis
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 library(terra)
@@ -41,8 +53,6 @@ library(bfast)
 
 ```
 
-
-Read the data files to investigate the data and extract the information about total area burned in 2017
 
 ```{r,  echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 h_fire_ply_polygon <- st_read("C:/Users/hphung.stu/Downloads/GEM520/Labs/Lab8/lab8_finalDemonstrationOfRSkills-assign/data/PROT_HISTORICAL_FIRE_POLYS_SP/H_FIRE_PLY_polygon.shp", quiet = TRUE)
@@ -70,17 +80,6 @@ fire_by_year <- h_fire_ply_polygon %>%
 
 ```
 
-```{r, echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
-# Create a bar plot showing total area burned per year in BC
-
-ggplot(fire_by_year, aes(x = FIRE_YEAR, y = TOTAL_AREA, fill = FIRE_CAUSE)) +
-  geom_bar(stat = "identity") +
-  scale_fill_brewer(palette = "Set1") +
-  labs(x = "Year", y = "Total Area Burned (Hectares)", 
-       title = "Total Area Burned per Year in BC by Fire Cause") +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
-```
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 
@@ -104,7 +103,7 @@ for (dir in l2_directories) {
   product_id <- basename(dir)
   
   # Load surface reflectance bands
-  sr_files <- list.files(dir, pattern = "_SR_B[1-7].TIF$", full.names = TRUE)
+  sr_files <- list.files(dir, pattern = "_SR_B[1-8].TIF$", full.names = TRUE)
   sr_stack <- rast(sr_files)
   
   # Load QA_PIXEL layers
@@ -139,7 +138,7 @@ for (dir in l2_directories) {
 
 ```
 
-```{r, echo = FALSE, warning = FALSE, message = FALSE}
+```{r, echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 
 # Extract the date from SR file
 flist_sr <- list.files("C:/Users/hphung.stu/Downloads/GEM520/Labs/Lab8/lab8_finalDemonstrationOfRSkills-assign/output/LC08_L2SP_048023_SR",
@@ -160,8 +159,27 @@ post_fire <- rast("C:/Users/hphung.stu/Downloads/GEM520/Labs/Lab8/lab8_finalDemo
 
 ```
 
+
+This RGB image show the condition of Prouton Lake before the fire (Left: July, 2015) and after the fire (Right: July, 2018). On the right image, there are areas with white and brown color, indicating the loss of vegetation. This is more obvious when looking at the false color image
+
+
 ```{r, echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 
+# Set up side-by-side layout
+par(mfrow = c(1, 2))
+
+# Create true color composite
+plotRGB(pre_fire, r = 4, g = 3, b = 2, stretch = "lin")
+plotRGB(post_fire, r = 4, g = 3, b = 2, stretch = "lin")
+
+# Reset plotting layout
+par(mfrow = c(1, 1))
+
+```
+
+False color image
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 # Set up side-by-side layout
 par(mfrow = c(1, 2))
 
@@ -171,7 +189,6 @@ plotRGB(post_fire, r = 5, g = 4, b = 3, stretch = "lin")
 
 # Reset plotting layout
 par(mfrow = c(1, 1))
-
 ```
 
 
@@ -297,6 +314,8 @@ levels(burn_severity) <- data.frame(id = c(1, 2, 3, 4),
                                               "high severity"))
 
 ```
+
+
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE}
 # Convert raster to dataframe for ggplot
