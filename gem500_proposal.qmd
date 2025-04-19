@@ -25,13 +25,12 @@ The results will provide implications such as climate change mitigation. Underst
 Table 1. Selected landscape metrics for quantifying landscape pattern
 
 |   | Abbreviation | Definition | Level |
-|---------------|---------------|-----------------------------|---------------|
+|----------------|----------------|-------------------------|----------------|
 | Patch Density | PD | Number of patches in the landscape | Class |
 | Edge Density | ED | Total length of all edge segments per hectare | Class |
 | Mean Patch Size | MPS | Average size of patches in the landscape | Class |
 | Largest Patch Index | LPI | Percentage of the total landscape area comprised by the largest patch. | Class |
 | Euclidean Nearest Neighbor Distance | ENN | Measurement of the straight-line distance between the focal patch and its nearest neighboring patch of the same class. | Class |
-
 
 ::: {html}
 <img src="images/figure_proposal.png" alt="Figure 1. The correlation of the used metrics and their carbon stocks estimation: a) Edge Density; b) Patch Density; c) Mean Patch Size; d) Largest Patch Index" width="600px"/>

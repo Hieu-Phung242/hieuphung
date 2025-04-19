@@ -46,88 +46,38 @@ Preparation of data for analysis
 
 For this study, the LiDAR point cloud data, stored in .las files, had already been normalized. This pre-processing step simplifies subsequent analysis by adjusting the elevation values relative to the ground surface rather than absolute elevation.
 
-```{r, echo = TRUE, warning = FALSE, message = FALSE}
-# Read normalized .las file into catalog for further processing
-norm_cat_mkrf <- readLAScatalog("C:/Users/hphung.stu/Downloads/GEM521/Labs/Lab 2/L2_data/Data/Normalized")
 
-# Filter the points with height below 0m and above 65m
-opt_filter(norm_cat_mkrf) <- '-drop_z_below 0 -drop_z_above 65'
-
-```
 
 Extract the specific plot. The coordinate of the plot is listed in the .csv files.
 
-```{r, echo = TRUE, warning = FALSE, message = FALSE}
-# Extract specific plot
-lab5_plot_table <- read.csv("C:/Users/hphung.stu/Downloads/GEM521/Labs/Lab 5/Data/lab5_Plots.csv")
 
-#define the radius
-radius <- 154
-
-#use for loop to extract the plots
-for (i in 1:nrow(lab5_plot_table)){
-  lab5_plot_cent <- c(lab5_plot_table$X[i], lab5_plot_table$Y[i]) #extract plot center coordinates
-  plot_las <- clip_circle(norm_cat_mkrf, lab5_plot_cent[1], lab5_plot_cent[2], radius) #clip plot from norm_cat_mkrf
-  output_file <- paste("C:/Users/hphung.stu/Downloads/GEM521/Labs/Lab 5/Data/Lab5_Plots/Lab5_Plot_", 
-                       i, ".las", sep = "") #output directory as string
-  writeLAS(assign(paste("C:/Users/hphung.stu/Downloads/GEM521/Labs/Lab 5/Data/Lab5_Plots/Lab5_Plot_", 
-                        i, sep = ""), plot_las), output_file) #write'MKRF_Plot_i' to output dir.
-}
-
-
-```
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE}
 # Explore the plots
 Lab5_Plot_1 <- readLAS("C:/Users/hphung.stu/Downloads/GEM521/Labs/Lab 5/Data/Lab5_Plots/Lab5_Plot_1.las")
-
-Lab5_Plot_2 <- readLAS("C:/Users/hphung.stu/Downloads/GEM521/Labs/Lab 5/Data/Lab5_Plots/Lab5_Plot_2.las")
-
-Lab5_Plot_3 <- readLAS("C:/Users/hphung.stu/Downloads/GEM521/Labs/Lab 5/Data/Lab5_Plots/Lab5_Plot_3.las")
-
-Lab5_Plot_4 <- readLAS("C:/Users/hphung.stu/Downloads/GEM521/Labs/Lab 5/Data/Lab5_Plots/Lab5_Plot_4.las")
 
 ```
 
 ## Detect individual trees using a point cloud
 
 ```{r, echo = TRUE, warning = FALSE, message = FALSE, results = "hide"}
-# Create a list to store the segmented plots
-segmented_plots <- list()
 
-# Segmented trees for each plot
-for (i in 1:4) {
-  plot_name <- paste0("Lab5_Plot_", i)
-  las_file <- paste0("C:/Users/hphung.stu/Downloads/GEM521/Labs/Lab 5/Data/Lab5_Plots/", plot_name, ".las")
-  
-  #read las file in lab5
-  lab5_las <- readLAS(las_file)
-  
-  #segment trees using li2012 algorithm 
-  segmented_plot <- segment_trees(lab5_las, li2012(dt1 = 1.5, 
-                                                   dt2 = 2, 
-                                                   R = 2, 
-                                                   Zu = 15, 
-                                                   speed_up = 10, 
-                                                   hmin = 2))
-  segmented_plots[[i]] <- segmented_plot
-}
+#segment trees using li2012 algorithm 
+segmented_plot_1 <- segment_trees(Lab5_Plot_1, li2012(dt1 = 1.5, 
+                                                      dt2 = 2, 
+                                                      R = 2, 
+                                                      Zu = 15, 
+                                                      speed_up = 10, 
+                                                      hmin = 2))
+
 
 ```
-
-```{r}
-# Plot each segmented plot colored by Tree ID
-for (i in 1:4) {
-  plot(segmented_plots[[i]], color = "treeID", main = paste("Plot", i))
-}
-```
-
 
 
 
 ## Detect individual trees using a CHM
 
-```{r}
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
 # Create CHM for plot 1 using pitfree algorithm
 chm_plot1 <- rasterize_canopy(Lab5_Plot_1,
                               res = 0.5,
@@ -135,21 +85,12 @@ chm_plot1 <- rasterize_canopy(Lab5_Plot_1,
                                                   subcircle = 0.2,
                                                   max_edge = c(0, 1)))
 
-# Plot the CHM
-plot(chm_plot1, main = "CHM - Plot 1")
-
 ```
 
-```{r, echo = TRUE, warning = FALSE}
+```{r, echo = FALSE, warning = FALSE}
 # Locate tree tops using lmf algorithm
 tree_tops <- locate_trees(chm_plot1,
                           lmf(ws = 5, hmin = 2))
-
-# Plot CHM
-plot(chm_plot1, main = "Tree Top Detection - Plot 1")
-
-# Overlay detected tree tops in red
-plot(tree_tops, add = TRUE, col = "red", pch = 20)
 
 ```
 
@@ -162,13 +103,8 @@ tree_crowns_plot1 <- segment_trees(Lab5_Plot_1, dalponte2016(chm_plot1,
                                                              th_cr = 0.55,
                                                              max_cr = 10,
                                                              ID = "treeID"))
-plot(tree_crowns_plot1, color = "treeID")
 
 ```
-
-
-
-
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
 
@@ -176,7 +112,7 @@ library(htmlwidgets)
 
 # Open a 3D rendering window for Li et al.2012
 open3d()
-plot(segmented_plots[[1]], color = "treeID")
+plot(segmented_plot_1, color = "treeID")
 rglwidget_obj_1 <- rglwidget()
 saveWidget(rglwidget_obj_1, file = "interactive_plot_li.html", selfcontained = TRUE)
 
@@ -192,68 +128,16 @@ saveWidget(rglwidget_obj_2, file = "interactive_plot_dalponte.html", selfcontain
 ```
 
 ::: {html}
-<iframe src="interactive_plot_li.html" width="100%" height="600px"></iframe>
+<iframe src="interactive_plot_li.html" width="100%" height="600px">
+
+</iframe>
+
 Figure 1. ITD using Li et al. 2012 method
 
-<iframe src="interactive_plot_dalponte.html" width="100%" height="600px"></iframe>
+<iframe src="interactive_plot_dalponte.html" width="100%" height="600px">
+
+</iframe>
+
 Figure 2. ITD using Dalponte and Coomes 2016 method
 :::
-
-
-Performing individual tree detection for plot 2 with different resolution (0.5m, 2m, 4m, and 10m)
-
-
-
-```{r}
-# Define resolution
-resolutions <- c(0.5, 2, 4, 10)
-
-# Create empty lists to store results
-chm_list_plot2 <- list()
-tree_tops_list_plot2 <- list()
-tree_crowns_list_plot2 <- list()
-
-# Set up a 2x2 plotting layout
-par(mfrow = c(2,2)) 
-
-# Performing loop through each resolution
-for (res in resolutions) {
-  
-  # create CHM using pitfree algorithm
-  chm_plot2 <- rasterize_canopy(Lab5_Plot_2,
-                                res = res,
-                                algorithm = pitfree(thresholds = c(0, 10, 20, 30),
-                                                    subcircle = 0.2,
-                                                    max_edge = c(0,1)))
-  # store the CHM to the chm_list_plot2
-  chm_list_plot2[[as.character(res)]] <- chm_plot2
-  
-  # locate tree tops using lmf algorithm
-  tree_tops_plot2 <- locate_trees(chm_plot2, lmf(ws = 5, hmin = 2))
-  # store the tree tops to the tree_tops_list_plot2
-  tree_tops_list_plot2[[as.character(res)]] <- tree_tops_plot2
-  
-  # perform tree segmentation using Dalponte and Coomes (2016) algorithm
-  tree_crowns_plot2 <- segment_trees(Lab5_Plot_2,
-                                     dalponte2016(chm_plot2,
-                                                  tree_tops_plot2,
-                                                  th_tree = 2,
-                                                  th_seed = 0.45,
-                                                  th_cr = 0.55,
-                                                  max_cr = 10,
-                                                  ID = "treeID"))
-  # store segment tree crowns to the tree_crown_list_plot2
-  tree_crowns_list_plot2[[as.character(res)]] <- tree_crowns_plot2
-  
-  # plot CHM and tree segmentation
-  plot(chm_plot2, main = paste("CHM Plot 2(", res, "m)", sep = ""))
-  plot(tree_crowns_plot2, main = paste("Tree Segmentation Plot 2 (", res, "m)", sep = ""), color = "treeID")
-  
-}
-
-
-```
-
-
-
 

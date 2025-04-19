@@ -74,7 +74,7 @@ fire_by_year <- h_fire_ply_polygon %>%
 ```{r, echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 # Create a bar plot showing total area burned per year in BC
 
-burn_plot <- ggplot(fire_by_year, aes(x = FIRE_YEAR, y = TOTAL_AREA, fill = FIRE_CAUSE)) +
+ggplot(fire_by_year, aes(x = FIRE_YEAR, y = TOTAL_AREA, fill = FIRE_CAUSE)) +
   geom_bar(stat = "identity") +
   scale_fill_brewer(palette = "Set1") +
   labs(x = "Year", y = "Total Area Burned (Hectares)", 
