@@ -1,0 +1,54 @@
+---
+title: "Proposal: Evaluating the Impact of Landsacape Fragmentation on Carbon Sequestration of Forests in Kwahu South, Ghana using Landscape Metrics and Landsat 8 Data"
+format: html
+editor: visual
+---
+
+# Introduction: It is ambiguous that highly fragmented forest enhances carbon sequestration ability.
+
+In recent years, the impact of forest fragmentation on carbon sequestration has become a topic of intense scientific debate (Hou et al., 2024; Ma et al., 2017). The increasing fragmentation of forest landscapes poses a significant threat to their ecosystem service (Fischer et al., 2021). While studies suggest that landscape fragmentation leads to reduced carbon storage capacity due to an increase in edge effects (Fischer et al., 2021), others have reported opposite findings (Lei et al., 2024). A recent study in subtropical forests found that carbon uptake capacity per unit area was enhanced in highly fragmented forest landscape (Jiao et al., 2024). The controversies of carbon uptake capacity between fragmented forest and continuous forest have prompted the need for further research in diverse forest ecosystems.
+
+To address this research gap, my study aims to evaluate the impact of landscape fragmentation on carbon sequestration of forest in Kwahu South, Ghana. Additionally, the impact of landscape fragmentation in the studied area on carbon absorption ability remain poorly understood. In this study, I will use landscape metrics derived from satellite imagery (Landsat 8) and combine them with carbon stock estimates to quantify the relationship between forest fragmentation and carbon sequestration capacity.
+
+# Methods
+
+The satellite imagery of Landsat 8 from the United States Geological Survey (USGS) with spatial resolution of 30 meters will be downloaded (EarthExplorer, n.d.). I will perform supervised classification using Random Forest algorithm to create a forest/non-forest map. Using landscape metrics package in RStudio, I will calculate landscape metrics such as Patch Density (PD), Edge Density (ED), Mean Patch Size (MPS), Largest Patch Index (LPI), and Euclidean Nearest Neighbor Distance (ENN). The description for each metric is shown in Table 1. To estimate carbon stocks, I will utilize allometric equations developed by Aabeyir et al. (2020) in combination with field measurements of diameter at breast height and tree height supplied by Ostrom Climate. I will also use the Normalized Difference Vegetation Index (NDVI) derived from Landsat 8 as a proxy for biomass, calibrating it with the field data. Finally, I will use linear regression to quantify the relationship between the calculated metrics and the estimated carbon stocks (Lei et al., 2024). The results allow me to assess how different fragmentation patterns relate to carbon sequestration capacity in the area.
+
+# Expected results and significance
+
+I expect a negative correlation between fragmentation metrics (such as Edge Density and Patch Density) and carbon sequestration capacity. Specifically, area with higher edge density will show lower carbon stocks due to increased edge effect. In addition, continuous forest patches (indicated by higher Mean Patch Size and Largest Patch Index) will demonstrate greater carbon sequestration capacity. Similar findings have been observed in research indicating that, in non-commercial forests, fragmentation reduces the carbon storage due to the influence of patch area, edge and patchy connection(Lei et al., 2024). The Figure 1 illustrates the correlation between each fragmentation metric and its corresponding carbon stock.
+
+The results will provide implications such as climate change mitigation. Understanding how fragmentation affects carbon storage can contribute to more accurate estimates of carbon stocks and potential emissions from forest degradation. Another significance from this study is demonstration of carbon sequestration benefits of maintaining large and contiguous forest patches. This insight is particularly significant for guiding conservation strategies and improving land management practices.
+
+# Figures and Tables
+
+Table 1. Selected landscape metrics for quantifying landscape pattern
+
+|   | Abbreviation | Definition | Level |
+|---------------|---------------|-----------------------------|---------------|
+| Patch Density | PD | Number of patches in the landscape | Class |
+| Edge Density | ED | Total length of all edge segments per hectare | Class |
+| Mean Patch Size | MPS | Average size of patches in the landscape | Class |
+| Largest Patch Index | LPI | Percentage of the total landscape area comprised by the largest patch. | Class |
+| Euclidean Nearest Neighbor Distance | ENN | Measurement of the straight-line distance between the focal patch and its nearest neighboring patch of the same class. | Class |
+
+
+::: {html}
+<img src="images/figure_proposal.png" alt="Figure 1. The correlation of the used metrics and their carbon stocks estimation: a) Edge Density; b) Patch Density; c) Mean Patch Size; d) Largest Patch Index" width="600px"/>
+:::
+
+# References
+
+Aabeyir, R., Adu-Bredu, S., Agyare, W. A., & Weir, M. J. C. (2020). Allometric models for estimating aboveground biomass in the tropical woodlands of Ghana, West Africa. *Forest Ecosystems*, *7*(1), 41. https://doi.org/10.1186/s40663-020-00250-3
+
+*EarthExplorer*. (n.d.). Retrieved October 25, 2024, from https://earthexplorer.usgs.gov/
+
+Fischer, R., Taubert, F., Müller, M. S., Groeneveld, J., Lehmann, S., Wiegand, T., & Huth, A. (2021). Accelerated forest fragmentation leads to critical increase in tropical forest edge area. *Science Advances*, *7*(37), eabg7012. https://doi.org/10.1126/sciadv.abg7012
+
+Hou, Y., Wang, L., Li, Z., Ouyang, X., Xiao, T., Wang, H., Li, W., & Nie, X. (2024). Landscape fragmentation and regularity lead to decreased carbon stocks in basins: Evidence from century-scale research. *Journal of Environmental Management*, *367*, 121937. https://doi.org/10.1016/j.jenvman.2024.121937
+
+Jiao, J., Cheng, Y., Hong, P., Ma, J., Yao, L., Jiang, B., Xu, X., & Wu, C. (2024). Impact of Fragmentation on Carbon Uptake in Subtropical Forest Landscapes in Zhejiang Province, China. *Remote Sensing*, *16*(13), Article 13. https://doi.org/10.3390/rs16132393
+
+Lei, H., Duan, D., Chen, Y., Guo, H., Li, J., & Li, X. (2024). Effects of landscape fragmentation of plantation forests on carbon storage in the Loess Plateau, China. *Journal of Arid Land*, *16*(2), 266–281. https://doi.org/10.1007/s40333-024-0005-3
+
+Ma, L., Shen, C., Lou, D., Fu, S., & Guan, D. (2017). Ecosystem carbon storage in forest fragments of differing patch size. *Scientific Reports*, *7*(1), 13173. https://doi.org/10.1038/s41598-017-13598-4

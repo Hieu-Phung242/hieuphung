@@ -26,7 +26,7 @@ Mitchell, K. A., Peng, L., Daniels, L., & Carroll, A. (2022). Patterns of infest
 Miller, C. W., Harvey, B. J., Kane, V. R., Moskal, L. M., & Alvarado, E. (2023). Different approaches make comparing studies of burn severity challenging: A review of methods used to link remotely sensed data with the Composite Burn Index. International Journal of Wildland Fire. https://doi.org/10.1071/WF22050
 :::
 
-## 
+::: {.dropdown}
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 library(terra)
@@ -40,6 +40,8 @@ library(ggplot2)
 library(bfast)
 
 ```
+
+:::
 
 Read the data files to investigate the data and extract the information about total area burned in 2017
 

@@ -131,5 +131,12 @@
     "title": "Analysis of Burn Severity and Vegetation Recovery at Prouton Lake, BC",
     "section": "Post-fire vegetation recovery",
     "text": "Post-fire vegetation recovery\n\n\n       ID      mean      x       y    label year\n2018.1  1 0.2663470 585420 5814480 unburned 2018\n2018.2  1 0.2561202 585450 5814480 unburned 2018\n2018.3  1 0.2355936 585390 5814450 unburned 2018\n2018.4  1 0.2287356 585420 5814450 unburned 2018\n2018.5  1 0.2395178 585450 5814450 unburned 2018\n2018.6  1 0.2413820 585480 5814450 unburned 2018"
+  },
+  {
+    "objectID": "gem520_finallab.html",
+    "href": "gem520_finallab.html",
+    "title": "Analysis of Burn Severity and Vegetation Recovery at Prouton Lake, BC",
+    "section": "",
+    "text": "Read the data files to investigate the data and extract the information about total area burned in 2017\n[1] 35\n\n\n[1] \"LC08_L2SP_048023_20130701_20200912_02_T1_NDVI.tif\"\n[2] \"LC08_L2SP_048023_20130717_20200912_02_T1_NDVI.tif\"\n[3] \"LC08_L2SP_048023_20130802_20200912_02_T1_NDVI.tif\"\n[4] \"LC08_L2SP_048023_20130818_20200913_02_T2_NDVI.tif\"\n[5] \"LC08_L2SP_048023_20140704_20200911_02_T1_NDVI.tif\"\n[1] 35\n\n\n[1] \"LC08_L2SP_048023_20130701_20200912_02_T1_NBR.tif\"\n[2] \"LC08_L2SP_048023_20130717_20200912_02_T1_NBR.tif\"\n[3] \"LC08_L2SP_048023_20130802_20200912_02_T1_NBR.tif\"\n[4] \"LC08_L2SP_048023_20130818_20200913_02_T2_NBR.tif\"\n[5] \"LC08_L2SP_048023_20140704_20200911_02_T1_NBR.tif\""
   }
 ]
