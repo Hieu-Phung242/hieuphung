@@ -26,7 +26,7 @@ Mitchell, K. A., Peng, L., Daniels, L., & Carroll, A. (2022). Patterns of infest
 Miller, C. W., Harvey, B. J., Kane, V. R., Moskal, L. M., & Alvarado, E. (2023). Different approaches make comparing studies of burn severity challenging: A review of methods used to link remotely sensed data with the Composite Burn Index. International Journal of Wildland Fire. https://doi.org/10.1071/WF22050
 :::
 
-::: {.dropdown}
+
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 library(terra)
@@ -41,7 +41,6 @@ library(bfast)
 
 ```
 
-:::
 
 Read the data files to investigate the data and extract the information about total area burned in 2017
 
@@ -168,6 +167,33 @@ plotRGB(pre_fire, r = 4, g = 3, b = 2, stretch = "lin")
 plotRGB(post_fire, r = 4, g = 3, b = 2, stretch = "lin")
 
 ```
+
+<div style="max-width: 600px; margin-bottom: 2em;">
+  <div style="position: relative; overflow: hidden; width: 100%;">
+    <div style="position: absolute; width: 100%;">
+      <img src="images/image_after.png" style="width: 100%;">
+    </div>
+    <div id="sliderContainer" style="position: relative; width: 100%;">
+      <div id="divider" style="position: absolute; top: 0; left: 50%; width: 3px; background: #fff; height: 100%; z-index: 10;"></div>
+      <img src="images/image_before.png" id="beforeImage" style="width: 100%; clip-path: inset(0 50% 0 0); position: relative; z-index: 5;">
+    </div>
+  </div>
+</div>
+
+<script>
+  const sliderContainer = document.getElementById("sliderContainer");
+  const beforeImage = document.getElementById("beforeImage");
+  const divider = document.getElementById("divider");
+
+  sliderContainer.addEventListener("mousemove", function(e) {
+    const bounds = sliderContainer.getBoundingClientRect();
+    const offset = e.clientX - bounds.left;
+    const percent = (offset / bounds.width) * 100;
+    beforeImage.style.clipPath = `inset(0 ${100 - percent}% 0 0)`;
+    divider.style.left = `${percent}%`;
+  });
+</script>
+
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 # List all the NDVI files

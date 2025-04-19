@@ -217,9 +217,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div class="dropdown">
-
-</div>
 <p>Read the data files to investigate the data and extract the information about total area burned in 2017</p>
 <div class="cell" data-result="hide">
 <div class="cell-output-display">
@@ -246,6 +243,30 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
+<div style="max-width: 600px; margin-bottom: 2em;">
+<div style="position: relative; overflow: hidden; width: 100%;">
+<pre><code>&lt;div style="position: absolute; width: 100%;"&gt;
+  &lt;img src="images/image_after.png" style="width: 100%;"&gt;
+&lt;/div&gt;
+&lt;div id="sliderContainer" style="position: relative; width: 100%;"&gt;
+  &lt;div id="divider" style="position: absolute; top: 0; left: 50%; width: 3px; background: #fff; height: 100%; z-index: 10;"&gt;&lt;/div&gt;
+  &lt;img src="images/image_before.png" id="beforeImage" style="width: 100%; clip-path: inset(0 50% 0 0); position: relative; z-index: 5;"&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+<script>
+  const sliderContainer = document.getElementById("sliderContainer");
+  const beforeImage = document.getElementById("beforeImage");
+  const divider = document.getElementById("divider");
+
+  sliderContainer.addEventListener("mousemove", function(e) {
+    const bounds = sliderContainer.getBoundingClientRect();
+    const offset = e.clientX - bounds.left;
+    const percent = (offset / bounds.width) * 100;
+    beforeImage.style.clipPath = `inset(0 ${100 - percent}% 0 0)`;
+    divider.style.left = `${percent}%`;
+  });
+</script>
 <div class="cell" data-result="hide">
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 35</code></pre>
