@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -170,7 +204,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#post-fire-vegetation-recovery" id="toc-post-fire-vegetation-recovery" class="nav-link active" data-scroll-target="#post-fire-vegetation-recovery">Post-fire vegetation recovery</a></li>
+  <li><a href="#applied-skills" id="toc-applied-skills" class="nav-link active" data-scroll-target="#applied-skills">Applied Skills</a></li>
+  <li><a href="#post-fire-vegetation-recovery" id="toc-post-fire-vegetation-recovery" class="nav-link" data-scroll-target="#post-fire-vegetation-recovery">Post-fire vegetation recovery</a></li>
   </ul>
 </nav>
     </div>
@@ -196,6 +231,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="applied-skills" class="level2">
+<h2 class="anchored" data-anchor-id="applied-skills">Applied Skills</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+<p><span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">R Coding</span></p>
+<p><span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Time Series Analysis</span></p>
+</div>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Background</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Objectives</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Data descriptions</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">References</a></li></ul>
 <div class="tab-content">
@@ -204,7 +245,10 @@ ul.task-list li input[type="checkbox"] {
 <p>Fire severity analysis is a crucial aspect of post-fire ecosystem assessment and management (Miller et al., 2023). It involves classifying burned areas into different severity classes based on the degree of ecological change caused by the fire (Miller et al., 2023).</p>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p>The aim of this lab is to investigate the burn severity at Prouton Lake as well as the recovery of vegetation in the years after the fire (2018 -2021).</p>
+<ul>
+<li><p>Investigated the burn severity at Prouton Lake</p></li>
+<li><p>Analysed the recovery of vegetation in the years after the fire (2018 -2021).</p></li>
+</ul>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <ul>
@@ -217,49 +261,27 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p>Read the data files to investigate the data and extract the information about total area burned in 2017</p>
+<p>Necessary R package for this analysis</p>
 <div class="cell" data-result="hide">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="gem520_finallab_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(terra)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(bfast)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p>The RGB composites show the condition of Prouton Lake and surrounding forest before (July 2015) and after the fire event (July 2018). In the pre-fire image, dense and healthy vegetation is visible as dark green patches, indicating an intact forest canopy. By contrast, the post-fire image reveals extensive areas of white, light brown, and grey, suggesting widespread vegetation loss and exposed soil — typical signs of high burn severity. The boundaries of the burn scar are clearly defined, with sharp contrasts between affected and unaffected areas. This transformation is especially evident around the central and northern parts of the scene. While RGB images give a visual sense of change, false-color composites or spectral indices such as NBR or NDVI would provide a more quantitative assessment of vegetation health and burn intensity.</p>
+<div class="{html}">
+<p><img src="images/pre_and_post_fire.png" alt="Pre- and Post-fire at Prouton Lake" width="700px"></p>
 </div>
+<p>False color image</p>
+<div class="{html}">
+<p><img src="images/false_color_pre_post_fire.png" alt="False Color Pre- and Post-fire at Prouton Lake" width="700px"></p>
 </div>
-<div class="cell" data-result="hide">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="gem520_finallab_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<div class="cell" data-result="hide">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 35</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "LC08_L2SP_048023_20130701_20200912_02_T1_NDVI.tif"
-[2] "LC08_L2SP_048023_20130717_20200912_02_T1_NDVI.tif"
-[3] "LC08_L2SP_048023_20130802_20200912_02_T1_NDVI.tif"
-[4] "LC08_L2SP_048023_20130818_20200913_02_T2_NDVI.tif"
-[5] "LC08_L2SP_048023_20140704_20200911_02_T1_NDVI.tif"</code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 35</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "LC08_L2SP_048023_20130701_20200912_02_T1_NBR.tif"
-[2] "LC08_L2SP_048023_20130717_20200912_02_T1_NBR.tif"
-[3] "LC08_L2SP_048023_20130802_20200912_02_T1_NBR.tif"
-[4] "LC08_L2SP_048023_20130818_20200913_02_T2_NBR.tif"
-[5] "LC08_L2SP_048023_20140704_20200911_02_T1_NBR.tif"</code></pre>
-</div>
-</div>
+<p>The NDVI time series illustrates notable vegetation dynamics across the Prouton Lakes Fire area between 2013 and 2021. From 2013 to 2016, there is a steady decline in average NDVI, reaching a pronounced low in 2016 — likely corresponding with the year of the wildfire event. This sharp dip indicates a significant loss of live green vegetation, consistent with high burn severity. In 2017, NDVI rebounds sharply, suggesting early signs of post-fire vegetation recovery. However, the values remain lower than pre-fire levels and show moderate fluctuations in the following years. The gradual upward trend from 2019 to 2021 may reflect ongoing regrowth and ecological succession, although the NDVI has not yet returned to its original state observed before the fire.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -269,6 +291,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
+<p>This map displays the spatial distribution of burn severity across the Prouton Lakes Fire area, derived from remote sensing analysis using indices such as NBR (Normalized Burn Ratio). The classification reveals a mosaic of fire impact, with most of the region experiencing low to moderate burn severity. Areas colored in red represent high severity burns, where vegetation was likely completely consumed or severely damaged. These zones are concentrated near the center and northern parts of the fire extent, suggesting intense fire activity in those regions. Surrounding these are patches of medium severity (orange) and low severity (yellow), indicating partial canopy loss and understorey burns. The green areas indicate unburned vegetation, either untouched by the fire or outside its perimeter. This spatial variability in burn severity provides crucial insight for post-fire recovery planning, ecological monitoring, and identifying zones that may require restoration efforts.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -278,6 +301,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
+</section>
 <section id="post-fire-vegetation-recovery" class="level2">
 <h2 class="anchored" data-anchor-id="post-fire-vegetation-recovery">Post-fire vegetation recovery</h2>
 <div class="cell" data-result="hide">

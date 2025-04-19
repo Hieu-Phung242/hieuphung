@@ -6,13 +6,11 @@ editor: visual
 
 ## Applied Skills
 
-<div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+::: {style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;"}
+[R Coding ]{style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;"}
 
-<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">R Coding </span>
-
-<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Time Series Analysis</span>
-
-</div>
+[Time Series Analysis]{style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;"}
+:::
 
 ::: panel-tabset
 ## Background
@@ -23,9 +21,9 @@ Fire severity analysis is a crucial aspect of post-fire ecosystem assessment and
 
 ## Objectives
 
-- Investigated the burn severity at Prouton Lake 
+-   Investigated the burn severity at Prouton Lake
 
-- Analysed the recovery of vegetation in the years after the fire (2018 -2021).
+-   Analysed the recovery of vegetation in the years after the fire (2018 -2021).
 
 ## Data descriptions
 
@@ -40,7 +38,7 @@ Miller, C. W., Harvey, B. J., Kane, V. R., Moskal, L. M., & Alvarado, E. (2023).
 
 Necessary R package for this analysis
 
-```{r, echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
+```{r, echo = TRUE, warning = FALSE, message = FALSE, result = "hide"}
 library(terra)
 library(sf)
 library(readr)
@@ -52,7 +50,6 @@ library(ggplot2)
 library(bfast)
 
 ```
-
 
 ```{r,  echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 h_fire_ply_polygon <- st_read("C:/Users/hphung.stu/Downloads/GEM520/Labs/Lab8/lab8_finalDemonstrationOfRSkills-assign/data/PROT_HISTORICAL_FIRE_POLYS_SP/H_FIRE_PLY_polygon.shp", quiet = TRUE)
@@ -79,7 +76,6 @@ fire_by_year <- h_fire_ply_polygon %>%
   summarize(TOTAL_AREA = sum(SIZE_HA, na.rm = TRUE))
 
 ```
-
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 
@@ -159,47 +155,52 @@ post_fire <- rast("C:/Users/hphung.stu/Downloads/GEM520/Labs/Lab8/lab8_finalDemo
 
 ```
 
+The RGB composites show the condition of Prouton Lake and surrounding forest before (July 2015) and after the fire event (July 2018). In the pre-fire image, dense and healthy vegetation is visible as dark green patches, indicating an intact forest canopy. By contrast, the post-fire image reveals extensive areas of white, light brown, and grey, suggesting widespread vegetation loss and exposed soil — typical signs of high burn severity. The boundaries of the burn scar are clearly defined, with sharp contrasts between affected and unaffected areas. This transformation is especially evident around the central and northern parts of the scene. While RGB images give a visual sense of change, false-color composites or spectral indices such as NBR or NDVI would provide a more quantitative assessment of vegetation health and burn intensity.
 
-This RGB image show the condition of Prouton Lake before the fire (Left: July, 2015) and after the fire (Right: July, 2018). On the right image, there are areas with white and brown color, indicating the loss of vegetation. This is more obvious when looking at the false color image
-
+::: {html}
+<img src="images/pre_and_post_fire.png" alt="Pre- and Post-fire at Prouton Lake" width="700px"/>
+:::
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 
 # Set up side-by-side layout
-par(mfrow = c(1, 2))
+#par(mfrow = c(1, 2), mar = c(4, 4, 4, 10))
 
 # Create true color composite
-plotRGB(pre_fire, r = 4, g = 3, b = 2, stretch = "lin")
-plotRGB(post_fire, r = 4, g = 3, b = 2, stretch = "lin")
+#plotRGB(pre_fire, r = 4, g = 3, b = 2, stretch = "lin")
+#plotRGB(post_fire, r = 4, g = 3, b = 2, stretch = "lin")
 
 # Reset plotting layout
-par(mfrow = c(1, 1))
+#par(mfrow = c(1, 1))
 
 ```
 
 False color image
 
+::: {html}
+<img src="images/false_color_pre_post_fire.png" alt="False Color Pre- and Post-fire at Prouton Lake" width="700px"/>
+:::
+
 ```{r, echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 # Set up side-by-side layout
-par(mfrow = c(1, 2))
+#par(mfrow = c(1, 2))
 
 # Create true color composite
-plotRGB(pre_fire, r = 5, g = 4, b = 3, stretch = "lin")
-plotRGB(post_fire, r = 5, g = 4, b = 3, stretch = "lin")
+#plotRGB(pre_fire, r = 5, g = 4, b = 3, stretch = "lin")
+#plotRGB(post_fire, r = 5, g = 4, b = 3, stretch = "lin")
 
 # Reset plotting layout
-par(mfrow = c(1, 1))
+#par(mfrow = c(1, 1))
 ```
-
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 # List all the NDVI files
 ndvi_files <- list.files("C:/Users/hphung.stu/Downloads/GEM520/Labs/Lab8/lab8_finalDemonstrationOfRSkills-assign/output/LC08_L2SP_048023_NDVI",
                          pattern = "tif$",
                          full.name = TRUE)
-length(ndvi_files)
+#length(ndvi_files)
 fname_ndvi <- basename(ndvi_files) # extract the file name from the full file path
-fname_ndvi[1:5]
+#fname_ndvi[1:5]
 
 # Extract year and month from NDVI file names
 ndvi_dates_extract <- str_sub(fname_ndvi, start = 18, end = 25)
@@ -228,9 +229,9 @@ for (year in unique(years_july_august_ndvi)) {
 nbr_files <- list.files("C:/Users/hphung.stu/Downloads/GEM520/Labs/Lab8/lab8_finalDemonstrationOfRSkills-assign/output/LC08_L2SP_048023_NBR",
                         pattern = "tif$",
                         full.name = TRUE)
-length(nbr_files)
+#length(nbr_files)
 fname_nbr <- basename(nbr_files)
-fname_nbr[1:5]
+#fname_nbr[1:5]
 
 # Extract year and month from NBR file names
 nbr_dates_extract <- str_sub(fname_nbr, start = 18, end = 25)
@@ -271,6 +272,9 @@ for (year in names(yearly_composites_ndvi)) {
                                         Avg_NDVI = avg_ndvi))
 }
 ```
+
+
+The NDVI time series illustrates notable vegetation dynamics across the Prouton Lakes Fire area between 2013 and 2021. From 2013 to 2016, there is a steady decline in average NDVI, reaching a pronounced low in 2016 — likely corresponding with the year of the wildfire event. This sharp dip indicates a significant loss of live green vegetation, consistent with high burn severity. In 2017, NDVI rebounds sharply, suggesting early signs of post-fire vegetation recovery. However, the values remain lower than pre-fire levels and show moderate fluctuations in the following years. The gradual upward trend from 2019 to 2021 may reflect ongoing regrowth and ecological succession, although the NDVI has not yet returned to its original state observed before the fire.
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE}
 # Plot
@@ -316,6 +320,7 @@ levels(burn_severity) <- data.frame(id = c(1, 2, 3, 4),
 ```
 
 
+This map displays the spatial distribution of burn severity across the Prouton Lakes Fire area, derived from remote sensing analysis using indices such as NBR (Normalized Burn Ratio). The classification reveals a mosaic of fire impact, with most of the region experiencing low to moderate burn severity. Areas colored in red represent high severity burns, where vegetation was likely completely consumed or severely damaged. These zones are concentrated near the center and northern parts of the fire extent, suggesting intense fire activity in those regions. Surrounding these are patches of medium severity (orange) and low severity (yellow), indicating partial canopy loss and understorey burns. The green areas indicate unburned vegetation, either untouched by the fire or outside its perimeter. This spatial variability in burn severity provides crucial insight for post-fire recovery planning, ecological monitoring, and identifying zones that may require restoration efforts.
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE}
 # Convert raster to dataframe for ggplot
