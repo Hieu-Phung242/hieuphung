@@ -4,6 +4,13 @@ format: html
 editor: visual
 ---
 
+
+
+
+
+
+
+
 ::: panel-tabset
 ## Background
 
@@ -26,7 +33,16 @@ Mitchell, K. A., Peng, L., Daniels, L., & Carroll, A. (2022). Patterns of infest
 Miller, C. W., Harvey, B. J., Kane, V. R., Moskal, L. M., & Alvarado, E. (2023). Different approaches make comparing studies of burn severity challenging: A review of methods used to link remotely sensed data with the Composite Burn Index. International Journal of Wildland Fire. https://doi.org/10.1071/WF22050
 :::
 
-## 
+## Running Code
+
+To begin with, I loaded the necessary library used for this analysis task.
+
+
+
+
+
+
+
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 library(terra)
@@ -41,7 +57,21 @@ library(bfast)
 
 ```
 
+
+
+
+
+
+
+
 Read the data files to investigate the data and extract the information about total area burned in 2017
+
+
+
+
+
+
+
 
 ```{r,  echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 h_fire_ply_polygon <- st_read("C:/Users/hphung.stu/Downloads/GEM520/Labs/Lab8/lab8_finalDemonstrationOfRSkills-assign/data/PROT_HISTORICAL_FIRE_POLYS_SP/H_FIRE_PLY_polygon.shp", quiet = TRUE)
@@ -307,7 +337,21 @@ ggplot() +
 
 ```
 
+
+
+
+
+
+
+
 ## Post-fire vegetation recovery
+
+
+
+
+
+
+
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 # Convert burn severity raster to polygons
@@ -379,3 +423,4 @@ ggplot(ndvi_all_years, aes(x = severity, y = mean, fill = severity)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 ```
+
