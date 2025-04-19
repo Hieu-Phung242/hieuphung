@@ -4,6 +4,8 @@ format: html
 editor: visual
 ---
 
+
+
 ::: panel-tabset
 ## Background
 
@@ -28,6 +30,8 @@ Miller, C. W., Harvey, B. J., Kane, V. R., Moskal, L. M., & Alvarado, E. (2023).
 
 
 
+
+
 ```{r, echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 library(terra)
 library(sf)
@@ -42,7 +46,11 @@ library(bfast)
 ```
 
 
+
+
 Read the data files to investigate the data and extract the information about total area burned in 2017
+
+
 
 ```{r,  echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 h_fire_ply_polygon <- st_read("C:/Users/hphung.stu/Downloads/GEM520/Labs/Lab8/lab8_finalDemonstrationOfRSkills-assign/data/PROT_HISTORICAL_FIRE_POLYS_SP/H_FIRE_PLY_polygon.shp", quiet = TRUE)
@@ -173,7 +181,6 @@ plotRGB(post_fire, r = 5, g = 4, b = 3, stretch = "lin")
 par(mfrow = c(1, 1))
 
 ```
-
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 # List all the NDVI files
@@ -315,7 +322,11 @@ ggplot() +
 
 ```
 
+
+
 ## Post-fire vegetation recovery
+
+
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE, result = "hide"}
 # Convert burn severity raster to polygons
@@ -387,3 +398,4 @@ ggplot(ndvi_all_years, aes(x = severity, y = mean, fill = severity)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 ```
+
