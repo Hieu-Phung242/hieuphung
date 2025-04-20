@@ -154,6 +154,11 @@ saveWidget(rglwidget_obj_2, file = "interactive_plot_dalponte.html", selfcontain
 ```
 
 ::: {html}
-Download Static Map: <a href="files/Lab3_map.pdf" download> <button>Download</button> </a>
+
+<iframe src="interactive_plot_dalponte.html" width="100%" height="600px">
+
+</iframe>
+
+
 :::
 

@@ -125,5 +125,5 @@ The interactive map above shows the top 5 suitable sanctuary for the humpback wh
 
 
 ::: {html}
-<img src="images/map_gem510_lab3.png" alt="Humpback Whales Sanctuary" width="700px"/>
+Download Static Map: <a href="files/Lab3_map.pdf" download> <button>Download</button> </a>
 :::
