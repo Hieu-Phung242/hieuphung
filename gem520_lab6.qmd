@@ -4,23 +4,33 @@ format: html
 editor: visual
 ---
 
-## Quarto
+## Applied Skills
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+<div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
 
-## Running Code
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">R Coding</span>
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">QGIS</span>
 
-```{r}
-1 + 1
-```
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Supervised Classification</span>
 
-You can add options to executable code like this
+</div>
 
-```{r}
-#| echo: false
-2 * 2
-```
 
-The `echo: false` option disables the printing of code (only output is displayed).
+::: panel-tabset
+## Background
+
+
+
+## Objectives
+
+-   
+
+## Data descriptions
+
+-   
+
+## References
+
+:::
+
