@@ -1,10 +1,8 @@
 ---
-title: "Environmental Projects"
+title: "CO~2~ Captured using Molten Salt Carbonate Electrolysis"
 format: html
 editor: visual
 ---
-
-# CO~2~ Captured using Molten Salt Carbonate Electrolysis
 
 ## This is my Master's Thesis at Tampere University
 
