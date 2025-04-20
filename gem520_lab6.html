@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CO2 Captured using Molten Salt Carbonate Electrolysis</title>
+<title>Image Classification using R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -170,14 +204,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#this-is-my-masters-thesis-at-tampere-university" id="toc-this-is-my-masters-thesis-at-tampere-university" class="nav-link active" data-scroll-target="#this-is-my-masters-thesis-at-tampere-university">This is my Master’s Thesis at Tampere University</a></li>
-  <li><a href="#applied-skills" id="toc-applied-skills" class="nav-link" data-scroll-target="#applied-skills">Applied Skills</a>
-  <ul class="collapse">
-  <li><a href="#mechanism-of-co2-capture-and-reduction-using-molten-carbonate-salt" id="toc-mechanism-of-co2-capture-and-reduction-using-molten-carbonate-salt" class="nav-link" data-scroll-target="#mechanism-of-co2-capture-and-reduction-using-molten-carbonate-salt">Mechanism of CO<sub>2</sub> capture and reduction using molten carbonate salt</a></li>
-  <li><a href="#experimental-methods" id="toc-experimental-methods" class="nav-link" data-scroll-target="#experimental-methods">Experimental methods</a></li>
-  <li><a href="#example-results" id="toc-example-results" class="nav-link" data-scroll-target="#example-results">Example Results</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
-  </ul></li>
+  <li><a href="#quarto" id="toc-quarto" class="nav-link active" data-scroll-target="#quarto">Quarto</a></li>
+  <li><a href="#running-code" id="toc-running-code" class="nav-link" data-scroll-target="#running-code">Running Code</a></li>
   </ul>
 </nav>
     </div>
@@ -186,7 +214,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">CO<sub>2</sub> Captured using Molten Salt Carbonate Electrolysis</h1>
+<h1 class="title">Image Classification using R</h1>
 </div>
 
 
@@ -203,75 +231,28 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="this-is-my-masters-thesis-at-tampere-university" class="level2">
-<h2 class="anchored" data-anchor-id="this-is-my-masters-thesis-at-tampere-university">This is my Master’s Thesis at Tampere University</h2>
+<section id="quarto" class="level2">
+<h2 class="anchored" data-anchor-id="quarto">Quarto</h2>
+<p>Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <a href="https://quarto.org" class="uri">https://quarto.org</a>.</p>
 </section>
-<section id="applied-skills" class="level2">
-<h2 class="anchored" data-anchor-id="applied-skills">Applied Skills</h2>
-<div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
-<p><span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">AutoCAD 3D</span></p>
-<p><span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">CO2 Captured using Molten Salt</span></p>
-<p><span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Research</span></p>
-<p><span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Scientific Writing</span></p>
-<p><span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Experimental Design</span></p>
-</div>
-<p>CO<sub>2</sub> capture via electrolysis in molten salt is one of the methods that draws attention of scientists and researchers due to its valuable product and sustainability. The basic idea of this method is to use molten salts, with the help from anode and cathode, to capture and convert CO2 to valuable carbon-products such as carbon nanofiber (CNF), carbon nano onions (CNO), or carbon nanotubes (CNT). (Wu et al.&nbsp;2017) Nevertheless, this technology has drawback. Several research showed that there were heavy corrosions on the anode used in molten salt electrolysis (Wu et al., 2017; Tang et al., 2018). Besides, lithium carbonate, which is mainly used in molten salt electrolysis, is becoming scarce (Reuter 2022). Hence, new carbonate salt and a suitable anode material should be researched to cope with the issue of corrsion and scarcity of lithium carbonate.</p>
-<p>The main aim of this thesis work is to find suitable and inexpensive materials for electrodes to hold off the corrosion during molten salt electrolysis process. In addition, a system for molten carbonate salt electrolysis is designed and constructed for testing the materials in a laboratory scale system. Furthermore, the growth of CNT is investigated by zinc coated iron electrode to see if iron can catalyze the formation of CNT.</p>
-<p>This thesis work is part of Hydrogen and Carbon Value Chains in Green Electrification (HYGCEL) project, in which new value chains from the development of Power-to-X (P2X) market was identified, plus, a guidance for electricity and hydrogen-based infrastructure should be examined. The work is in work package 5 (WP5), which concentrates on techno-economy of solid carbon products. The project is a collaborative project between Tampere University and Lappeenranta-Lahti University of Technology.</p>
-<section id="mechanism-of-co2-capture-and-reduction-using-molten-carbonate-salt" class="level3">
-<h3 class="anchored" data-anchor-id="mechanism-of-co2-capture-and-reduction-using-molten-carbonate-salt">Mechanism of CO<sub>2</sub> capture and reduction using molten carbonate salt</h3>
-<p>In direct reduction of CO<sub>2</sub> to carbon, CO<sub>2</sub> is converted directly to elemental carbon on the cathode during electrolysis of molten salt via a three-step electrochemical-chemical-electrochemical CO<sub>2</sub> reduction (Ijije et al., 2014)</p>
-<ul>
-<li><p>1st step:</p>
-<p>CO<sub>2</sub> + 2e<sup>-</sup> &lt;-&gt; CO<sub>2</sub><sup>2-</sup> (1)</p></li>
-<li><p>2nd step:</p>
-<p>CO<sub>2</sub><sup>2-</sup> -&gt; CO + O<sup>2-</sup> (2)</p></li>
-<li><p>3rd step:</p>
-<p>CO + 2e<sup>-</sup> -&gt; C + 2 CO<sub>3</sub><sup>2-</sup> (3)</p></li>
-<li><p>Overall reaction:</p>
-<p>3 CO<sub>2</sub> + 4e<sup>-</sup> -&gt; C + 2 CO<sub>3</sub><sup>2-</sup> (4)</p></li>
-</ul>
-<div class="{html}">
-<p><img src="images/co2_capture.png" alt="Figure 1. Illustration of the reduction of CO2 to carbon" width="600px"></p>
-</div>
-<p>Figure 1. Illustration of the reduction of CO2 to carbon</p>
-</section>
-<section id="experimental-methods" class="level3">
-<h3 class="anchored" data-anchor-id="experimental-methods">Experimental methods</h3>
-<p>The experimental system was designed for specific purposes. Several experiments were done to test the durability of anodes and formation of carbon products using different combination of carbonate salt. The anodes which were used in this thesis were nickel, tin dioxides (SnO<sub>2</sub>), and galvanized steel. The combination of salt used in this experiment were Li<sub>2</sub>CO<sub>3</sub> and Na<sub>2</sub>CO<sub>3</sub>-K<sub>2</sub>CO<sub>3</sub>-CaCO<sub>3</sub>.</p>
-</section>
-<section id="example-results" class="level3">
-<h3 class="anchored" data-anchor-id="example-results">Example Results</h3>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Figure 2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Figure 3</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Figure 4</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Figure 5</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p><img src="images/experiment_design.png" alt="Preliminary design for a part of experimental systems" width="600px"></p>
-<p>Preliminary design for a part of experimental systems</p>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p><img src="images/li2co3_steel_sno2.png" alt="SEM photo of carbon products when galvanized steel (cathode) and tin dioxide (anode) were used in Li2CO3" width="600px"></p>
-<p>SEM photo of carbon products when galvanized steel (cathode) and tin dioxide (anode) were used in Li2CO3</p>
-</div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<p><img src="images/mix_ni_sno2.png" alt="SEM photo of carbon products when nickel (cathode) and tin dioxide (anode) were used in CaCO3-Na2CO3-K2CO3" width="600px"></p>
-<p>SEM photo of carbon products when nickel (cathode) and tin dioxide (anode) were used in CaCO3-Na2CO3-K2CO3</p>
-</div>
-<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-<p><img src="images/sno2_surface.png" alt="SEM photo of the surface of SnO2 for corrosion analysis" width="600px"></p>
-<p>SEM photo of the surface of SnO2 for corrosion analysis</p>
+<section id="running-code" class="level2">
+<h2 class="anchored" data-anchor-id="running-code">Running Code</h2>
+<p>When you click the <strong>Render</strong> button a document will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2</code></pre>
 </div>
 </div>
+<p>You can add options to executable code like this</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 4</code></pre>
 </div>
-</section>
-<section id="references" class="level3">
-<h3 class="anchored" data-anchor-id="references">References</h3>
-<p>Ijije, H. V., Lawrence, R. C., Chen, G. Z. (2014a). Carbon electrodeposition in molten salts: electrode reaction and application. RSC advances. Vol. 4(67), pp.&nbsp;35808 – 35817.</p>
-<p>Tang, D., Zheng, K., Yin, H., Mao, X., Sadoway, D. R., Wang, D. (2018). Electrochemical growth of a corrosion-resistant multi-layer scale to enable an oxygen-evolution inert anode in molten carbonate. Electrochimica acta. Vol. 279, pp.&nbsp;250 – 257</p>
-<p>Wu, H., Li, Z., Ji, D., Liu, Y., Yi, G., Yuan, D., Wang, B., Zhang, Z. (2017). Effect of molten carbonate composition on the generation of carbon material. RSC advances. Vol. 7(14), pp.&nbsp;8467 – 8473</p>
+</div>
+<p>The <code>echo: false</code> option disables the printing of code (only output is displayed).</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
