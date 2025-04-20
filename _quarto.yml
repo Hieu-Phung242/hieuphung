@@ -24,8 +24,6 @@ website:
             text: Evaluating the Impact of Landsacape Fragmentation on Carbon Sequestration of Forests in Kwahu South, Ghana using Landscape Metrics and Landsat 8 Data
       - text: Environmental Projects
         menu:
-          - href: other_projects.qmd
-            text: Overview
           - href: thesis1.qmd
             text: Molten Salt Carbonate Electrolysis
           - href: thesis2.qmd
