@@ -64,7 +64,7 @@ most_suitable <- st_read("C:/Users/hphung.stu/OneDrive - UBC/Documents/ArcGIS/Pr
 
 ```{r, echo = FALSE}
 # Create a leaflet map
-m <- leaflet() %>% 
+m2 <- leaflet() %>% 
   addProviderTiles("Esri.WorldImagery") %>% 
   
   #add sanctuary buffer
@@ -111,12 +111,12 @@ m <- leaflet() %>%
   addScaleBar(position = c("bottomleft"))
 
 # Save as an interactive HTML file
-saveWidget(m, "interactive_map.html", selfcontained = TRUE)
+saveWidget(m2, "interactive_map2.html", selfcontained = TRUE)
   
 ```
 
 ::: {html}
-<iframe src="interactive_map.html" width="100%" height="600px">
+<iframe src="interactive_map2.html" width="100%" height="600px">
 
 </iframe>
 :::
