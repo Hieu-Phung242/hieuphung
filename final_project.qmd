@@ -1,10 +1,8 @@
 ---
-title: "Remote Sensing"
+title: "Detecting Change of Aboveground Biomass using Landsat 9 and PlanetScope data"
 format: html
 editor: visual
 ---
-
-# Detecting Change of Aboveground Biomass using Landsat 9 and PlanetScope data
 
 ## Applied Skills
 
