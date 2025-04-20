@@ -4,6 +4,20 @@ format: html
 editor: visual
 ---
 
+## Applied Skills
+
+<div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">R Coding</span>
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">ITD using Point Cloud</span>
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">ITD using CHM Derived Model</span>
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Handling LiDAR Data</span>
+
+</div>
+
 ::: panel-tabset
 ## Background
 
@@ -44,7 +58,6 @@ library(rgl)
 ```
 
 
-
 ```{r, echo = FALSE, warning = FALSE, message = FALSE}
 # Explore the plots
 Lab5_Plot_1 <- readLAS("C:/Users/hphung.stu/Downloads/GEM521/Labs/Lab 5/Data/Lab5_Plots/Lab5_Plot_1.las")
@@ -52,6 +65,8 @@ Lab5_Plot_1 <- readLAS("C:/Users/hphung.stu/Downloads/GEM521/Labs/Lab 5/Data/Lab
 ```
 
 ## Detect individual trees using a point cloud
+
+
 
 ```{r, echo = TRUE, warning = FALSE, message = FALSE, results = "hide"}
 
@@ -66,6 +81,25 @@ segmented_plot_1 <- segment_trees(Lab5_Plot_1, li2012(dt1 = 1.5,
 
 ```
 
+```{r, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
+library(htmlwidgets)
+
+# Open a 3D rendering window for Li et al.2012
+open3d()
+plot(segmented_plot_1, color = "treeID")
+rglwidget_obj_1 <- rglwidget()
+saveWidget(rglwidget_obj_1, file = "interactive_plot_li.html", selfcontained = TRUE)
+```
+
+
+::: {html}
+<iframe src="interactive_plot_li.html" width="100%" height="600px">
+
+</iframe>
+
+Figure 1. ITD using Li et al. 2012 method
+
+:::
 
 
 ## Detect individual trees using a CHM
@@ -80,12 +114,14 @@ chm_plot1 <- rasterize_canopy(Lab5_Plot_1,
 
 ```
 
+
 ```{r, echo = FALSE, warning = FALSE}
 # Locate tree tops using lmf algorithm
 tree_tops <- locate_trees(chm_plot1,
                           lmf(ws = 5, hmin = 2))
 
 ```
+
 
 ```{r}
 # Using Dalponte and Coomes 2016 algorithm to detect individual trees
@@ -99,15 +135,10 @@ tree_crowns_plot1 <- segment_trees(Lab5_Plot_1, dalponte2016(chm_plot1,
 
 ```
 
+
 ```{r, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
 
 library(htmlwidgets)
-
-# Open a 3D rendering window for Li et al.2012
-open3d()
-plot(segmented_plot_1, color = "treeID")
-rglwidget_obj_1 <- rglwidget()
-saveWidget(rglwidget_obj_1, file = "interactive_plot_li.html", selfcontained = TRUE)
 
 # Open a 3D rendering window for Dalponte and Coomes, 2016
 
@@ -117,20 +148,15 @@ rglwidget_obj_2 <- rglwidget()
 saveWidget(rglwidget_obj_2, file = "interactive_plot_dalponte.html", selfcontained = TRUE)
 
 
-
 ```
 
 ::: {html}
-<iframe src="interactive_plot_li.html" width="100%" height="600px">
-
-</iframe>
-
-Figure 1. ITD using Li et al. 2012 method
 
 <iframe src="interactive_plot_dalponte.html" width="100%" height="600px">
 
 </iframe>
 
 Figure 2. ITD using Dalponte and Coomes 2016 method
+
 :::
 

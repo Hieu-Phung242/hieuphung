@@ -204,7 +204,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#detect-individual-trees-using-a-point-cloud" id="toc-detect-individual-trees-using-a-point-cloud" class="nav-link active" data-scroll-target="#detect-individual-trees-using-a-point-cloud">Detect individual trees using a point cloud</a></li>
+  <li><a href="#applied-skills" id="toc-applied-skills" class="nav-link active" data-scroll-target="#applied-skills">Applied Skills</a></li>
+  <li><a href="#detect-individual-trees-using-a-point-cloud" id="toc-detect-individual-trees-using-a-point-cloud" class="nav-link" data-scroll-target="#detect-individual-trees-using-a-point-cloud">Detect individual trees using a point cloud</a></li>
   <li><a href="#detect-individual-trees-using-a-chm" id="toc-detect-individual-trees-using-a-chm" class="nav-link" data-scroll-target="#detect-individual-trees-using-a-chm">Detect individual trees using a CHM</a></li>
   </ul>
 </nav>
@@ -231,6 +232,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<section id="applied-skills" class="level2">
+<h2 class="anchored" data-anchor-id="applied-skills">Applied Skills</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+<p><span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">R Coding</span></p>
+<p><span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">ITD using Point Cloud</span></p>
+<p><span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">ITD using CHM Derived Model</span></p>
+<p><span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Handling LiDAR Data</span></p>
+</div>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Background</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Objectives</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Data descriptions</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">References</a></li></ul>
 <div class="tab-content">
@@ -264,6 +273,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rgl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</section>
 <section id="detect-individual-trees-using-a-point-cloud" class="level2">
 <h2 class="anchored" data-anchor-id="detect-individual-trees-using-a-point-cloud">Detect individual trees using a point cloud</h2>
 <div class="cell">
@@ -274,6 +284,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>                                                      <span class="at">Zu =</span> <span class="dv">15</span>, </span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>                                                      <span class="at">speed_up =</span> <span class="dv">10</span>, </span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>                                                      <span class="at">hmin =</span> <span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="{html}">
+<iframe src="interactive_plot_li.html" width="100%" height="600px">
+</iframe>
+<p>Figure 1. ITD using Li et al.&nbsp;2012 method</p>
 </div>
 </section>
 <section id="detect-individual-trees-using-a-chm" class="level2">
@@ -289,9 +304,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>                                                             <span class="at">ID =</span> <span class="st">"treeID"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="{html}">
-<iframe src="interactive_plot_li.html" width="100%" height="600px">
-</iframe>
-<p>Figure 1. ITD using Li et al.&nbsp;2012 method</p>
 <iframe src="interactive_plot_dalponte.html" width="100%" height="600px">
 </iframe>
 <p>Figure 2. ITD using Dalponte and Coomes 2016 method</p>
