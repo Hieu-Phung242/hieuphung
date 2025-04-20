@@ -4,6 +4,18 @@ format: html
 editor: visual
 ---
 
+## Applied Skills
+
+<div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Proposal Writing</span>
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Research</span>
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Landscape Fragmentation Analysis</span>
+
+</div>
+
 # Introduction: It is ambiguous that highly fragmented forest enhances carbon sequestration ability.
 
 In recent years, the impact of forest fragmentation on carbon sequestration has become a topic of intense scientific debate (Hou et al., 2024; Ma et al., 2017). The increasing fragmentation of forest landscapes poses a significant threat to their ecosystem service (Fischer et al., 2021). While studies suggest that landscape fragmentation leads to reduced carbon storage capacity due to an increase in edge effects (Fischer et al., 2021), others have reported opposite findings (Lei et al., 2024). A recent study in subtropical forests found that carbon uptake capacity per unit area was enhanced in highly fragmented forest landscape (Jiao et al., 2024). The controversies of carbon uptake capacity between fragmented forest and continuous forest have prompted the need for further research in diverse forest ecosystems.
