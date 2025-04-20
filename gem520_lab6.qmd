@@ -28,7 +28,7 @@ editor: visual
 
 ## Data descriptions
 
--   
+- Landsat 9 data (including 6 bands)
 
 ## References
 
