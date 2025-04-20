@@ -1,0 +1,11 @@
+---
+title: "Other Projects"
+format: html
+editor: visual
+---
+
+# Exploring my work beyond Forestry and Remote Sensing
+
+In this space, you can find other projects and works that are relevant to environment, energy and material science.
+
+![Environment](https://hieu-phung242.github.io/My-E-portfolio/images/environment_energy.png)
