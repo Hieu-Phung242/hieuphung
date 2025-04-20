@@ -20,6 +20,10 @@ editor: visual
 
 <span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Handling Trajectory GEDI Dataset</span>
 
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Scientific Writing</span>
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Research</span>
+
 </div>
 
 ::: panel-tabset
