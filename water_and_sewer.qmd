@@ -1,0 +1,79 @@
+---
+title: "Water and Sewer Network Design"
+format: html
+editor: visual
+---
+
+This section will show an example of how water and sewer network is designed. The study site is a town plan zone of Isokuusi in Vuores neighborhood of Tampere, Finland. The software used for designing the water and sewer network was Fluidit Water and Fluidit Sewer.
+
+## Water Network
+
+For water network, we used branch and loop system to design the network to ensure the cost efficiency and the quantity of water distribution to the customers. The loop system was used to make the distribution run smoothly even when there was a pipe burst. Branched system was used when there were customers at the border of the network or the demand was not too many in number. The water network was designed based on 4 scenarios.
+
+-   Maximum unit headloss: should be 1-5 m/km in dimensioning scenario. Values between 8 and 10 are acceptable in extreme cases.
+
+-   Minimum pressure: typically over 25 m
+
+-   Pressure difference: the values should ideally be less than 5 mwc/d. Values between 8 and 10 are acceptable.
+
+-   Maximum velocity: the values should be below 0.5 m/s. Values \<\< 0.1 m/s might lead to water quality problem as the water might get stale.
+
+::: panel-tabset
+## Maximum unit headloss
+
+<img src="images/maximum_unit_headloss.png" alt="Maximum unit headloss scenario" width="600px"/>
+
+## Minimum pressure
+
+<img src="images/minimum_pressure.png" alt="Minimum pressure scenario" width="600px"/>
+
+## Pressure difference
+
+<img src="images/pressure_difference.png" alt="Pressure difference unit" width="600px"/>
+
+## Maximum velocity
+
+<img src="images/maximum_velocity.png" alt="Maximum velocity scenario" width="600px"/>
+:::
+
+For the scope of this project, the cost for installing the main pipeline was calculated. The calculation was done by Fluidit software. The map below shows the cost for each segment of pipe.
+
+::: {html}
+<img src="images/pipe_cost.png" alt="Example of cost calculation for main pipeline" width="600px"/>
+:::
+
+Example profile of water
+
+::: {html}
+<img src="images/water_profile.png" alt="Water profile from average demand scenario" width="600px"/>
+:::
+
+From the water profile:
+
+-   Most pipes have velocities ≤ 0.8 m/s, which is acceptable for urban networks.
+
+-   Consider increasing pipe sizes in High Head Loss Areas
+
+## Sewer Network
+
+For the sewer network, capcity and velocity are factors that need to be evaluated carefully. The capacity values should be below 1 so that the system can be gravitational conveyed to the outfall. The velocity should be in range of 0.1 - 1 m/s to ensure the self-cleaning for the pipe. If there are self-cleaning problems, the diameter of the pipe will be decreased to increase the pressure =\> the velocity will be increased naturally. The manholes depth should also be in the range of 1-5 m.
+
+::: {html}
+<img src="images/sewer_model.png" alt="Model of sewer network" width="600px"/>
+:::
+
+The model shows neither capacity problem nor self-cleaning problem. There is not any manholes that are too full.
+
+::: {html}
+<img src="images/sewer_profile.png" alt="Sewer profile" width="600px"/>
+:::
+
+From the sewer profile:
+
+-   The capacity (max) values are below 1, thus, the system can be gravitational conveyed to the outfall.
+
+-   The velocity (max) are also in range of 0.1-1 m/s, which is in typical range of velocity in sewer system for self-cleaning purpose.
+
+## Final layout of water and sewer network
+
+<a href="files/Final_Layout.pdf" download> <button>Download</button> </a>

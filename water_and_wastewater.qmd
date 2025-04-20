@@ -1,0 +1,31 @@
+---
+title: "Design of Water, Wastewater, Sludge Treatment"
+format: html
+editor: visual
+---
+
+In this section, I will show an example of how a water treatment, a wastewater treatment, and sludge treatment plant is designed. The work was done mostly in excel with an initial value of input flowrate to the water treatment plant. Detailed design for each units in a plant will be shown in the attached excel files.
+
+::: {html}
+For water treatment design <a href="files/Project work 1_Water_Hieu Phung.xlsx" download> <button>Download</button> </a>
+
+For wastewater treatment design <a href="files/Project work 2_Wastewater_Hieu Phung.xlsx" download> <button>Download</button> </a>
+
+For sludge treatment design <a href="files/Project work 3_Sludge_Hieu Phung.xlsx" download> <button>Download</button> </a>
+:::
+
+## Process Diagram
+
+::: panel-tabset
+## Water Treatment Process
+
+<img src="images/water_treatment.png" alt="Water Treatment Flow Diagram" width="1200px"/>
+
+## Wastewater Treatment Process
+
+<img src="images/wastewater_treatment.png" alt="Wastewater Treatment Flow Diagram" width="1200px"/>
+
+## Sludge Treatment Process
+
+<img src="images/sludge_treatment.png" alt="Sludge Treatment Diagram" width="600px"/>
+:::

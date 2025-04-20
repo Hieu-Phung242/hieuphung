@@ -1,0 +1,80 @@
+---
+title: "Effect of Graphene/Gold - nanoparticles composite on the photocatalytics activity of TiO2"
+format: html
+editor: visual
+---
+
+## This is my Bachelor's Thesis at Tampere University of Applied Sciences
+
+Titan dioxide (TiO~2~) is used in the enhanced oxidation method because of its ability in photocatalysis. It has shown its potential in the application of removal contaminant in the environment. However, the ability of disposing contaminant of
+TiO2 is efficient only under a specific wavelength. Therefore, two methods have
+been researched in order to increase the ability of TiO2 in photocatalysis under
+UV ray and visible light. The first one is to add metal nanoparticles to the surface
+of TiO~2~. The other one is to attach nanocarbon dots on TiO~2~. In this thesis work,
+Graphene and gold nanoparticles were chosen as a support for the photocatalysis of TiO2.
+
+The aim of this thesis is to research about the effect of Graphene/gold nanoparticles on the photocatalysis of TiO2. In addition, the ratio of gold and graphene
+also affected to the ability of photocatalysis. Therefore, different samples with
+various ratios were made to determine a necessary sample with a specific ratio. The color
+indicator such as blue methylene or Rhodamin B was used as a proxy for pollutants, in order to examine the efficiency of the photocatalysis between graphene/gold nanoparticles
+and TiO2.
+
+The thesis topic is belonged to Vietnam Academy of Science and Technology.
+
+
+### Mechanism of photocatalysis
+
+When the surface of TiO~2~ is illuminated by light with energy level similar or higher than the bandgap energy ΔE~bg~,  the electrons in the valence band are stimulated and moved to the conduction band (Thiruvenkatachari et al., 2006). As the electrons have moved to the conduction band, there are several holes in the valence band, and these holes are positive charge (h+). The electrons in the conduction band are now negative charge (e^-^). In the valence band, there is a formation of OH* radical due to the oxidation of h^+^ and the water in the environment. In conduction band, O^2-^ is formed by the reduction of e^-^ and oxygen.(Thiruvenkatachari et al., 2006)
+
+::: {html}
+<img src="images/photocatalysis_tio2.png" alt="Figure 1. Illustration of photocatalysis process using TiO2" width="600px"/>
+:::
+
+[link to image](https://jourcc.com/index.php/jourcc/article/view/jcc314)
+
+The OH* radical is the main factor that helps disposing the organic compound
+and convert them into CO~2~ and H~2~O (Waring & Wells, ).
+
+### Methods
+
+The experiment consisted of 4 steps:
+
+  - Creating Graphene/Au by sonic vibration and ultra violet method
+  
+  - Creating sample of TiO~2~
+  
+  - Creating sample of Graphene - Au/TiO~2~
+  
+  - Evaluating the photocatalysis
+
+### Example Results
+ 
+::: panel-tabset
+
+## Figure 2
+
+<img src="images/au_graphene_tio2.png" alt="SEM's photo of Au attaches to Graphene" width="600px"/>
+
+SEM's photo of Au attaches to Graphene
+
+## Figure 3
+
+<img src="images/mb_concentration.png" alt="Change of concentration of MB using various ratio of Au/Graphene - TiO2" width="600px"/>
+
+Change of concentration of MB using various ratio of Au/Graphene - TiO~2~
+
+## Figure 4
+
+<img src="images/mb_color_change.png" alt="Color change of methylene blue after different time frame" width="600px"/>
+
+Color change of methylene blue after different time frame
+
+:::
+
+### References
+
+Thiruvenkatachari, R., Vigneswaran, S., & Moon, I. L. (2006). A review on
+UV/TiO2 photocatalytic oxidation process. University of Technology. Sunchon
+National University, 1 – 2
+
+Waring, M. S., & Wells, J. R. (2015). Volatile organic compound conversion by ozone, hydroxyl radicals, and nitrate radicals in residential indoor air: Magnitudes and impacts of oxidant sources. Atmospheric Environment, 106, 382-391.
