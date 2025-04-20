@@ -276,6 +276,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="detect-individual-trees-using-a-point-cloud" class="level2">
 <h2 class="anchored" data-anchor-id="detect-individual-trees-using-a-point-cloud">Detect individual trees using a point cloud</h2>
+<p>The individual tree detection (ITD) method developed by Li et al.&nbsp;(2012) segments trees directly from LiDAR point cloud data without relying on intermediate raster products like canopy height models. This top-down, region-growing approach begins by identifying the highest point in the cloud, assumed to be a tree top, and sequentially classifies neighboring points based on 2D spatial distance, adaptive spacing thresholds, and tree shape characteristics. By leveraging the 3D structure of the forest, the algorithm effectively distinguishes individual trees even in complex, overlapping canopies.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#segment trees using li2012 algorithm </span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>segmented_plot_1 <span class="ot">&lt;-</span> <span class="fu">segment_trees</span>(Lab5_Plot_1, <span class="fu">li2012</span>(<span class="at">dt1 =</span> <span class="fl">1.5</span>, </span>
@@ -285,14 +286,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>                                                      <span class="at">speed_up =</span> <span class="dv">10</span>, </span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>                                                      <span class="at">hmin =</span> <span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p>Figure 1. ITD using Li et al.&nbsp;2012 method</p>
 <div class="{html}">
 <iframe src="interactive_plot_li.html" width="100%" height="600px">
 </iframe>
-<p>Figure 1. ITD using Li et al.&nbsp;2012 method</p>
 </div>
 </section>
 <section id="detect-individual-trees-using-a-chm" class="level2">
 <h2 class="anchored" data-anchor-id="detect-individual-trees-using-a-chm">Detect individual trees using a CHM</h2>
+<p>Dalponte and Coomes (2016) developed a tree-centric approach for individual tree detection (ITD) using canopy height models (CHMs) derived from airborne laser scanning. Their method identifies individual tree crowns by detecting local maxima in the CHM, then applies a region-growing algorithm to delineate tree boundaries based on vertical height differences. Each delineated crown is used to extract tree height and crown area, from which stem diameter and aboveground biomass are estimated using species-specific allometric equations. Hyperspectral imagery aids in tree species classification, enabling more accurate wood density assignment. This CHM-based ITD framework enables high-resolution carbon density mapping, though it is limited in detecting small understory trees hidden beneath the canopy.</p>
+<p>Figure 2. ITD using Dalponte and Coomes 2016 method</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Using Dalponte and Coomes 2016 algorithm to detect individual trees</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>tree_crowns_plot1 <span class="ot">&lt;-</span> <span class="fu">segment_trees</span>(Lab5_Plot_1, <span class="fu">dalponte2016</span>(chm_plot1, </span>
@@ -306,7 +309,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="{html}">
 <iframe src="interactive_plot_dalponte.html" width="100%" height="600px">
 </iframe>
-<p>Figure 2. ITD using Dalponte and Coomes 2016 method</p>
 </div>
 
 

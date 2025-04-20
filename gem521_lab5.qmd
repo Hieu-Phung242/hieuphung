@@ -66,7 +66,7 @@ Lab5_Plot_1 <- readLAS("C:/Users/hphung.stu/Downloads/GEM521/Labs/Lab 5/Data/Lab
 
 ## Detect individual trees using a point cloud
 
-
+The individual tree detection (ITD) method developed by Li et al. (2012) segments trees directly from LiDAR point cloud data without relying on intermediate raster products like canopy height models. This top-down, region-growing approach begins by identifying the highest point in the cloud, assumed to be a tree top, and sequentially classifies neighboring points based on 2D spatial distance, adaptive spacing thresholds, and tree shape characteristics. By leveraging the 3D structure of the forest, the algorithm effectively distinguishes individual trees even in complex, overlapping canopies. 
 
 ```{r, echo = TRUE, warning = FALSE, message = FALSE, results = "hide"}
 
@@ -80,6 +80,7 @@ segmented_plot_1 <- segment_trees(Lab5_Plot_1, li2012(dt1 = 1.5,
 
 
 ```
+Figure 1. ITD using Li et al. 2012 method
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
 library(htmlwidgets)
@@ -97,12 +98,12 @@ saveWidget(rglwidget_obj_1, file = "interactive_plot_li.html", selfcontained = T
 
 </iframe>
 
-Figure 1. ITD using Li et al. 2012 method
-
 :::
 
 
 ## Detect individual trees using a CHM
+
+Dalponte and Coomes (2016) developed a tree-centric approach for individual tree detection (ITD) using canopy height models (CHMs) derived from airborne laser scanning. Their method identifies individual tree crowns by detecting local maxima in the CHM, then applies a region-growing algorithm to delineate tree boundaries based on vertical height differences. Each delineated crown is used to extract tree height and crown area, from which stem diameter and aboveground biomass are estimated using species-specific allometric equations. Hyperspectral imagery aids in tree species classification, enabling more accurate wood density assignment. This CHM-based ITD framework enables high-resolution carbon density mapping, though it is limited in detecting small understory trees hidden beneath the canopy.
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE}
 # Create CHM for plot 1 using pitfree algorithm
@@ -122,6 +123,7 @@ tree_tops <- locate_trees(chm_plot1,
 
 ```
 
+Figure 2. ITD using Dalponte and Coomes 2016 method
 
 ```{r}
 # Using Dalponte and Coomes 2016 algorithm to detect individual trees
@@ -156,7 +158,6 @@ saveWidget(rglwidget_obj_2, file = "interactive_plot_dalponte.html", selfcontain
 
 </iframe>
 
-Figure 2. ITD using Dalponte and Coomes 2016 method
 
 :::
 
