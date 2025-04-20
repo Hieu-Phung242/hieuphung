@@ -6,6 +6,22 @@ editor: visual
 
 ## This is my Master's Thesis at Tampere University
 
+## Applied Skills
+
+<div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">AutoCAD 3D</span>
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">CO2 Captured using Molten Salt</span>
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Research</span>
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Scientific Writing</span>
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Experimental Design</span>
+
+</div>
+
 CO~2~ capture via electrolysis in molten salt is one of the methods that draws attention of scientists and researchers due to its valuable product and sustainability. The basic idea of this method is to use molten salts, with the help from anode and cathode, to capture and convert CO2 to valuable carbon-products such as carbon nanofiber (CNF), carbon nano onions (CNO), or carbon nanotubes (CNT). (Wu et al. 2017) Nevertheless, this technology has drawback. Several research showed that there were heavy corrosions on the anode used in molten salt electrolysis (Wu et al., 2017; Tang et al., 2018). Besides, lithium carbonate, which is mainly used in molten salt electrolysis, is becoming scarce (Reuter 2022). Hence, new carbonate salt and a suitable anode material should be researched to cope with the issue of corrsion and scarcity of lithium carbonate.
 
 The main aim of this thesis work is to find suitable and inexpensive materials for electrodes to hold off the corrosion during molten salt electrolysis process. In addition, a system for molten carbonate salt electrolysis is designed and constructed for testing the materials in a laboratory scale system. Furthermore, the growth of CNT is investigated by zinc coated iron electrode to see if iron can catalyze the formation of CNT.

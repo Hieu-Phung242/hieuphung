@@ -4,6 +4,17 @@ format: html
 editor: visual
 ---
 
+## Applied Skills
+
+<div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Computation using Excel</span>
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Process Flow Design</span>
+
+</div>
+
+
 In this section, I will show an example of how a water treatment, a wastewater treatment, and sludge treatment plant is designed. The work was done mostly in excel with an initial value of input flowrate to the water treatment plant. Detailed design for each units in a plant will be shown in the attached excel files.
 
 ::: {html}

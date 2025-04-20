@@ -4,6 +4,22 @@ format: html
 editor: visual
 ---
 
+## Applied Skills
+
+<div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Fluidit Water Software</span>
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Fluidit Sewer Software</span>
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">AutoCAD</span>
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Water Distribution Network Design</span>
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Sewer Network Design</span>
+
+</div>
+
 This section will show an example of how water and sewer network is designed. The study site is a town plan zone of Isokuusi in Vuores neighborhood of Tampere, Finland. The software used for designing the water and sewer network was Fluidit Water and Fluidit Sewer.
 
 ## Water Network
