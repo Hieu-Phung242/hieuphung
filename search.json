@@ -326,7 +326,7 @@
     "href": "gem520_lab6.html",
     "title": "Image Classification using R",
     "section": "",
-    "text": "R Coding\nQGIS\nSupervised Classification\n\n\nBackgroundObjectivesData descriptionsReferences\n\n\n\n\n\n\n\n\n\n\n\nLandsat 9 data (including 6 bands)"
+    "text": "R Coding\nQGIS\nSupervised Classification\n\n\nBackgroundObjectivesData descriptionsReferences\n\n\nImage classification is a fundamental task in remote sensing used to extract meaningful information from satellite imagery. By assigning each pixel in an image to a specific land cover class (e.g., forest, water, urban, agriculture), classification allows us to analyze spatial patterns, monitor environmental changes over time, and support decision-making in fields like urban planning, agriculture, forestry, and conservation.\n\n\n\nClassifying the raw Landsat 9 image into different land cover class by using supervised classification method\n\n\n\n\nLandsat 9 data (including 6 bands)\n\n\n\n\n\n\n\nThe Landsat 9 satellite image shows the Southern Gulf Island, BC. The result of classification can be seen in the swiped map below."
   },
   {
     "objectID": "gem520_lab6.html#quarto",
@@ -347,6 +347,6 @@
     "href": "gem520_lab6.html#applied-skills",
     "title": "Image Classification using R",
     "section": "",
-    "text": "R Coding\nQGIS\nSupervised Classification\n\n\nBackgroundObjectivesData descriptionsReferences\n\n\n\n\n\n\n\n\n\n\n\nLandsat 9 data (including 6 bands)"
+    "text": "R Coding\nQGIS\nSupervised Classification\n\n\nBackgroundObjectivesData descriptionsReferences\n\n\nImage classification is a fundamental task in remote sensing used to extract meaningful information from satellite imagery. By assigning each pixel in an image to a specific land cover class (e.g., forest, water, urban, agriculture), classification allows us to analyze spatial patterns, monitor environmental changes over time, and support decision-making in fields like urban planning, agriculture, forestry, and conservation.\n\n\n\nClassifying the raw Landsat 9 image into different land cover class by using supervised classification method\n\n\n\n\nLandsat 9 data (including 6 bands)\n\n\n\n\n\n\n\nThe Landsat 9 satellite image shows the Southern Gulf Island, BC. The result of classification can be seen in the swiped map below."
   }
 ]
