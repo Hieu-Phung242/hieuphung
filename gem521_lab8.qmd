@@ -3,3 +3,34 @@ title: "Image Classification using eCognition"
 format: html
 editor: visual
 ---
+
+## Applied Skills
+
+<div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">eCognition</span>
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Supervised Image Classification</span>
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Object-based Image Analysis</span>
+
+</div>
+
+::: panel-tabset
+## Background
+
+Image classification is a fundamental task in remote sensing used to extract meaningful information from satellite imagery. By assigning each pixel in an image to a specific land cover class (e.g., forest, water, urban, agriculture), classification allows us to analyze spatial patterns, monitor environmental changes over time, and support decision-making in fields like urban planning, agriculture, forestry, and conservation.
+
+## Objectives
+
+-   Classifying the raw Landsat 9 image into different land cover class by using supervised classification method
+
+## Data descriptions
+
+-   Landsat 9 data (including 6 bands)
+
+## References
+
+The instruction for this task was written by the teaching team of MGEM program at The University of British Columbia
+:::
+
