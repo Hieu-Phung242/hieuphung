@@ -7,32 +7,30 @@ code-fold: true
 
 ## Applied Skills
 
-<div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+::: {style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;"}
+[R Coding]{style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;"}
 
-<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">R Coding</span>
+[QGIS]{style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;"}
 
-<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">QGIS</span>
-
-<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Supervised Classification</span>
-
-</div>
-
+[Supervised Classification]{style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;"}
+:::
 
 ::: panel-tabset
 ## Background
 
-Image classification is a fundamental task in remote sensing used to extract meaningful information from satellite imagery.  By assigning each pixel in an image to a specific land cover class (e.g., forest, water, urban, agriculture), classification allows us to analyze spatial patterns, monitor environmental changes over time, and support decision-making in fields like urban planning, agriculture, forestry, and conservation.
+Image classification is a fundamental task in remote sensing used to extract meaningful information from satellite imagery. By assigning each pixel in an image to a specific land cover class (e.g., forest, water, urban, agriculture), classification allows us to analyze spatial patterns, monitor environmental changes over time, and support decision-making in fields like urban planning, agriculture, forestry, and conservation.
 
 ## Objectives
 
-- Classifying the raw Landsat 9 image into different land cover class by using supervised classification method
+-   Classifying the raw Landsat 9 image into different land cover class by using supervised classification method
 
 ## Data descriptions
 
-- Landsat 9 data (including 6 bands)
+-   Landsat 9 data (including 6 bands)
 
 ## References
 
+The instruction for this task was written by the teaching team of MGEM program at The University of British Columbia 
 
 :::
 
@@ -49,13 +47,11 @@ library(mapview)
 
 ```
 
-
 ```{r, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
 # Load classified raster (e.g., 2020 classification)
 classified <- rast("C:/Users/hphung.stu/Downloads/GEM520/Labs/Lab6/Lab 6 - Classification/Lab 6 - Classification/outputs/classified_map2.tif")
 classified_r <- raster(classified)  # convert for leaflet
 ```
-
 
 ```{r, echo = FALSE}
 # Define class colors (hex or names)
@@ -107,3 +103,49 @@ leaflet(width = 1200, height = 800) %>%
 ```
 
 
+Table 1. Confusion matrix for land cover classification
+
+|   | Broadleaf Forest | Coniferous Forest | Exposed Soil | High Density Developed | Low Density Developed | Non-forest Vegetation | Water |
+|---------|---------|---------|---------|---------|---------|---------|---------|
+| Broadleaf Forest | 225 | 11 | 0 | 0 | 7 | 0 | 0 |
+| Coniferous Forest | 3 | 465 | 0 | 0 | 4 | 0 | 0 |
+| Exposed Soil | 0 | 0 | 308 | 2 | 19 | 220 | 0 |
+| High Density Developed | 0 | 0 | 28 | 119 | 11 | 7 | 94 |
+| Low Density Developed | 4 | 1 | 75 | 40 | 295 | 2 | 1 |
+| Non-forest Vegetation | 1 | 0 | 0 | 0 | 9 | 648 | 0 |
+| Water | 0 | 0 | 0 | 0 | 0 | 0 | 2821 |
+
+- Overall accuracy: 0.90
+
+- Producer's accuracy:
+
+  - Broadleaf Forest: 0.97
+  
+  - Coniferous Forest: 0.97
+  
+  - Exposed Soil: 0.75
+  
+  - High Density Developed: 0.73
+  
+  - Low Density Developed: 0.86
+  
+  - Non-forest Vegetation: 0.74
+  
+  - Water: 0.97
+ 
+- User's accuracy:
+
+  - Broadleaf Forest: 0.93
+  
+  - Coniferous Forest: 0.99
+  
+  - Exposed Soil: 0.56
+  
+  - High Density Developed: 0.46
+  
+  - Low Density Developed: 0.71
+  
+  - Non-forest Vegetation: 0.98
+  
+  - Water: 1.00
+  
