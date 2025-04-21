@@ -2,6 +2,7 @@
 title: "Image Classification using R"
 format: html
 editor: visual
+code-fold: true
 ---
 
 ## Applied Skills
@@ -20,11 +21,11 @@ editor: visual
 ::: panel-tabset
 ## Background
 
-
+Image classification is a fundamental task in remote sensing used to extract meaningful information from satellite imagery.  By assigning each pixel in an image to a specific land cover class (e.g., forest, water, urban, agriculture), classification allows us to analyze spatial patterns, monitor environmental changes over time, and support decision-making in fields like urban planning, agriculture, forestry, and conservation.
 
 ## Objectives
 
--   
+- Classifying the raw Landsat 9 image into different land cover class by using supervised classification method
 
 ## Data descriptions
 
@@ -32,5 +33,34 @@ editor: visual
 
 ## References
 
+
 :::
+
+The Landsat 9 satellite image shows the Southern Gulf Island, BC. The result of classification can be seen in the swiped map below.
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
+
+library(leaflet)
+library(raster)
+library(leaflet.extras2)
+
+```
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
+# Load your TIF files
+landsat <- raster::brick("C:/Users/hphung.stu/Downloads/GEM520/Labs/Lab6/Lab 6 - Classification/Lab 6 - Classification/data/LC09_L2SP_047026_20240716_20240717_02_T1_SR_BSTACK.tif")
+classified <- raster::raster("C:/Users/hphung.stu/Downloads/GEM520/Labs/Lab6/Lab 6 - Classification/Lab 6 - Classification/outputs/classified_map2.tif")
+
+# Optional: Normalize or convert to RGB if needed
+landsat_rgb <- landsat[[c(4,3,2)]]  # for natural color composite (adjust if needed)
+
+# Create leaflet swipe map
+leaflet() %>%
+  addTiles() %>%
+  addRasterImage(landsat_rgb, group = "Landsat", opacity = 1) %>%
+  addRasterImage(classified, group = "Classified", opacity = 1) %>%
+  addSideBySide(leftId = "Landsat", rightId = "Classified")
+
+```
+
 

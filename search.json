@@ -326,7 +326,7 @@
     "href": "gem520_lab6.html",
     "title": "Image Classification using R",
     "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+    "text": "R Coding\nQGIS\nSupervised Classification\n\n\nBackgroundObjectivesData descriptionsReferences\n\n\n\n\n\n\n\n\n\n\n\nLandsat 9 data (including 6 bands)"
   },
   {
     "objectID": "gem520_lab6.html#quarto",
@@ -347,6 +347,6 @@
     "href": "gem520_lab6.html#applied-skills",
     "title": "Image Classification using R",
     "section": "",
-    "text": "R Coding\nQGIS\nSupervised Classification\n\n\nBackgroundObjectivesData descriptionsReferences"
+    "text": "R Coding\nQGIS\nSupervised Classification\n\n\nBackgroundObjectivesData descriptionsReferences\n\n\n\n\n\n\n\n\n\n\n\nLandsat 9 data (including 6 bands)"
   }
 ]
