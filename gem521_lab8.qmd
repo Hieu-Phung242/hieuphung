@@ -44,7 +44,7 @@ Silveira, E. M. O., Silva, S. H. G., Acerbi-Junior, F. W., Carvalho, M. C., Carv
 The image below presents the results of an object-based image analysis (OBIA) for forest structure classification. On the left, the segmented and classified image highlights distinct forest classes—Old Forest, Young Forest, Recent Harvest—and Water, derived using a multiresolution segmentation algorithm in eCognition. These segments represent homogeneous landscape units that capture both spectral and spatial characteristics of the environment. After segmentation, selected polygons were manually labeled to train a Random Forest classifier, which was then used to classify the remaining segments. The right side of the image displays the original false-color composite (NIR-Red-Green), where vegetation appears in shades of red and water bodies in black. The comparison demonstrates how OBIA enhances classification by aligning land cover boundaries with meaningful landscape features, offering a more accurate and interpretable result than traditional pixel-based methods.
 
 ::: {html}
-<img src="images/ecognition_map.png" alt="Result of classification" width="600px"/>
+<img src="images/ecognition_map.png" alt="Result of classification" width="1200px"/>
 :::
 
 
