@@ -30,8 +30,7 @@ Image classification is a fundamental task in remote sensing used to extract mea
 
 ## References
 
-The instruction for this task was written by the teaching team of MGEM program at The University of British Columbia 
-
+The instruction for this task was written by the teaching team of MGEM program at The University of British Columbia
 :::
 
 The Landsat 9 satellite image shows the Southern Gulf Island, BC. The result of classification can be seen in the swiped map below.
@@ -102,6 +101,7 @@ leaflet(width = 1200, height = 800) %>%
   addScaleBar(position = "bottomleft")
 ```
 
+# 
 
 Table 1. Confusion matrix for land cover classification
 
@@ -115,37 +115,36 @@ Table 1. Confusion matrix for land cover classification
 | Non-forest Vegetation | 1 | 0 | 0 | 0 | 9 | 648 | 0 |
 | Water | 0 | 0 | 0 | 0 | 0 | 0 | 2821 |
 
-- Overall accuracy: 0.90
+-   Overall accuracy: 0.90
 
-- Producer's accuracy:
+-   Producer's accuracy:
 
-  - Broadleaf Forest: 0.97
-  
-  - Coniferous Forest: 0.97
-  
-  - Exposed Soil: 0.75
-  
-  - High Density Developed: 0.73
-  
-  - Low Density Developed: 0.86
-  
-  - Non-forest Vegetation: 0.74
-  
-  - Water: 0.97
- 
-- User's accuracy:
+    -   Broadleaf Forest: 0.97
 
-  - Broadleaf Forest: 0.93
-  
-  - Coniferous Forest: 0.99
-  
-  - Exposed Soil: 0.56
-  
-  - High Density Developed: 0.46
-  
-  - Low Density Developed: 0.71
-  
-  - Non-forest Vegetation: 0.98
-  
-  - Water: 1.00
-  
+    -   Coniferous Forest: 0.97
+
+    -   Exposed Soil: 0.75
+
+    -   High Density Developed: 0.73
+
+    -   Low Density Developed: 0.86
+
+    -   Non-forest Vegetation: 0.74
+
+    -   Water: 0.97
+
+-   User's accuracy:
+
+    -   Broadleaf Forest: 0.93
+
+    -   Coniferous Forest: 0.99
+
+    -   Exposed Soil: 0.56
+
+    -   High Density Developed: 0.46
+
+    -   Low Density Developed: 0.71
+
+    -   Non-forest Vegetation: 0.98
+
+    -   Water: 1.00
