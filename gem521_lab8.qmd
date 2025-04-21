@@ -19,18 +19,27 @@ editor: visual
 ::: panel-tabset
 ## Background
 
-Image classification is a fundamental task in remote sensing used to extract meaningful information from satellite imagery. By assigning each pixel in an image to a specific land cover class (e.g., forest, water, urban, agriculture), classification allows us to analyze spatial patterns, monitor environmental changes over time, and support decision-making in fields like urban planning, agriculture, forestry, and conservation.
+Object-based image analysis (OBIA) is an advanced remote sensing technique that segments imagery into meaningful image objects rather than analyzing individual pixels. This method enhances classification by incorporating not only spectral characteristics but also spatial, shape, and contextual information. In this task, I used eCognition to conduct OBIA by applying a multiresolution segmentation algorithm, which grouped spectrally and spatially similar pixels into polygons. I then manually labeled a subset of these polygons with land cover classes such as forest, water, and urban areas. These labeled segments were used as training data for a Random Forest classifier, which was subsequently applied to classify the remaining objects in the image. This object-based approach provided a more structured and context-aware classification compared to traditional pixel-based methods.
 
 ## Objectives
 
--   Classifying the raw Landsat 9 image into different land cover class by using supervised classification method
+-   Performing object-based image classification using multiresolution segmentation and Random Forest in eCognition
+
+-   Classifying land cover types by leveraging both spectral and spatial characteristics of segmented image objects
 
 ## Data descriptions
 
--   Landsat 9 data (including 6 bands)
+-   Airborne Laser Scanning data
 
 ## References
 
 The instruction for this task was written by the teaching team of MGEM program at The University of British Columbia
+
+Silveira, E. M. O., Silva, S. H. G., Acerbi-Junior, F. W., Carvalho, M. C., Carvalho, L. M. T., Scolforo, J. R. S., & Wulder, M. A. (n.d.). Object-based random forest modelling of aboveground forest biomass outperforms a pixel-based approach in a heterogeneous and mountain tropical environment. International Journal of Applied Earth Observation and Geoinformation.https://doi.org/10.1016/j.jag.2019.02.004
+
 :::
+
+
+
+
 
