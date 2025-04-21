@@ -1,0 +1,5 @@
+---
+title: "Image Classification using eCognition"
+format: html
+editor: visual
+---

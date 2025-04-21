@@ -65,7 +65,7 @@ landcover_colors <- c(
 )
 
 # Create swipe map with only basemap and classified map
-leaflet(width = 1200, height = 800) %>%
+l1 <- leaflet(width = 1200, height = 800) %>%
    setView(lng = -123.1, lat = 48.6, zoom = 11) %>%  # Set center and zoom
   
   # Define left and right panes
