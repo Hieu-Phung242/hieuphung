@@ -21,6 +21,8 @@ editor: visual
 
 Object-based image analysis (OBIA) is an advanced remote sensing technique that segments imagery into meaningful image objects rather than analyzing individual pixels. This method enhances classification by incorporating not only spectral characteristics but also spatial, shape, and contextual information. In this task, I used eCognition to conduct OBIA by applying a multiresolution segmentation algorithm, which grouped spectrally and spatially similar pixels into polygons. I then manually labeled a subset of these polygons with land cover classes such as forest, water, and urban areas. These labeled segments were used as training data for a Random Forest classifier, which was subsequently applied to classify the remaining objects in the image. This object-based approach provided a more structured and context-aware classification compared to traditional pixel-based methods.
 
+The study area for analysis is at Malcom Knapp Research Forest.
+
 ## Objectives
 
 -   Performing object-based image classification using multiresolution segmentation and Random Forest in eCognition
