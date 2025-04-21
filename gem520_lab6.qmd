@@ -58,8 +58,19 @@ classified_r <- raster(classified)  # convert for leaflet
 
 
 ```{r, echo = FALSE}
+# Define class colors (hex or names)
+landcover_colors <- c(
+  "Water" = "#4575b4",
+  "Coniferous Forest" = "#1a9850",
+  "Broadleaf Forest" = "#91cf60",
+  "Non-Forest Vegetation" = "#ffffbf",
+  "Exposed Soil" = "#fdae61",
+  "Low Density Developed" = "#d73027",
+  "High Density Developed" = "#a50026"
+)
+
 # Create swipe map with only basemap and classified map
-leaflet(width = 1200, height = 600) %>%
+leaflet(width = 1200, height = 800) %>%
    setView(lng = -123.1, lat = 48.6, zoom = 11) %>%  # Set center and zoom
   
   # Define left and right panes
@@ -76,6 +87,13 @@ leaflet(width = 1200, height = 600) %>%
   addRasterImage(classified, group = "Classified Map",
                  maxBytes = 10 * 1024 * 1024,
                  options = pathOptions(pane = "right"), opacity = 1) %>%
+  
+  # Add custom legend
+  addLegend(position = "topright",
+            colors = landcover_colors,
+            labels = names(landcover_colors),
+            title = "Land Cover Classes",
+            opacity = 1) %>%
   
   # Swipe control using pane layer IDs
   addSidebyside(
