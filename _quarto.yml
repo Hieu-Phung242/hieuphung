@@ -22,6 +22,8 @@ website:
             text: Analysis of Suitable Sanctuaries for Humpback Whales
           - href: gem520_lab6.qmd
             text: Image Classification using R 
+          - href: gem521_lab8.qmd
+            text: Image Classification using eCognition
           - href: gem500_proposal.qmd
             text: Evaluating the Impact of Landsacape Fragmentation on Carbon Sequestration of Forests in Kwahu South, Ghana using Landscape Metrics and Landsat 8 Data
       - text: Environmental Projects
