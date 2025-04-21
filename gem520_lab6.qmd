@@ -60,13 +60,13 @@ classified_r <- raster(classified)  # convert for leaflet
 ```{r, echo = FALSE}
 # Define class colors (hex or names)
 landcover_colors <- c(
-  "Water" = "#4575b4",
-  "Coniferous Forest" = "#1a9850",
-  "Broadleaf Forest" = "#91cf60",
-  "Non-Forest Vegetation" = "#ffffbf",
+  "Water" = "violet",
+  "Coniferous Forest" = "#d73027",
+  "Broadleaf Forest" = "#a50026",
+  "Non-Forest Vegetation" = "cyan",
   "Exposed Soil" = "#fdae61",
-  "Low Density Developed" = "#d73027",
-  "High Density Developed" = "#a50026"
+  "Low Density Developed" = "#91cf60",
+  "High Density Developed" = "lightyellow"
 )
 
 # Create swipe map with only basemap and classified map
