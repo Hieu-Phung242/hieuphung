@@ -42,6 +42,8 @@ website:
         menu:
           - href: san_hoodia.qmd
           - text: The Hoodia Case Study. Disputed Rights, Shared Benefits, and Indigenous Epistemologies
+          - href: negotiation_exercise.qmd
+          - text: Conflict Style Negotiation and Reflection
       - href: contact.qmd
         text: Contact
 
