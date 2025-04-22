@@ -99,6 +99,8 @@ l1 <- leaflet(width = 1200, height = 800) %>%
   ) %>%
   
   addScaleBar(position = "bottomleft")
+
+l1
 ```
 
 # 
