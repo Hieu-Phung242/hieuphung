@@ -383,5 +383,12 @@
     "title": "Image Classification using Google Earth Engine",
     "section": "Explore My Interactive Map",
     "text": "Explore My Interactive Map"
+  },
+  {
+    "objectID": "gem521_lab9.html#land-cover-classification-using-random-forest-cart-and-naive-bayes",
+    "href": "gem521_lab9.html#land-cover-classification-using-random-forest-cart-and-naive-bayes",
+    "title": "Image Classification using Google Earth Engine",
+    "section": "Land Cover Classification using Random Forest, CART, and Naive Bayes",
+    "text": "Land Cover Classification using Random Forest, CART, and Naive Bayes"
   }
 ]
