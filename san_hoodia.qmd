@@ -6,19 +6,41 @@ editor: visual
 
 ## Applied Skills
 
-<div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+::: {style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;"}
+[Writing]{style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;"}
 
-<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Writing</span>
+[Literature Research]{style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;"}
 
-<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Literature Research</span>
+[Indigenous Knowledge]{style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;"}
+:::
 
-<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Indigenous Knowledge</span>
+## Background
 
-</div>
+The San-Hoodia case is a key example of how Indigenous knowledge can connect with science, business, and international laws. It shows the challenges of recognizing traditional knowledge as a type of intellectual property and making sure Indigenous communities are fairly rewarded for their knowledge. In this case, the San people had used the Hoodia plant for centuries to suppress hunger. This knowledge later attracted scientists and pharmaceutical companies. As Hoodia became more commercially valuable, the case raised important issues about consent, ownership, and fair sharing of benefits. It has since played an important role in global discussions about Indigenous rights and bioprospecting.
 
+## Description of ontology/worldview of the rightholders and stakeholders
 
+::: panel-tabset
+## The San People
 
+The San people view Hoodia as a traditional resource with cultural and practical significance. They have used Hoodia as a food, a drink substitute and appetite suppressant. The San also use Hoodia for other purposes “recounted variously as to improve virility; to cure or treat hangovers, haemorrhoids, high blood pressure, pulmonary tuberculosis, stomach pains, flu, asthma and eye pain.” (Wynberg & Chennells, 2009). This suggests that the San see Hoodia as an integral part of their traditional knowledge and lifestyle, viewing it as a valuable plant that supports their survival in harsh conditions. Their ontology emphasizes communal sharing of knowledge and resources, contrasting with Western notions of intellectual property and commercialization. The San view their traditional knowledge of Hoodia as collective intellectual property that should not be owned by any individual or entity (Wynberg & Chennells, 2009). The evidence for this ontology is “Traditional knowledge of plants is viewed as collective and the idea of ‘owning’ life is abhorrent.” (Wynberg & Chennells, 2009).
 
+## The Council for Scientific and Industrial Research (CSIR)
 
+CSIR initially viewed Hoodia as a potential commercial product, recognizing its properties for development into an appetite suppressant and anti-obesity drug (Leveraging Economic Growth through Benefit Sharing, n.d.). They patented the findings and pursued partnerships with companies like Phytopharm and Pfizer to commercialize the plant's potential. This ontology treats Hoodia as a resource to be studied, modified, and exploited for profit, prioritizing intellectual property rights and market potential over the traditional knowledge systems that initially guided their research. The evidence for this statement is found in this sentence “In 1998, CSIR signed a licensing agreement for further development and commercialization of the product” (Wynberg & Chennells, 2009).
+
+## Phytopharm
+
+Phytopharm's worldview of Hoodia was primarily commercial. They saw it as a business opportunity, patenting the active ingredient P57 and promoting it as a potential natural cure for obesity. Their initial approach overlooked the indigenous knowledge source, as evidenced by their chief executive's belief that the people who discovered the plant's effects had disappeared. “Phytopharm’s Richard Dixey as having been told by the CSIR that the 100000 strong San ‘no longer existed’.” (Wynberg & Chennells, 2009).
+
+## Southern African Hoodia Growers Association (SAHGA)
+
+SAHGA represents commercial Hoodia cultivators in Southern Africa who are primarily concerned with cultivating Hoodia for the herbal and dietary supplement market (Wynberg & Chennells, 2009). The SAHGA appears to view Hoodia primarily as a commercial crop with significant economic potential. This is evidenced by their agreement to pay a percentage of farmgate sales to the Working Group of Indigenous Minorities in Southern Africa (WIMSA) (Amusan, 2016). Unlike Phytopharm, SAHGA’s perspective is closer to the ground, with an emphasis on the cultivation process, environmental sustainability, and local economic benefits. While they acknowledge the San's role as traditional knowledge holders, their engagement is shaped by compliance with biodiversity and bioprospecting legislation rather than cultural or moral obligations.
+:::
+
+::: {html}
+<img src="images/hoodia_plant.png" alt="San Hoodia Plant" width="600px"/>
+:::
+*San Hoodia Flora*
 
 
