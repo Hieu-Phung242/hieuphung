@@ -41,6 +41,31 @@ SAHGA represents commercial Hoodia cultivators in Southern Africa who are primar
 ::: {html}
 <img src="images/hoodia_plant.png" alt="San Hoodia Plant" width="600px"/>
 :::
-*San Hoodia Flora*
+*San Hoodia Flora (Wikimedia Common, CC-BY-SA-4.0)*
 
+## Recognition of the San as Traditional Knowledge Holders
+
+This section outlines the key reasons why the San were ultimately recognized as the legitimate holders of traditional knowledge related to Hoodia. The first reason for naming the San as the holders of the traditional knowledge of Hoodia is their historical precedence. The San are recognized as the oldest human inhabitants of southern Africa, having lived as hunters and gatherers in the region for thousands of years. This long-standing presence supports their claims as the original holders of Hoodia-related knowledge, predating other groups who later migrated to the region. 
+
+The second reason is the documented early use. As it was written in the article of Wynberg & Chennels, (2009), colonial botanical accounts, such as those by Francis Masson in 1798 and Rudolf Marloth in 1932, specifically mention the San’s use of Hoodia as an appetite suppressant and thirst quencher. These early documentations directly link the traditional knowledge of Hoodia to the San, strengthening their claims as the primary holders of this knowledge.
+
+## Transboundary Challenges in the Governance of Hoodia
+
+One of the key transboundary challenges in the governance of Hoodia was the shared distribution of both the plant and the associated traditional knowledge across national borders. Hoodia grows naturally in South Africa, Namibia, and Botswana, and its uses have been known among various Indigenous groups within these regions. While the San were officially recognized as the primary holders of Hoodia-related knowledge, other communities such as the Nama, Damara, and Topnaar also had documented histories of using the plant. This overlap created tension around the rightful ownership of knowledge and the fair distribution of benefits. To address this, the San, through the Working Group of Indigenous Minorities in Southern Africa (WIMSA), adopted a unified stance by declaring that their cultural heritage was indivisible. As a result, benefit-sharing was structured to be distributed equally among all San peoples, regardless of their national location—helping to avoid internal conflict and facilitate cross-border negotiations.
+
+Another major challenge stemmed from the differences in national legal and policy frameworks related to bioprospecting and traditional knowledge. South Africa had a formal legislative structure, including the Biodiversity Act, which mandated benefit-sharing agreements. However, at the time, Namibia and Botswana lacked equivalent laws, which made it difficult to align benefit-sharing mechanisms across countries. These discrepancies posed significant hurdles in ensuring fairness, legal compliance, and consistency in implementation. To overcome these issues, WIMSA and legal representatives of the San worked closely with the Council for Scientific and Industrial Research (CSIR) to design agreements that were adaptable to different legal contexts, while still protecting the collective rights of the San across all three countries.
+
+## Concerns with Commercialization and Benefit Sharing
+
+Many San community members expressed dissatisfaction with the way Hoodia was commercialized and how benefit-sharing agreements were handled. A primary concern was the lack of meaningful involvement and access to information during the negotiation process. Although legislation to protect Indigenous knowledge was being developed in South Africa, the San were not consulted about its scope or content. As a result, they were left to negotiate without the support of a legal framework mandating equitable benefit sharing. Within the communities, individuals felt excluded from decision-making, and some believed that the San Hoodia Trust—established to manage and distribute benefits—had not sufficiently communicated the terms or implications of the agreement to the wider San population.
+
+Beyond procedural issues, cultural and symbolic concerns also played a significant role. For the San, Hoodia is not merely a medicinal plant but a vital source of food, water, and energy deeply embedded in their cultural identity. Commercial cultivation and the transformation of the plant into pills and dietary supplements were viewed by some as stripping Hoodia of its traditional meaning and spiritual power, which is believed to be rooted in its natural habitat. Additionally, the exploitation of Indigenous knowledge by companies that marketed Hoodia-based products without consent or fair compensation further intensified discontent. Some products used the image and story of the San to promote their goods while bypassing the benefit-sharing agreement entirely. This unauthorized use disrespected San heritage and denied them rightful economic benefits. As highlighted in the case, one advertisement even criticized pharmaceutical companies for sidelining Indigenous peoples—while doing precisely that in its own marketing.
+
+## References
+
+Amusan, L. (2016). POLITICS OF BIOPIRACY: AN ADVENTURE INTO HOODIA/XHOBA PATENTING IN SOUTHERN AFRICA. African Journal of Traditional, Complementary, and Alternative Medicines, 14(1), 103–109. https://doi.org/10.21010/ajtcam.v14i1.11
+
+Leveraging Economic Growth through Benefit Sharing. (n.d.). Ip-Advantage. Retrieved November 29, 2024, from https://www.wipo.int/web/ip-advantage/w/stories/leveraging-economic-growth-through-benefit-sharing
+
+Wynberg, R., & Chennells, R. (2009). Green diamonds of the South: An overview of the San-Hoodia Case. In Indigenous Peoples, consent and benefit sharing: Lessons from the San-Hoodia case (pp. 89–124). Springer Netherlands.
 

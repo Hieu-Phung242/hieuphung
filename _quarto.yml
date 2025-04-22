@@ -41,7 +41,7 @@ website:
       - text: Communication Skills and Indigenous Knowledge
         menu:
           - href: san_hoodia.qmd
-          - text: The Hoodia Case Study - Disputed Rights, Shared Benefits, and Indigenous Epistemologies
+          - text: The Hoodia Case Study. Disputed Rights, Shared Benefits, and Indigenous Epistemologies
       - href: contact.qmd
         text: Contact
 
