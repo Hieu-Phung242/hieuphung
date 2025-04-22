@@ -37,7 +37,6 @@ The instruction for this task was written by the teaching team of MGEM program a
 
 :::
 
-Among the models tested, Random Forest achieved the highest overall accuracy (89.5%), followed closely by CART (87.1%), while Naive Bayes performed the least accurately (76.6%). The superior performance of Random Forest can be attributed to its ability to handle high-dimensional data and reduce overfitting through ensemble learning. Although CART also demonstrated strong results, its single-tree structure may have limited its classification precision compared to the ensemble-based Random Forest. Naive Bayes, which relies on the assumption of feature independence, was less effective in capturing complex spectral patterns across land cover types. These results highlight the strength of ensemble methods like Random Forest in remote sensing applications and demonstrate GEE’s capacity to support scalable and comparative analysis of classification techniques.
 
 ## Land Cover Classification using Random Forest, CART, and Naive Bayes
 
@@ -48,4 +47,6 @@ Among the models tested, Random Forest achieved the highest overall accuracy (89
         allowfullscreen>
 </iframe>
 
+#
 
+Among the models tested, Random Forest achieved the highest overall accuracy (89.5%), followed closely by CART (87.1%), while Naive Bayes performed the least accurately (76.6%). The superior performance of Random Forest can be attributed to its ability to handle high-dimensional data and reduce overfitting through ensemble learning. Although CART also demonstrated strong results, its single-tree structure may have limited its classification precision compared to the ensemble-based Random Forest. Naive Bayes, which relies on the assumption of feature independence, was less effective in capturing complex spectral patterns across land cover types. These results highlight the strength of ensemble methods like Random Forest in remote sensing applications and demonstrate GEE’s capacity to support scalable and comparative analysis of classification techniques.
