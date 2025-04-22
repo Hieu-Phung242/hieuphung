@@ -38,6 +38,10 @@ website:
             text: Design of Water, Wastewater, and Sludge Treatment
           - href: water_and_sewer.qmd
             text: Water and Sewer Network Design
+      - text: Communication Skills and Indigenous Knowledge
+        menu:
+          - href: san_hoodia.qmd
+          - text: The Hoodia Case Study - Disputed Rights, Shared Benefits, and Indigenous Epistemologies
       - href: contact.qmd
         text: Contact
 

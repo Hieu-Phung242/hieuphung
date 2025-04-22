@@ -1,0 +1,24 @@
+---
+title: "The Hoodia Case Study - Disputed Rights, Shared Benefits, and Indigenous Epistemologies"
+format: html
+editor: visual
+---
+
+## Applied Skills
+
+<div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Writing</span>
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Literature Research</span>
+
+<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Indigenous Knowledge</span>
+
+</div>
+
+
+
+
+
+
+
