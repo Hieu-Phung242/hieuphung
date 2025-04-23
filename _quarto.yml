@@ -20,6 +20,10 @@ website:
             text: Individual Trees Detecting using different methods
           - href: gem510_lab3.qmd
             text: Analysis of Suitable Sanctuaries for Humpback Whales
+          - href: gem510_lab5.qmd
+            text: Least Cost Path Analysis for Grizzly Bear
+          - href: gem511_lab2.qmd
+            text: Salmon Stream Network Analysis
           - href: gem520_lab6.qmd
             text: Image Classification using R 
           - href: gem521_lab8.qmd
