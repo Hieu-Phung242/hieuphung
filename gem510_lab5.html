@@ -118,6 +118,14 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Analysis of Suitable Sanctuaries for Humpback Whales</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="./gem510_lab5.html">
+ <span class="dropdown-text">Least Cost Path Analysis for Grizzly Bear</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./gem511_lab2.html">
+ <span class="dropdown-text">Salmon Stream Network Analysis</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="./gem520_lab6.html">
  <span class="dropdown-text">Image Classification using R</span></a>
   </li>  
@@ -194,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#applied-skills" id="toc-applied-skills" class="nav-link active" data-scroll-target="#applied-skills">Applied Skills</a></li>
-  <li><a href="#least-cost-path-map" id="toc-least-cost-path-map" class="nav-link" data-scroll-target="#least-cost-path-map">Least Cost Path Map</a></li>
+  <li><a href="#salmon-stream-network-map" id="toc-salmon-stream-network-map" class="nav-link" data-scroll-target="#salmon-stream-network-map">Salmon Stream Network Map</a></li>
   </ul>
 </nav>
     </div>
@@ -232,15 +240,13 @@ ul.task-list li input[type="checkbox"] {
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Background</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Objectives</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Data descriptions</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">References</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p>Least cost path analysis is a spatial modeling technique used to determine the most efficient route between two points across a landscape, taking into account varying levels of resistance or “cost” associated with different land cover types or terrain features. This method is widely applied in wildlife conservation to model animal movement and habitat connectivity, especially for species affected by habitat fragmentation. In the case of Grizzly Bears (Ursus arctos horribilis), which require large, contiguous territories for foraging and migration, understanding movement corridors is critical for effective management and protection efforts. Human development and landscape alteration in regions like the Rocky Mountain foothills of western Alberta have significantly constrained Grizzly Bear movement. By applying least cost path analysis, researchers can identify potential wildlife corridors that minimize conflict with human activity and support long-term species viability.</p>
+<p>This work centers on stream network analysis to support salmon habitat assessment using GIS. Pacific salmon species, such as Chinook, Coho, Chum, Pink, and Sockeye, are integral to the ecological and cultural fabric of British Columbia, and their spawning success depends on specific freshwater habitat conditions. By extracting a stream network from a digital elevation model (DEM) using ArcGIS Pro, this work explores key physical characteristics like stream order and slope that influence spawning suitability. Vancouver Island serves as the study area due to its distinct hydrologic boundaries, which enable accurate flow accumulation and network modeling, and its relevance as a spawning ground where natural systems often intersect with human development.</p>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <ul>
-<li><p>Gain hands-on experience with raster operations using GDAL both from the command line and in QGIS</p></li>
-<li><p>Create and manipulate raster datasets from multiple sources</p></li>
-<li><p>Perform raster calculations to derive new spatial data</p></li>
-<li><p>Apply least cost path analysis to model wildlife movement</p></li>
-<li><p>Explore habitat connectivity and conservation planning for Grizzly Bears in western Alberta using GIS tools</p></li>
+<li><p>Applying network topology to represent dams as barriers within the stream system</p></li>
+<li><p>Use linear referencing to evaluate a capability model of salmon habitat along stream segments</p></li>
+<li><p>Trace stream networks and calculate the extent of upstream salmon habitat accessible from given points</p></li>
 </ul>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
@@ -254,12 +260,12 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
-<section id="least-cost-path-map" class="level2">
-<h2 class="anchored" data-anchor-id="least-cost-path-map">Least Cost Path Map</h2>
+<section id="salmon-stream-network-map" class="level2">
+<h2 class="anchored" data-anchor-id="salmon-stream-network-map">Salmon Stream Network Map</h2>
 <div class="{html}">
-<p><img src="images/least_cost_map.png" alt="Least Cost Path Map for Grizzly Bear based on Slopes and Roads" width="1000px"></p>
+<p>&lt;img src=“images/salmon_stream_map.png” alt=“Salmon Stream Network Map width=”1000px”/&gt;</p>
 </div>
-<p>The two maps illustrate least cost path (LCP) analyses for Grizzly Bear movement across a region in western Alberta, with resistance surfaces based on slope (left) and road networks (right). The slope-based LCP highlights terrain-driven movement, showing a more direct and topographically informed route through lower slope gradients, avoiding steep mountainous areas. This route suggests that Grizzly Bears may prefer to travel along more gradual slopes to minimize energy expenditure. In contrast, the road-based LCP results in a less direct, more fragmented path, indicating increased resistance in areas with dense road networks. Roads often act as physical and psychological barriers to wildlife, influencing movement behavior and habitat connectivity. This comparison underscores the importance of selecting appropriate cost surfaces based on ecological context. For conservation planning, incorporating multiple resistance factors, such as topography and human infrastructure, can provide a more comprehensive understanding of species movement and help identify priority areas for maintaining or restoring wildlife corridors.</p>
+<p>Within the North East Vancouver Island Conservation Unit (NEVCU), two recorded dams play a significant role in limiting salmon access to portions of the stream network. The region features 143 unique coastal entry points where rivers meet the ocean, marking the origins of salmon migration into freshwater for spawning. Of the 5,137 stream segments analyzed, 4,210—or approximately 82%—are accessible to salmon, indicating relatively high connectivity. This may be attributed to the lower population density and reduced demand for infrastructure, such as dams, in the northern part of the island. However, 927 streams (about 18%) remain inaccessible, with the dams near Kains Lake and Brewster Lake contributing to this fragmentation. The exercise emphasizes the importance of understanding how human-made barriers affect critical salmon habitat and the extent of available spawning grounds.</p>
 
 
 </section>
