@@ -1,12 +1,14 @@
 ---
 title: "Resume"
 ---
+
 ::: {html}
-Full Resume: <a href="files/CV.pdf" download> <button>Download</button> </a>
+Full Resume: <a href="files/Resume_HarryPhung.pdf" download> <button>Download</button> </a>
 :::
+
 # Education
 
--   [ **Master of Geomatics for Environmental Management (July, 2024 - April, 2025)**]{style="color: red;"}
+-   [**Master of Geomatics for Environmental Management (July, 2024 - April, 2025)**]{style="color: red;"}
 
     **The University of British Columbia**
 
@@ -30,8 +32,9 @@ Full Resume: <a href="files/CV.pdf" download> <button>Download</button> </a>
 
 -   **The University of British Columbia (May, 2025 - August, 2025)**
 
-    - Preparing study materials for next year courses 
-    
+    -   Developed an educational module titled “Understanding Indigenous Knowledge” to support incoming MGEM students in building foundational awareness
+    -   Designed a welcoming brochure (30 pages) showcasing Vancouver’s art and cultural scene to help new students transition smoothly to life in the city
+    -   Contributed to the development of lab assignment for “Landscape Ecology and Management” course , focusing on data analysis using R
 
 ## Environmental Specialist (Internship) Hanoi, Vietnam
 
