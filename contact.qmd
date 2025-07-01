@@ -45,5 +45,5 @@ I'd love to hear from you. Please, drop me an email or message me on LinkedIn an
 </div>
 
 ::: {html}
-<img src="images/profile_picture.png" alt="Profile Picture" width="300px"/>
+<img src="images/profile_photo.jpg" alt="Profile Picture" width="300px"/>
 :::
