@@ -516,5 +516,12 @@
     "title": "Salmon Stream Network Analysis",
     "section": "Salmon Stream Network Map",
     "text": "Salmon Stream Network Map\n\n\n\nWithin the North East Vancouver Island Conservation Unit (NEVCU), two recorded dams play a significant role in limiting salmon access to portions of the stream network. The region features 143 unique coastal entry points where rivers meet the ocean, marking the origins of salmon migration into freshwater for spawning. Of the 5,137 stream segments analyzed, 4,210—or approximately 82%—are accessible to salmon, indicating relatively high connectivity. This may be attributed to the lower population density and reduced demand for infrastructure, such as dams, in the northern part of the island. However, 927 streams (about 18%) remain inaccessible, with the dams near Kains Lake and Brewster Lake contributing to this fragmentation. The exercise emphasizes the importance of understanding how human-made barriers affect critical salmon habitat and the extent of available spawning grounds."
+  },
+  {
+    "objectID": "gem510_lab5.html#least-cost-path-map-for-grizzly-bear",
+    "href": "gem510_lab5.html#least-cost-path-map-for-grizzly-bear",
+    "title": "Least Cost Path Analysis for Grizzly Bear",
+    "section": "Least Cost Path Map for Grizzly Bear",
+    "text": "Least Cost Path Map for Grizzly Bear\n\n\n\nThe two maps illustrate least cost path (LCP) analyses for Grizzly Bear movement across a region in western Alberta, with resistance surfaces based on slope (left) and road networks (right). The slope-based LCP highlights terrain-driven movement, showing a more direct and topographically informed route through lower slope gradients, avoiding steep mountainous areas. This route suggests that Grizzly Bears may prefer to travel along more gradual slopes to minimize energy expenditure. In contrast, the road-based LCP results in a less direct, more fragmented path, indicating increased resistance in areas with dense road networks. Roads often act as physical and psychological barriers to wildlife, influencing movement behavior and habitat connectivity. This comparison underscores the importance of selecting appropriate cost surfaces based on ecological context. For conservation planning, incorporating multiple resistance factors—such as topography and human infrastructure—can provide a more comprehensive understanding of species movement and help identify priority areas for maintaining or restoring wildlife corridors."
   }
 ]
