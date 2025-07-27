@@ -529,7 +529,7 @@
     "href": "index.html#featured-projects",
     "title": "Exploring the Art of Solutions and Design - Innovating at the crossroads of Forestry, Remote Sensing, and Environment",
     "section": "Featured Projects",
-    "text": "Featured Projects\n\n\n\n\n\nCapstone\n\n\nThis project develops a method for detecting forest cover change in Tajikistan’s Pamir Mountains using historical Hexagon panchromatic imagery and modern PlanetScope multispectral data. The workflow is designed to be scalable for broader landscape analysis.\n\nLearn More"
+    "text": "Featured Projects\n\n\n\n\n\nDetecting Change of AGB in Ghana\n\n\nThis project compares satellite-based approaches—Landsat 9, PlanetScope, and resampled PlanetScope—using GEDI L4A as reference data to identify the most accurate method for estimating AGB in Kwahu South, Ghana.\n\nLearn More"
   },
   {
     "objectID": "index.html#featured-projects-1",
