@@ -6,15 +6,20 @@ format:
     allow-html: true
 ---
 
-### Welcome to my e-portfolio 👋
+::: {style="text-align: center; margin-top: 30px;"}
+```{=html}
+<img src="images/Profile photo 3.jpeg" alt="Profile picture of Hieu Phung" 
+       style="width: 250px; height: 250px; object-fit: cover; border-radius: 50%; border: 4px solid #4CAF50; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+```
+:::
 
-My name is Hieu (pronounce as "Heal") Phung. You can call me Harry.
+#### My name is Hieu (pronounce as "Heal") Phung. You can call me Harry.
+
+### Welcome to my e-portfolio 👋
 
 I am a fresh graduate student in Master of Geomatics for Environmental Management at The University of British Columbia.
 
-Before coming to Canada, I have completed my Bachelor's in Energy and Environmental Engineering at Tampere University of Applied Sciences in Finland. I also completed one Master's programme in Environmental Engineering in Tampere University in Finland.
-
-It is interesting that, after my first master's graduation, I decided to revolve my career path to the field of GIS and Forestry because I recognized an interconnection between environment, forestry and remote sensing field.
+Before coming to Canada, I have completed my Bachelor's and a Master's programme in Environmental Engineering in Finland. After my first master's graduation, I decided to revolve my career path to the field of GIS and Forestry because I recognized an interconnection between environment, forestry and remote sensing field. What I am aiming to do is to use the hands-on experience in GIS, spatial statistics, and spatial analysis in applications such as urban forestry monitoring, water resource and water infrastructure management, climate adaptation, etc. 
 
 In my e-portfolio, I hope to deliver insights, creativity and innovations to readers.
 
@@ -30,86 +35,102 @@ Thank you and enjoy your time exploring my space. Should you have any questions,
 
 ## Featured Projects
 
-:::: {.container-fluid .px-0}
-::: {.row .align-items-center style="background-color: #e8fdf3; border-radius: 12px; padding: 30px; margin-bottom: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);"}
-         
+:::::: {.container-fluid .px-0}
+::::: {.row .align-items-center style="background-color: #e8fdf3; border-radius: 12px; padding: 30px; margin-bottom: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);"}
 <!-- Left column: Text -->
-<div class="col-lg-6 col-md-6">
-  <h3><strong>Detecting Change of AGB in Ghana</strong></h3>
-  <p>This project compares satellite-based approaches—Landsat 9, PlanetScope, and resampled PlanetScope—using GEDI L4A as reference data to identify the most accurate method for estimating AGB in Kwahu South, Ghana.</p>
-  <a href="https://hieu-phung242.github.io/hieuphung/final_project.html#code-snippets" class="btn btn-dark">Learn More</a>
-</div>
+
+::: {.col-lg-6 .col-md-6}
+<h3><strong>Detecting Change of AGB in Ghana</strong></h3>
+
+<p>This project compares satellite-based approaches—Landsat 9, PlanetScope, and resampled PlanetScope—using GEDI L4A as reference data to identify the most accurate method for estimating AGB in Kwahu South, Ghana.</p>
+
+<a href="https://hieu-phung242.github.io/hieuphung/final_project.html#code-snippets" class="btn btn-dark">Learn More</a>
+:::
 
 <!-- Right column: Image -->
-<div class="col-lg-6 col-md-6 text-center">
-  <img src="images/agb_map.gif"
+
+::: {.col-lg-6 .col-md-6 .text-center}
+```{=html}
+<img src="images/agb_map.gif"
        alt="Map image"
        class="img-fluid rounded shadow"
        style="max-height: 300px;">
-</div>
-
+```
 :::
-::::
+:::::
+::::::
 
-:::: {.container-fluid .px-0}
-::: {.row .align-items-center style="background-color: #e8fdf3; border-radius: 12px; padding: 30px; margin-bottom: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);"}
-         
+:::::: {.container-fluid .px-0}
+::::: {.row .align-items-center style="background-color: #e8fdf3; border-radius: 12px; padding: 30px; margin-bottom: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);"}
 <!-- Left column: Text -->
-<div class="col-lg-6 col-md-6">
-  <h3><strong>Burn Severity and Vegetation Recovery Analysis</strong></h3>
-  <p>This project assesses burn severity at Prouton Lake in British Columbia by classifying fire-affected areas based on ecological change. It also analyzes vegetation recovery from 2018 to 2021 to understand post-fire ecosystem dynamics.</p>
-  <a href="https://hieu-phung242.github.io/hieuphung/gem520_finallab.html" class="btn btn-dark">Learn More</a>
-</div>
+
+::: {.col-lg-6 .col-md-6}
+<h3><strong>Burn Severity and Vegetation Recovery Analysis</strong></h3>
+
+<p>This project assesses burn severity at Prouton Lake in British Columbia by classifying fire-affected areas based on ecological change. It also analyzes vegetation recovery from 2018 to 2021 to understand post-fire ecosystem dynamics.</p>
+
+<a href="https://hieu-phung242.github.io/hieuphung/gem520_finallab.html" class="btn btn-dark">Learn More</a>
+:::
 
 <!-- Right column: Image -->
-<div class="col-lg-6 col-md-6 text-center">
-  <img src="images/burn_severity.png"
+
+::: {.col-lg-6 .col-md-6 .text-center}
+```{=html}
+<img src="images/burn_severity.png"
        alt="Map image"
        class="img-fluid rounded shadow"
        style="max-height: 300px;">
-</div>
-
+```
 :::
-::::
+:::::
+::::::
 
-:::: {.container-fluid .px-0}
-::: {.row .align-items-center style="background-color: #e8fdf3; border-radius: 12px; padding: 30px; margin-bottom: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);"}
-         
+:::::: {.container-fluid .px-0}
+::::: {.row .align-items-center style="background-color: #e8fdf3; border-radius: 12px; padding: 30px; margin-bottom: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);"}
 <!-- Left column: Text -->
-<div class="col-lg-6 col-md-6">
-  <h3><strong>Analysis of Suitable Sanctuaries for Humpback Whale</strong></h3>
-  <p>This project identifies the five most suitable areas for humpback whale sanctuaries in Hawaii using suitability and overlay analysis based on weighted environmental and human activity criteria. The goal is to support conservation efforts by expanding protected habitats within the Hawaiian Islands Humpback Whale National Marine Sanctuary.</p>
-  <a href="https://hieu-phung242.github.io/hieuphung/gem510_lab3.html" class="btn btn-dark">Learn More</a>
-</div>
+
+::: {.col-lg-6 .col-md-6}
+<h3><strong>Analysis of Suitable Sanctuaries for Humpback Whale</strong></h3>
+
+<p>This project identifies the five most suitable areas for humpback whale sanctuaries in Hawaii using suitability and overlay analysis based on weighted environmental and human activity criteria. The goal is to support conservation efforts by expanding protected habitats within the Hawaiian Islands Humpback Whale National Marine Sanctuary.</p>
+
+<a href="https://hieu-phung242.github.io/hieuphung/gem510_lab3.html" class="btn btn-dark">Learn More</a>
+:::
 
 <!-- Right column: Image -->
-<div class="col-lg-6 col-md-6 text-center">
-  <img src="images/lab3_map.png"
+
+::: {.col-lg-6 .col-md-6 .text-center}
+```{=html}
+<img src="images/lab3_map.png"
        alt="Map image"
        class="img-fluid rounded shadow"
        style="max-height: 300px;">
-</div>
-
+```
 :::
-::::
+:::::
+::::::
 
-:::: {.container-fluid .px-0}
-::: {.row .align-items-center style="background-color: #e8fdf3; border-radius: 12px; padding: 30px; margin-bottom: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);"}
-         
+:::::: {.container-fluid .px-0}
+::::: {.row .align-items-center style="background-color: #e8fdf3; border-radius: 12px; padding: 30px; margin-bottom: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);"}
 <!-- Left column: Text -->
-<div class="col-lg-6 col-md-6">
-  <h3><strong>Image Classification using Google Earth Engine</strong></h3>
-  <p>This project used Google Earth Engine (GEE) to perform supervised land cover classification in Finland using Random Forest, CART, and Naive Bayes algorithms. It aimed to compare the performance of these models while exploring GEE’s capabilities for scalable remote sensing analysis.</p>
-  <a href="https://hieu-phung242.github.io/hieuphung/gem521_lab9.html" class="btn btn-dark">Learn More</a>
-</div>
+
+::: {.col-lg-6 .col-md-6}
+<h3><strong>Image Classification using Google Earth Engine</strong></h3>
+
+<p>This project used Google Earth Engine (GEE) to perform supervised land cover classification in Finland using Random Forest, CART, and Naive Bayes algorithms. It aimed to compare the performance of these models while exploring GEE’s capabilities for scalable remote sensing analysis.</p>
+
+<a href="https://hieu-phung242.github.io/hieuphung/gem521_lab9.html" class="btn btn-dark">Learn More</a>
+:::
 
 <!-- Right column: Image -->
-<div class="col-lg-6 col-md-6 text-center">
-  <img src="images/gee_classification.gif"
+
+::: {.col-lg-6 .col-md-6 .text-center}
+```{=html}
+<img src="images/gee_classification.gif"
        alt="Map image"
        class="img-fluid rounded shadow"
        style="max-height: 300px;">
-</div>
-
+```
 :::
-::::
+:::::
+::::::
