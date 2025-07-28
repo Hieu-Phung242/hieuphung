@@ -41,6 +41,14 @@ Thank you and enjoy your time exploring my space. Should you have any questions,
 
 <p>This project compares satellite-based approaches—Landsat 9, PlanetScope, and resampled PlanetScope—using GEDI L4A as reference data to identify the most accurate method for estimating AGB in Kwahu South, Ghana.</p>
 
+<!-- Skill highlights -->
+<div style="margin-top: 12px; margin-bottom: 12px;">
+  <span style="display: inline-block; background-color: #163f76; color: white; padding: 8px 14px; margin: 6px 6px 0 0; border-radius: 6px;">ArcGIS Pro</span>
+  <span style="display: inline-block; background-color: #163f76; color: white; padding: 8px 14px; margin: 6px 6px 0 0; border-radius: 6px;">Calculating Vegetation Indices</span>
+  <span style="display: inline-block; background-color: #163f76; color: white; padding: 8px 14px; margin: 6px 6px 0 0; border-radius: 6px;">Handling GEDI Trajectory</span>
+  <span style="display: inline-block; background-color: #163f76; color: white; padding: 8px 14px; margin: 6px 6px 0 0; border-radius: 6px;">Linear Regression</span>
+</div>
+
 <a href="https://hieu-phung242.github.io/hieuphung/final_project.html#code-snippets" class="btn btn-dark">Learn More</a>
 :::
 
@@ -65,6 +73,12 @@ Thank you and enjoy your time exploring my space. Should you have any questions,
 <h3><strong>Burn Severity and Vegetation Recovery Analysis</strong></h3>
 
 <p>This project assesses burn severity at Prouton Lake in British Columbia by classifying fire-affected areas based on ecological change. It also analyzes vegetation recovery from 2018 to 2021 to understand post-fire ecosystem dynamics.</p>
+
+<!-- Skill highlights -->
+<div style="margin-top: 12px; margin-bottom: 12px;">
+  <span style="display: inline-block; background-color: #163f76; color: white; padding: 8px 14px; margin: 6px 6px 0 0; border-radius: 6px;">R</span>
+  <span style="display: inline-block; background-color: #163f76; color: white; padding: 8px 14px; margin: 6px 6px 0 0; border-radius: 6px;">Time Series Analysis</span>
+</div>
 
 <a href="https://hieu-phung242.github.io/hieuphung/gem520_finallab.html" class="btn btn-dark">Learn More</a>
 :::
@@ -91,6 +105,13 @@ Thank you and enjoy your time exploring my space. Should you have any questions,
 
 <p>This project identifies the five most suitable areas for humpback whale sanctuaries in Hawaii using suitability and overlay analysis based on weighted environmental and human activity criteria. The goal is to support conservation efforts by expanding protected habitats within the Hawaiian Islands Humpback Whale National Marine Sanctuary.</p>
 
+<!-- Skill highlights -->
+<div style="margin-top: 12px; margin-bottom: 12px;">
+  <span style="display: inline-block; background-color: #163f76; color: white; padding: 8px 14px; margin: 6px 6px 0 0; border-radius: 6px;">ArcGIS Pro</span>
+  <span style="display: inline-block; background-color: #163f76; color: white; padding: 8px 14px; margin: 6px 6px 0 0; border-radius: 6px;">Suitability Analysis</span>
+  <span style="display: inline-block; background-color: #163f76; color: white; padding: 8px 14px; margin: 6px 6px 0 0; border-radius: 6px;">Handling Vector Data</span>
+</div>
+
 <a href="https://hieu-phung242.github.io/hieuphung/gem510_lab3.html" class="btn btn-dark">Learn More</a>
 :::
 
@@ -115,6 +136,12 @@ Thank you and enjoy your time exploring my space. Should you have any questions,
 <h3><strong>Image Classification using Google Earth Engine</strong></h3>
 
 <p>This project used Google Earth Engine (GEE) to perform supervised land cover classification in Finland using Random Forest, CART, and Naive Bayes algorithms. It aimed to compare the performance of these models while exploring GEE’s capabilities for scalable remote sensing analysis.</p>
+
+<!-- Skill highlights -->
+<div style="margin-top: 12px; margin-bottom: 12px;">
+  <span style="display: inline-block; background-color: #163f76; color: white; padding: 8px 14px; margin: 6px 6px 0 0; border-radius: 6px;">Google Earth Engine</span>
+  <span style="display: inline-block; background-color: #163f76; color: white; padding: 8px 14px; margin: 6px 6px 0 0; border-radius: 6px;">Supervised Image Classification</span>
+</div>
 
 <a href="https://hieu-phung242.github.io/hieuphung/gem521_lab9.html" class="btn btn-dark">Learn More</a>
 :::
