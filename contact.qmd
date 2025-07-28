@@ -4,14 +4,15 @@ format: html
 editor: visual
 ---
 
-Thanks for spending your time here 😀  
+Thanks for spending your time here 😀
 
 I'd love to hear from you. Please, drop me an email or message me on LinkedIn anytime!
 
-
 <!-- Add Font Awesome CDN -->
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+```{=html}
 <style>
 .contact-links {
   margin-top: 20px;
@@ -29,21 +30,14 @@ I'd love to hear from you. Please, drop me an email or message me on LinkedIn an
   margin-right: 8px;
 }
 </style>
+```
 
-<div class="contact-links">
-  <a href="https://www.linkedin.com/in/hieu-phung-465699154/" target="_blank">
-    <i class="fab fa-linkedin"></i> LinkedIn
-  </a>
+::: contact-links
+<a href="https://www.linkedin.com/in/hieu-phung-465699154/" target="_blank"> <i class="fab fa-linkedin"></i> LinkedIn </a>
 
-  <a href="https://github.com/Hieu-Phung242" target="_blank">
-    <i class="fab fa-github"></i> GitHub
-  </a>
+<a href="https://github.com/Hieu-Phung242" target="_blank"> <i class="fab fa-github"></i> GitHub </a>
 
-  <a href="mailto:harry.ph.242@gmail.com"> 
-    <i class="fas fa-envelope"></i> Email: harry.ph.242@gmail.com
-  </a>
-</div>
-
-::: {html}
-<img src="images/profile_photo.jpg" alt="Profile Picture" width="300px"/>
+<a href="mailto:harry.ph.242@gmail.com"> <i class="fas fa-envelope"></i> Email: harry.ph.242\@gmail.com </a>
 :::
+
+
