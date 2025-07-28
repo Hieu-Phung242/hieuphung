@@ -6,23 +6,21 @@ editor: visual
 
 ## Applied Skills
 
-<div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+::: {style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;"}
+[ArcGIS Pro]{style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;"}
 
-<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">ArcGIS Pro</span>
+[Linear Regression Analysis]{style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;"}
 
-<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Linear Regression Analysis</span>
+[Create Map]{style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;"}
 
-<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Create Map</span>
+[Calculating Vegetation Indices]{style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;"}
 
-<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Calculating Vegetation Indices</span>
+[Handling Trajectory GEDI Dataset]{style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;"}
 
-<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Handling Trajectory GEDI Dataset</span>
+[Scientific Writing]{style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;"}
 
-<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Scientific Writing</span>
-
-<span style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">Research</span>
-
-</div>
+[Research]{style="background-color: #1f3c73; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;"}
+:::
 
 ::: panel-tabset
 ## Background
@@ -31,14 +29,15 @@ Forests play a vital role in regulating the global carbon cycle, yet their above
 
 ## Objectives
 
-- Identifying the optimal approach for estimating AGB in Ghana
-- Evaluating the accuracy AGB estimation models derived from Landsat 9, PlanetSocpe, and 30-m PlanetScope with GEDI L4A serving as a reference data
+-   Identifying the optimal approach for estimating AGB in Ghana
+-   Evaluating the accuracy AGB estimation models derived from Landsat 9, PlanetSocpe, and 30-m PlanetScope with GEDI L4A serving as a reference data
 
 ## Datasets
-- Landsat 9 imagery (date of the images: 12/2022)
-- PlanetScope imagery (date of the images: 12/2022)
-- GEDI L4A data (date of the data: 09/2022 to 02/2023)
-- Digital Elevation Model (DEM)
+
+-   Landsat 9 imagery (date of the images: 12/2022)
+-   PlanetScope imagery (date of the images: 12/2022)
+-   GEDI L4A data (date of the data: 09/2022 to 02/2023)
+-   Digital Elevation Model (DEM)
 
 ## References
 
@@ -53,9 +52,9 @@ The study area is located in Kwahu South District, Ghana
 
 Total area: 795.76 km2
 
-Main climate: wet semi equatorial 
+Main climate: wet semi equatorial
 
-Forest zone: semi-deciduous 
+Forest zone: semi-deciduous
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE}
 # Load library
@@ -68,13 +67,11 @@ library(leafem)            # to visualize raster in leaflet
 
 ```
 
-
 ```{r, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
 # Load shapefile
 kwahu_boundary <- st_read("C:/Users/hphung.stu/OneDrive - UBC/Documents/GitHub/hieuphung/files/final_project/AOI_Kwahu_South.shp")
 
 ```
-
 
 ```{r, echo = FALSE}
 # Create a leaflet map
@@ -114,46 +111,48 @@ saveWidget(m, "interactive_map.html", selfcontained = TRUE)
 
 ## Method
 
-The main approach for developing AGB estimation model in this project is as follow:
-- Generated a rescaled 30-m PlanetScope imagery
+The main approach for developing AGB estimation model in this project is as follow: - Generated a rescaled 30-m PlanetScope imagery
 
-- Calculated vegetation indices (NDVI, EVI, NDWI, MSAVI, and GCI) from Landsat 9, PlanetScope, and rescaled 30-m PlanetScope imagery
+-   Calculated vegetation indices (NDVI, EVI, NDWI, MSAVI, and GCI) from Landsat 9, PlanetScope, and rescaled 30-m PlanetScope imagery
 
-- Computed the aspect from the DEM
+-   Computed the aspect from the DEM
 
-- Applying random forest algorithm for AGB estimation with input variables were spectral bands, vegetation indices, aspect, and DEM. GEDI L4A was used as groundtruth data for validating each model
+-   Applying random forest algorithm for AGB estimation with input variables were spectral bands, vegetation indices, aspect, and DEM. GEDI L4A was used as groundtruth data for validating each model
 
-- Evaluated the accuracy of AGB estimation model derived from Landsat 9, PlanetScope, and rescaled 30-m PlanetScope
+-   Evaluated the accuracy of AGB estimation model derived from Landsat 9, PlanetScope, and rescaled 30-m PlanetScope
 
 ## Results
 
 ### Model's accuracy
 
-::: panel-tabset
-
+:::::: panel-tabset
 ## Landsat 9 model
+
 ::: {html}
 <img src="images/Scatterplot_L9.png" alt="AGB estimation model derived from Landsat 9" width="700px"/>
 :::
 
 ## PlanetScope model
+
 ::: {html}
 <img src="images/Scatterplot_Planet.png" alt="AGB estimation model derived from PlanetScope" width="700px"/>
 :::
+
 Result derived from Image © 2022 Planet Labs PBC
 
 ## Rescaled 30-m PlanetScope model
+
 ::: {html}
 <img src="images/Scatterplot_Planet30m.png" alt="AGB estimation model derived from 30-m PlanetScope" width="700px"/>
 :::
-Result derived from Image © 2022 Planet Labs PBC
 
-:::
+Result derived from Image © 2022 Planet Labs PBC
+::::::
 
 Though Planet had finer spatial resolution, it still demonstrated a less accurate result compared to Landsat 9. Meanwhile, the rescaled Planet provided the best performance, suggesting that spatial resolution alone did not determine AGB estimation accuracy. One potential explanation for this result is the misalignment between Planet’s 3m resolution and GEDI’s 25m footprint.That explains when the PlanetScope was rescaled to 30m, it better matched the scale of GEDI’s footprint, improving alignment and reducing fine-scale noise.
 
-
 ### AGB Distribution Map
+
 ::: {html}
 <img src="images/predicted_agb_l9.png" alt="Predicted AGB map derived from Landsat 9" width="700px"/>
 :::

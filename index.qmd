@@ -17,15 +17,12 @@ format:
 
 ### Welcome to my e-portfolio 👋
 
-I am a fresh graduate student in Master of Geomatics for Environmental Management at The University of British Columbia.
-
-Before coming to Canada, I have completed my Bachelor's and a Master's programme in Environmental Engineering in Finland. After my first master's graduation, I decided to revolve my career path to the field of GIS and Forestry because I recognized an interconnection between environment, forestry and remote sensing field. What I am aiming to do is to use the hands-on experience in GIS, spatial statistics, and spatial analysis in applications such as urban forestry monitoring, water resource and water infrastructure management, climate adaptation, etc. 
+I an an early-career GIS and environmental professional with a background in Environmental Engineering and a recent Master’s in Geomatics for Environmental Management from UBC. My path has evolved from engineering to geospatial science, driven by a passion for connecting remote sensing, forestry, and climate resilience. I specialize in using tools like ArcGIS Pro, QGIS, Python, R, and Google Earth Engine to turn spatial data into actionable solutions. My focus is on applying these skills to real-world challenges—such as monitoring the health and carbon dynamics of urban forests, optimizing water infrastructure systems in climate-sensitive regions, and supporting nature-based climate adaptation strategies. Whether it's mapping aboveground biomass, analyzing NDVI trends, or creating reproducible workflows for spatial planning, I strive to build solutions that not only work technically but also contribute to sustainable, data-informed decision-making in the environmental sector.
 
 In my e-portfolio, I hope to deliver insights, creativity and innovations to readers.
 
 Thank you and enjoy your time exploring my space. Should you have any questions, please do not hesitate to send me an email.
 
--   Skills: ArcGIS Pro, QGIS, R coding, Python, ENVI, eCognition, Google Earth Engine, AutoCAD, AutoCAD Plant 3D
 
 <p style="text-align: center; margin-top: 30px;">
 
