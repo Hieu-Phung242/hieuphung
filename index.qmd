@@ -17,11 +17,14 @@ format:
 
 ### Welcome to my e-portfolio 👋
 
-I am an early-career GIS and environmental professional with a background in Environmental Engineering and a recent Master’s in Geomatics for Environmental Management from UBC. My path has evolved from engineering to geospatial science, driven by a passion for connecting remote sensing, forestry, and climate resilience. I specialize in using tools like ArcGIS Pro, QGIS, Python, R, and Google Earth Engine to turn spatial data into actionable solutions. My focus is on applying these skills to real-world challenges—such as monitoring the health and carbon dynamics of urban forests, optimizing water infrastructure systems in climate-sensitive regions, and supporting nature-based climate adaptation strategies. Whether it's mapping aboveground biomass, analyzing NDVI trends, or creating reproducible workflows for spatial planning, I strive to build solutions that not only work technically but also contribute to sustainable, data-informed decision-making in the environmental sector.
+I am an early-career GIS and environmental professional with a background in Environmental Engineering and a recent Master’s in Geomatics for Environmental Management from UBC. 
+My path has evolved from engineering to geospatial science, driven by a passion for connecting remote sensing, forestry, and climate resilience. 
 
-In my e-portfolio, I hope to deliver insights, creativity and innovations to readers.
+I specialize in using tools like ArcGIS Pro, QGIS, Python, R, and Google Earth Engine to turn spatial data into actionable solutions. My focus is on applying these skills to real-world challenges—such as monitoring the health and carbon dynamics of urban forests, optimizing water infrastructure systems in climate-sensitive regions, and supporting nature-based climate adaptation strategies. 
 
-Thank you and enjoy your time exploring my space. Should you have any questions, please do not hesitate to send me an email.
+Whether it's mapping aboveground biomass, analyzing NDVI trends, or creating reproducible workflows for spatial planning, I strive to build solutions that not only work technically but also contribute to sustainable, data-informed decision-making in the environmental sector.
+
+Should you have any questions, please do not hesitate to send me an email. Thank you and enjoy your time exploring my space.
 
 
 <p style="text-align: center; margin-top: 30px;">
